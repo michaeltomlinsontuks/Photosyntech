@@ -8,20 +8,19 @@
 #include "../singleton/Singleton.h"
 
 LivingPlant::LivingPlant(std::string name, double price, int waterAffect, int sunAffect)
-    : PlantComponent(price, waterAffect, sunAffect), 
-    //remember to change to getString() after Wilmar fixes getSeason()
+    : PlantComponent(price, waterAffect, sunAffect),
+      // remember to change to getString() after Wilmar fixes getSeason()
       name(Inventory::getInstance()->getString("")),
       season(Inventory::getInstance()->getString("")),
-      age(0), 
-      health(0), 
-      waterLevel(0), 
+      age(0),
+      health(0),
+      waterLevel(0),
       sunExposure(0),
-      maturityState(nullptr), 
-      waterStrategy(nullptr), 
-      sunStrategy(nullptr)
-{};
+      maturityState(nullptr),
+      waterStrategy(nullptr),
+      sunStrategy(nullptr) {};
 
-LivingPlant::LivingPlant(const LivingPlant& other) 
+LivingPlant::LivingPlant(const LivingPlant &other)
     : PlantComponent(other),
 
       name(other.name),
@@ -33,76 +32,86 @@ LivingPlant::LivingPlant(const LivingPlant& other)
 
       maturityState(other.maturityState),
       waterStrategy(other.waterStrategy),
-      sunStrategy(other.sunStrategy)
-{};
+      sunStrategy(other.sunStrategy) {};
 
-void LivingPlant::setAge(int age){
+void LivingPlant::setAge(int age)
+{
     this->age = age;
 };
 
-void LivingPlant::setHealth(int health){
+void LivingPlant::setHealth(int health)
+{
     this->health = health;
 };
 
-void LivingPlant::setWaterLevel(int waterLevel){
+void LivingPlant::setWaterLevel(int waterLevel)
+{
     this->waterLevel = waterLevel;
 };
 
-void LivingPlant::setSunExposure(int sunExposure){
+void LivingPlant::setSunExposure(int sunExposure)
+{
     this->sunExposure = sunExposure;
 };
 
-void LivingPlant::setWaterStrategy(int strategy){
-    //waiting on wilmar's final implementation for flyweight
+void LivingPlant::setWaterStrategy(int strategy) {
+    // waiting on wilmar's final implementation for flyweight
 };
 
-void LivingPlant::setSunStrategy(int strategy){
-    //waiting on wilmar's final implementation for flyweight
+void LivingPlant::setSunStrategy(int strategy) {
+    // waiting on wilmar's final implementation for flyweight
 };
 
-void LivingPlant::setMaturity(int state){
-    //waiting on wilmar's final implementation for flyweight
+void LivingPlant::setMaturity(int state) {
+    // waiting on wilmar's final implementation for flyweight
 };
 
-void LivingPlant::setSeason(Flyweight<std::string*>* season){
+void LivingPlant::setSeason(Flyweight<std::string *> *season)
+{
     this->season = season;
 }
 
-void LivingPlant::addAttribute(PlantAttributes* attribute){
-//stub since this is the ConcreteComponent
+void LivingPlant::addAttribute(PlantAttributes *attribute) {
+    // stub since this is the ConcreteComponent
 };
 
-int LivingPlant::getAge(){
+int LivingPlant::getAge()
+{
     return this->age;
 };
 
-int LivingPlant::getHealth(){
+int LivingPlant::getHealth()
+{
     return this->health;
 };
 
-int LivingPlant::getSunExposure(){
+int LivingPlant::getSunExposure()
+{
     return this->sunExposure;
 };
 
-
-
-std::string LivingPlant::getName(){
+std::string LivingPlant::getName()
+{
     return *name->getState();
 };
 
-int LivingPlant::getAffectSunlight(){
+int LivingPlant::getAffectSunlight()
+{
     return this->affectSunValue;
 };
 
-int LivingPlant::getAffectWater(){
+int LivingPlant::getAffectWater()
+{
     return this->affectWaterValue;
 };
 
-double LivingPlant::getPrice(){
+double LivingPlant::getPrice()
+{
     return this->price;
 };
 
-std::string LivingPlant::getInfo(){
+std::string LivingPlant::getInfo()
+{
     std::string plantName = *name->getState();
     std::string baseInfo;
 
@@ -116,96 +125,100 @@ std::string LivingPlant::getInfo(){
     baseInfo += "Base Price: R" + std::to_string(price) + "\n";
     baseInfo += "Water Affection: " + std::to_string(affectWaterValue) + "\n";
     baseInfo += "Sun Affection: " + std::to_string(affectSunValue) + "\n";
-    
+
     return baseInfo;
 };
 
-Flyweight<std::string*> *LivingPlant::getSeason(){
+Flyweight<std::string *> *LivingPlant::getSeason()
+{
     return this->season;
 }
 
-PlantComponent* LivingPlant::clone(){
+PlantComponent *LivingPlant::clone()
+{
     return new LivingPlant(*this);
 };
 
-void LivingPlant::water(){
-    if (this->waterStrategy != nullptr){
+void LivingPlant::water()
+{
+    if (this->waterStrategy != nullptr)
+    {
 
-        WaterStrategy* strategy = this->waterStrategy->getState();
+        WaterStrategy *strategy = this->waterStrategy->getState();
 
-        int waterApplied = strategy->water(this); 
+        int waterApplied = strategy->water(this);
 
-        this->waterLevel += waterApplied; 
+        this->waterLevel += waterApplied;
 
-        //should we add a limit to the amount we can water? And should this be MVP
+        // should we add a limit to the amount we can water? And should this be MVP
     }
 }
 
-void LivingPlant::setOutside(){
-        if (this->sunStrategy != nullptr){
+void LivingPlant::setOutside()
+{
+    if (this->sunStrategy != nullptr)
+    {
 
-        SunStrategy* strategy = this->sunStrategy->getState();
+        SunStrategy *strategy = this->sunStrategy->getState();
 
-        int sunApplied = strategy->addSun(this); 
+        int sunApplied = strategy->addSun(this);
 
-        this->sunExposure += sunApplied; 
+        this->sunExposure += sunApplied;
 
-        //should we add a limit to the amount we can leave plants outside? And should this be MVP
+        // should we add a limit to the amount we can leave plants outside? And should this be MVP
     }
 }
 
-int LivingPlant::getWaterLevel(){
+int LivingPlant::getWaterLevel()
+{
     return this->waterLevel;
 };
 
+void LivingPlant::tick()
+{
+    
+}
 
 Herb::Herb()
-    : LivingPlant("", 0, 0, 0)
-{};
+    : LivingPlant("", 0, 0, 0) {};
 
-Herb::Herb(const Herb& other) 
-    : LivingPlant(other) 
-{};
+Herb::Herb(const Herb &other)
+    : LivingPlant(other) {};
 
-PlantComponent* Herb::clone(){
+PlantComponent *Herb::clone()
+{
     return new Herb(*this);
 }
 
-
 Shrub::Shrub()
-    : LivingPlant("", 0, 0, 0)
-{};
+    : LivingPlant("", 0, 0, 0) {};
 
-Shrub::Shrub(const Shrub& other) 
-    : LivingPlant(other) 
-{};
+Shrub::Shrub(const Shrub &other)
+    : LivingPlant(other) {};
 
-PlantComponent* Shrub::clone(){
+PlantComponent *Shrub::clone()
+{
     return new Shrub(*this);
 }
 
-
 Succulent::Succulent()
-    : LivingPlant("", 0, 0, 0)
-{};
+    : LivingPlant("", 0, 0, 0) {};
 
-Succulent::Succulent(const Succulent& other) 
-    : LivingPlant(other) 
-{};
+Succulent::Succulent(const Succulent &other)
+    : LivingPlant(other) {};
 
-PlantComponent* Succulent::clone(){
+PlantComponent *Succulent::clone()
+{
     return new Succulent(*this);
 }
 
-
 Tree::Tree()
-    : LivingPlant("", 0, 0, 0)
-{};
+    : LivingPlant("", 0, 0, 0) {};
 
-Tree::Tree(const Tree& other) 
-    : LivingPlant(other) 
-{};
+Tree::Tree(const Tree &other)
+    : LivingPlant(other) {};
 
-PlantComponent* Tree::clone(){
+PlantComponent *Tree::clone()
+{
     return new Tree(*this);
 }

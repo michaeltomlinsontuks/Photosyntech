@@ -66,7 +66,10 @@ class MaturityState;
 class PlantGroup
 {
 	friend class Inventory;
-	void tick();
+	void tick()
+	{
+		return;
+	}
 };
 
 class Staff;

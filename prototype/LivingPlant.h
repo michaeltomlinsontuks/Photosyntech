@@ -229,6 +229,8 @@ public:
 	 * @brief Virtual destructor for proper cleanup of derived classes.
 	 */
 	virtual ~LivingPlant() {}
+
+	virtual void tick();
 };
 
 #endif

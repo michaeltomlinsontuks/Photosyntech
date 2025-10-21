@@ -112,7 +112,7 @@ public:
 	 */
 	virtual void addAttribute(PlantAttributes *attribute) = 0;
 
-	void tick();
+	virtual void tick() = 0;
 };
 
 #endif

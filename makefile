@@ -18,6 +18,7 @@ TEST_SRC = unitTests.cpp\
 			state/Mature.cpp\
 			state/Seed.cpp\
 			state/Vegetative.cpp\
+			strategy/AlternatingSun.cpp
 
 SRC = $(TEST_SRC)
 OBJ := $(SRC:.cpp=.o)

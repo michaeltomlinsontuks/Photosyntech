@@ -99,7 +99,7 @@ public:
 	 */
 	void addAttribute(PlantAttributes *attribute);
 
-	void tick();
+	virtual void tick();
 };
 
 #endif
