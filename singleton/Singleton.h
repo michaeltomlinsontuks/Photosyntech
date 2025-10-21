@@ -4,6 +4,8 @@
 using namespace std;
 #include <string>
 #include <vector>
+#include <thread>
+#include <atomic>
 
 #include "../flyweight/FlyweightFactory.h"
 
@@ -11,7 +13,6 @@ using namespace std;
 #include "../strategy/MidSun.h"
 #include "../strategy/HighSun.h"
 #include "../strategy/AlternatingSun.h"
-
 
 // #include "../mediator/Staff.h"
 
@@ -61,11 +62,16 @@ class Customer;
 class WaterStrategy;
 class SunStrategy;
 class MaturityState;
-class PlantGroup;
+
+class PlantGroup
+{
+	friend class Inventory;
+	void tick();
+};
+
 class Staff;
 class Customer;
 class Inventory
-
 
 {
 private:
@@ -77,11 +83,17 @@ private:
 	FlyweightFactory<int, MaturityState *> *states;
 	vector<Staff *> *staffList;
 	vector<Customer *> *customerList;
+
 	/**
 	 * @brief Private constructor to prevent direct instantiation.
 	 */
 	Inventory();
 
+	// Multithreading components
+	void TickInventory();
+	static thread *TickerThread;
+	static atomic<bool> *on;
+	// Multithreading components
 public:
 	/**
 	 * @brief Gets the singleton instance.
@@ -135,6 +147,9 @@ public:
 	void addCustomer(Customer *Customer);
 
 	~Inventory();
+
+	static bool startTicker();
+	static bool stopTicker();
 };
 
 #endif

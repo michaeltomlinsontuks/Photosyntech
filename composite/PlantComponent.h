@@ -111,6 +111,8 @@ public:
 	 * @param attribute Pointer to the PlantAttributes decorator to add.
 	 */
 	virtual void addAttribute(PlantAttributes *attribute) = 0;
+
+	void tick();
 };
 
 #endif

@@ -5,6 +5,8 @@
 #include "../state/Seed.h"
 
 Inventory *Inventory::instance = nullptr;
+thread *Inventory::TickerThread = nullptr;
+atomic<bool> *Inventory::on = new atomic<bool>(false);
 
 Inventory::Inventory()
 {
@@ -43,6 +45,16 @@ Inventory::~Inventory()
 {
     if (inventory)
         delete inventory;
+
+    if (TickerThread && TickerThread->joinable())
+    {
+        TickerThread->join();
+        delete TickerThread;
+        TickerThread = nullptr;
+    }
+
+    if (on)
+        delete on;
 
     delete stringFactory;
     delete waterStrategies;
@@ -128,4 +140,40 @@ void Inventory::addCustomer(Staff *staff)
 void Inventory::addCustomer(Customer *customer)
 {
     customerList->push_back(customer);
+}
+
+bool Inventory::startTicker()
+{
+    Inventory *inv = getInstance();
+
+    if (!TickerThread)
+        TickerThread = new thread(&Inventory::TickInventory, inv);
+
+    if (!on->load())
+    {
+        on->store(true);
+        return true;
+    }
+    else
+        return false;
+}
+bool Inventory::stopTicker()
+{
+
+    if (on->load())
+    {
+        on->store(false);
+        return true;
+    }
+    else
+        return false;
+}
+
+void Inventory::TickInventory()
+{
+    while (on->load())
+    {
+        this->inventory->tick();
+        std::this_thread::sleep_for(std::chrono::seconds(10));
+    }
 }
