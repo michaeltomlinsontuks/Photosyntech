@@ -243,7 +243,7 @@ public:
 	 */
 	virtual PlantComponent *getDecorator();
 	virtual ~LivingPlant() {}
-	virtual PlantComponent *correctShape(PlantComponent *mainDecorator);
+	
 };
 
 #endif

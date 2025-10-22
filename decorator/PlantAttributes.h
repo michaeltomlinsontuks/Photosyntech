@@ -146,11 +146,8 @@ public:
 	//  * @param other Pointer to the decorator.
 	// */
 	// void setDecorator(PlantComponent* other);
-	virtual PlantComponent *correctShape(PlantComponent *mainDecorator)
-	{
-		if (this->nextComponent)
-			return nextComponent->correctShape(mainDecorator);
-	};
+
+
 };
 
 #endif

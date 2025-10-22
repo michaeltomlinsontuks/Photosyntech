@@ -74,8 +74,3 @@ void PlantAttributes::addAttribute(PlantComponent *attribute)
         this->nextComponent = attribute;
     }
 };
-PlantComponent *PlantAttributes::correctShape(PlantComponent *mainDecorator)
-{
-    if (this->nextComponent)
-        return nextComponent->correctShape(mainDecorator);
-};

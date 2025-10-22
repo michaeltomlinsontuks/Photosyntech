@@ -140,11 +140,7 @@ PlantComponent *LivingPlant::clone()
 {
     return new LivingPlant(*this);
 };
-PlantComponent *LivingPlant::correctShape(PlantComponent *mainDecorator)
-{
-    this->decorator = mainDecorator;
-    return this;
-}
+
 
 void LivingPlant::water()
 {
