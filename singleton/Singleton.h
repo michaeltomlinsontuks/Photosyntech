@@ -20,6 +20,8 @@ using namespace std;
 #include "../strategy/HighWater.h"
 #include "../strategy/AlternatingWater.h"
 
+#include "../composite/PlantGroup.h"
+
 /**
  * @brief Singleton class managing global inventory and flyweight factories.
  *

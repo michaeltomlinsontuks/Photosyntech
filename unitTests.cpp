@@ -1633,3 +1633,82 @@ TEST_CASE("Testing Builder Pattern Implementation")
         delete Inventory::getInstance();
     }
 }
+
+TEST_CASE("Testing load on system with many rose objects")
+{
+    SUBCASE("Testing load of 1_000")
+    {
+        cout << endl;
+
+        Builder *builder = new RoseBuilder();
+        Director *dir = new Director(builder);
+
+        dir->construct();
+        PlantGroup *mainInventory = Inventory::getInstance()->getInventory();
+
+        auto start = std::chrono::high_resolution_clock::now();
+        for (int i = 0; i < 1000; i++)
+        {
+            mainInventory->addComponent(dir->getPlant());
+        }
+        auto end = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> duration = end - start;
+        std::cout << "Time to add 1000 plants: " << duration.count() << " seconds" << std::endl;
+
+        delete builder;
+        delete dir;
+        delete Inventory::getInstance();
+        cout << "All 1000 plants de-allocated" << endl;
+    }
+
+    SUBCASE("Testing load of 1_000_000")
+    {
+        cout << endl;
+
+        Builder *builder = new RoseBuilder();
+        Director *dir = new Director(builder);
+
+        dir->construct();
+        PlantGroup *mainInventory = Inventory::getInstance()->getInventory();
+
+        auto start = std::chrono::high_resolution_clock::now();
+        for (int i = 0; i < 1000000; i++)
+        {
+            mainInventory->addComponent(dir->getPlant());
+        }
+        auto end = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> duration = end - start;
+        std::cout << "Time to add 1_000_000 plants: " << duration.count() << " seconds" << std::endl;
+
+        delete builder;
+        delete dir;
+        delete Inventory::getInstance();
+        cout << "All 1_000_000 plants de-allocated" << endl;
+    }
+    /*
+        SUBCASE("Testing load of 1_000_000_000")
+        {
+            cout << endl;
+
+            Builder *builder = new RoseBuilder();
+            Director *dir = new Director(builder);
+
+            dir->construct();
+            PlantGroup *mainInventory = Inventory::getInstance()->getInventory();
+
+            auto start = std::chrono::high_resolution_clock::now();
+            for (int i = 0; i < 100000000; i++)
+            {
+                mainInventory->addComponent(dir->getPlant());
+            }
+            auto end = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double> duration = end - start;
+            std::cout << "Time to add 100_000_000 plants: " << duration.count() << " seconds" << std::endl;
+
+            delete builder;
+            delete dir;
+            delete Inventory::getInstance();
+            cout << "All 100_000_000 plants de-allocated" << endl;
+        }
+            */
+}

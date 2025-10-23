@@ -12,7 +12,7 @@ Inventory::Inventory()
     // inventory = new PlantGroup();
 
     // remove
-    inventory = nullptr;
+    inventory = new PlantGroup();
     // remove
 
     stringFactory = new FlyweightFactory<string, string *>();
