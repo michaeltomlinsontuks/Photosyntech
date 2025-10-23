@@ -11,7 +11,6 @@ Inventory::Inventory()
 {
 
     inventory = new PlantGroup();
-  
 
     stringFactory = new FlyweightFactory<string, string *>();
     waterStrategies = new FlyweightFactory<int, WaterStrategy *>();
@@ -37,39 +36,55 @@ Inventory::Inventory()
     states->getFlyweight(Mature::getID(), new Mature());
     states->getFlyweight(Dead::getID(), new Dead());
 }
+#include <chrono>
+#include <iostream>
+
 Inventory::~Inventory()
 {
+    using namespace std::chrono;
+
+    auto start_total = high_resolution_clock::now();
+
+    auto start_inventory = high_resolution_clock::now();
     if (inventory)
         delete inventory;
+    auto end_inventory = high_resolution_clock::now();
+    std::cout << "Deleted inventory in " << duration<double>(end_inventory - start_inventory).count() << "s\n";
 
+    auto start_strategies = high_resolution_clock::now();
     delete stringFactory;
     delete waterStrategies;
     delete sunStrategies;
     delete states;
+    auto end_strategies = high_resolution_clock::now();
+    std::cout << "Deleted strategies in " << duration<double>(end_strategies - start_strategies).count() << "s\n";
 
-    std::vector<Staff *>::iterator itr = staffList->begin();
-    while (!(itr == staffList->end()))
+    auto start_staff = high_resolution_clock::now();
+    for (auto itr = staffList->begin(); itr != staffList->end(); ++itr)
     {
         if (*itr != nullptr)
-        {
             delete *itr;
-        }
-        itr++;
-    }
-
-    std::vector<Customer *>::iterator itrCustomer = customerList->begin();
-    while (!(itrCustomer == customerList->end()))
-    {
-        if (*itrCustomer != nullptr)
-        {
-            delete *itrCustomer;
-        }
-        itrCustomer++;
     }
     delete staffList;
+    auto end_staff = high_resolution_clock::now();
+    std::cout << "Deleted staff in " << duration<double>(end_staff - start_staff).count() << "s\n";
+
+    auto start_customers = high_resolution_clock::now();
+    for (auto itrCustomer = customerList->begin(); itrCustomer != customerList->end(); ++itrCustomer)
+    {
+        if (*itrCustomer != nullptr)
+            delete *itrCustomer;
+    }
     delete customerList;
+    auto end_customers = high_resolution_clock::now();
+    std::cout << "Deleted customers in " << duration<double>(end_customers - start_customers).count() << "s\n";
+
     instance = NULL;
+
+    auto end_total = high_resolution_clock::now();
+    std::cout << "Total Inventory destruction time: " << duration<double>(end_total - start_total).count() << "s\n";
 }
+
 Inventory *Inventory::getInstance()
 {
     if (!instance)
