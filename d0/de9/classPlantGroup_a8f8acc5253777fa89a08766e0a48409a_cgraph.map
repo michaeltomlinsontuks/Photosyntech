@@ -1,0 +1,5 @@
+<map id="PlantGroup::PlantGroup" name="PlantGroup::PlantGroup">
+<area shape="rect" id="Node000001" title="Copy constructor for deep copying the group hierarchy." alt="" coords="5,5,180,31"/>
+<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#afccd7a203a3854c7f356e6bde6b93cb8" title="Clones the plant component (Prototype pattern)." alt="" coords="228,5,401,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,15,214,15,214,21,180,21"/>
+</map>

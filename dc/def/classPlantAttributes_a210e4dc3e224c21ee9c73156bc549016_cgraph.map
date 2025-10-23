@@ -1,0 +1,5 @@
+<map id="PlantAttributes::affectSunlight" name="PlantAttributes::affectSunlight">
+<area shape="rect" id="Node000001" title="Gets the sunlight affection value for this component." alt="" coords="5,5,223,31"/>
+<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#a8ee78f7d4dd73734bdd0845108df5cb3" title="Gets the sunlight affection value for this component." alt="" coords="271,5,499,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,15,257,15,257,21,223,21"/>
+</map>

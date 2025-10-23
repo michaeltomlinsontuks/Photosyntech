@@ -1,0 +1,9 @@
+<map id="PlantGroup::sunlightNeeded" name="PlantGroup::sunlightNeeded">
+<area shape="rect" id="Node000001" title="Notifies observers that plants in this group need sunlight." alt="" coords="5,31,209,56"/>
+<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html#a5987e8682dbf78888e94b65e72c968e3" title="Sets the plant component to be outside. (Calls Sun Strategy)" alt="" coords="257,31,429,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,41,244,41,244,46,210,46"/>
+<area shape="rect" id="Node000003" href="$d6/d99/classSunStrategy.html#ab78e2922e453d8758dcac433749511d0" title="Applies sunlight exposure to the plant." alt="" coords="477,5,633,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="429,30,463,26,464,32,430,36"/>
+<area shape="rect" id="Node000004" href="$d1/d99/classFlyweight.html#a00ae12c029b8c4e184bcbe49a7389228" title="Gets the shared state data." alt="" coords="481,55,630,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="430,50,467,55,466,60,430,56"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="LavenderBuilder::getResult" name="LavenderBuilder::getResult">
+<area shape="rect" id="Node000001" title="Returns the fully constructed Lavender plant." alt="" coords="5,31,204,56"/>
+<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#afccd7a203a3854c7f356e6bde6b93cb8" title="Clones the plant component (Prototype pattern)." alt="" coords="259,5,432,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,30,245,26,245,31,204,36"/>
+<area shape="rect" id="Node000003" href="$d7/d79/classLivingPlant.html#a243c56b07cce6b0629f84886b3ab6232" title="Virtual destructor for proper cleanup of derived classes." alt="" coords="252,55,439,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,51,239,54,238,59,204,56"/>
+</map>

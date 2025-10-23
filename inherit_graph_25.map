@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$d6/d99/classSunStrategy.html" title=" " alt="" coords="5,80,107,105"/>
+<area shape="rect" id="Node000001" href="$d4/dad/classAlternatingSun.html" title="Concrete strategy for high&#45;intensity, full sunlight exposure." alt="" coords="155,5,273,31"/>
+<area shape="poly" id="edge50_Node000000_Node000001" title=" " alt="" coords="91,71,154,40,179,28,182,33,156,44,94,76"/>
+<area shape="rect" id="Node000002" href="$d7/d2d/classHighSun.html" title="Concrete strategy for high&#45;intensity, full sunlight exposure." alt="" coords="176,55,252,80"/>
+<area shape="poly" id="edge51_Node000000_Node000002" title=" " alt="" coords="120,80,175,71,176,76,121,85"/>
+<area shape="rect" id="Node000003" href="$d8/d6c/classLowSun.html" title="Concrete strategy for low&#45;intensity, shade&#45;tolerant sunlight exposure." alt="" coords="178,104,250,129"/>
+<area shape="poly" id="edge52_Node000000_Node000003" title=" " alt="" coords="121,100,178,109,177,114,120,105"/>
+<area shape="rect" id="Node000004" href="$d8/d6d/classMidSun.html" title="Concrete strategy for moderate sunlight exposure." alt="" coords="179,153,249,179"/>
+<area shape="poly" id="edge53_Node000000_Node000004" title=" " alt="" coords="96,109,156,138,184,151,181,156,154,143,94,114"/>
+</map>

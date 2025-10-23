@@ -1,0 +1,37 @@
+<map id="SuggestionFloor::assist" name="SuggestionFloor::assist">
+<area shape="rect" id="Node000001" title="Coordinates staff assistance for suggestion operations." alt="" coords="5,301,179,327"/>
+<area shape="rect" id="Node000002" href="$dd/d7a/classInventory.html#ae50f36bd26c42f404b5b9d9f78e85796" title="a getter for the customer list used in the system" alt="" coords="227,252,409,277"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,299,245,278,246,283,151,304"/>
+<area shape="rect" id="Node000003" href="$dd/d7a/classInventory.html#a6214bbce5f65c3c4b50f3703c3374364" title="Gets the singleton instance." alt="" coords="235,301,401,327"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,311,221,311,221,317,179,317"/>
+<area shape="rect" id="Node000018" href="$dd/d7a/classInventory.html#a1a6be650abb780ce7cb1778732269d76" title="a getter for the Staff list used in the system" alt="" coords="247,351,389,376"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="151,324,246,345,245,350,150,329"/>
+<area shape="rect" id="Node000004" href="$dd/d7a/classInventory.html#a10485613fc8bfb32ee564d9b5110f8fb" title="Private constructor to prevent direct instantiation." alt="" coords="457,301,611,327"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="402,311,443,311,443,317,402,317"/>
+<area shape="rect" id="Node000005" href="$d5/d2c/classFlyweightFactory.html#a7abec75c45177edeed4e8c94f0f48e1f" title="Gets or creates a flyweight for the given identifier." alt="" coords="659,5,884,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="534,301,544,252,565,181,581,142,602,105,627,70,657,40,664,35,667,39,660,44,631,73,606,107,586,145,570,183,549,253,540,302"/>
+<area shape="rect" id="Node000006" href="$dc/ddc/classDead.html#abcdb9719d65bb5652d1a95719236673a" title="Returns the identifier for the Dead state." alt="" coords="722,55,821,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="536,300,548,259,572,201,608,141,631,113,657,89,682,76,708,68,710,74,684,81,660,94,634,117,612,144,577,204,554,261,541,302"/>
+<area shape="rect" id="Node000007" href="$da/dc8/classMature.html#a8e9fd3e33549edd0a91f188635f77339" title="Returns the identifier for the Mature state." alt="" coords="716,104,827,129"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="538,300,554,267,579,223,614,177,657,138,679,127,702,120,703,125,681,132,660,143,617,181,583,226,558,269,543,302"/>
+<area shape="rect" id="Node000008" href="$db/d19/classSeed.html#a9abc859b004490c9086455651fe07c89" title="Returns the identifier for the Seed state." alt="" coords="723,153,820,179"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="542,299,587,245,620,214,657,188,682,177,708,170,710,175,684,182,660,192,623,218,591,248,546,303"/>
+<area shape="rect" id="Node000009" href="$db/d81/classVegetative.html#ac92c41674f765f7850b029a289c587aa" title="Returns the identifier for the Vegetative state." alt="" coords="704,203,839,228"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="551,299,597,268,658,237,690,227,691,232,660,242,600,272,554,303"/>
+<area shape="rect" id="Node000010" href="$d4/dad/classAlternatingSun.html#a0b2a72d22483109cd9d21eb11b5f6a77" title="Gets the unique identifier for the AlternatingSun strategy." alt="" coords="691,252,852,277"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="595,299,696,278,697,283,596,304"/>
+<area shape="rect" id="Node000011" href="$d6/df2/classAlternatingWater.html#a29cda914abc61d0db88c872db673a62e" title="Gets the unique identifier for the AlternatingWater strategy." alt="" coords="684,301,859,327"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="611,311,670,311,670,317,611,317"/>
+<area shape="rect" id="Node000012" href="$d7/d2d/classHighSun.html#a602a35623820dfc3cfd118bf18023d58" title="Gets the unique identifier for the HighSun strategy." alt="" coords="712,351,831,376"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="596,324,699,346,698,351,595,329"/>
+<area shape="rect" id="Node000013" href="$d9/d86/classHighWater.html#a23c9ce28639f0c7e57049542217edfd2" title="Gets the unique identifier for the HighWater strategy." alt="" coords="705,400,838,425"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="554,325,601,355,660,385,692,395,690,401,658,390,598,359,551,329"/>
+<area shape="rect" id="Node000014" href="$d8/d6c/classLowSun.html#a76b4d46e42dd8d174b39a2d331992c0d" title="Gets the unique identifier for the LowSun strategy." alt="" coords="714,449,829,475"/>
+<area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="546,325,591,379,623,409,660,434,702,450,700,455,657,439,620,413,587,382,542,328"/>
+<area shape="rect" id="Node000015" href="$d1/de3/classLowWater.html#a249b7e03f5e7ecbaea2581b232b78727" title="Gets the unique identifier for the LowWater strategy." alt="" coords="707,499,836,524"/>
+<area shape="poly" id="edge14_Node000004_Node000015" title=" " alt="" coords="543,326,558,358,584,401,618,446,660,484,694,499,692,504,657,488,614,450,579,404,554,361,538,328"/>
+<area shape="rect" id="Node000016" href="$d8/d6d/classMidSun.html#a16f4d6db6f6ab1cc5fd96c1ad1dc5b4a" title="Gets the unique identifier for the MidSun strategy." alt="" coords="715,548,828,573"/>
+<area shape="poly" id="edge15_Node000004_Node000016" title=" " alt="" coords="541,326,554,367,577,424,612,483,635,510,660,533,680,544,702,552,701,557,678,549,657,537,631,514,608,486,572,426,549,369,536,328"/>
+<area shape="rect" id="Node000017" href="$dd/df9/classMidWater.html#a8630fc254c3889716599c148d4ab7819" title="Gets the unique identifier for the MidWater strategy." alt="" coords="708,597,835,623"/>
+<area shape="poly" id="edge16_Node000004_Node000017" title=" " alt="" coords="540,327,550,376,571,445,587,483,607,520,631,554,660,583,677,593,696,600,694,605,674,598,657,587,627,557,602,522,582,485,566,447,544,377,535,328"/>
+</map>

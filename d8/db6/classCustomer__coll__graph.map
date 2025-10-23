@@ -1,0 +1,33 @@
+<map id="Customer" name="Customer">
+<area shape="rect" id="Node000001" title="Concrete colleague representing a customer in the mediator pattern." alt="" coords="801,165,887,191"/>
+<area shape="rect" id="Node000002" href="$d9/dc0/classUser.html" title="Abstract base class for users in the Mediator pattern." alt="" coords="615,216,667,241"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="680,216,801,186,802,191,681,222"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="911,268,1073,293"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="676,245,713,259,763,270,815,276,910,281,910,286,814,282,762,275,711,265,674,250"/>
+<area shape="rect" id="Node000008" href="$dd/df7/classStaff.html" title="Concrete colleague representing staff in the mediator and observer patterns." alt="" coords="818,116,870,141"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="671,206,711,182,767,156,817,136,819,141,769,161,713,187,673,211"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="323,239,410,264"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="424,246,569,235,614,230,614,235,570,241,424,251"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,231,144,271"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="158,249,323,249,323,254,158,254"/>
+<area shape="rect" id="Node000005" href="$df/dd5/classMediator.html" title="Abstract mediator interface for coordinating colleague interactions." alt="" coords="1365,216,1445,241"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1352,231,667,231,667,226,1352,226"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1087,276,1209,267,1275,258,1341,245,1364,238,1366,244,1342,250,1276,263,1209,272,1087,281"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1097,161,1260,187"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="1251,187,1342,209,1366,215,1365,220,1341,214,1250,192"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="884,131,1097,160,1097,166,883,137"/>
+<area shape="rect" id="Node000009" href="$de/dab/classObserver.html" title="Abstract observer interface in the Observer pattern." alt="" coords="34,5,115,31"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="129,16,233,17,355,15,408,16,476,23,577,43,675,70,819,117,817,122,674,75,576,49,476,29,408,21,355,20,233,22,129,21"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="281,39,452,64"/>
+<area shape="poly" id="edge17_Node000014_Node000009" title=" " alt="" coords="130,25,168,31,281,43,281,48,168,37,129,31"/>
+<area shape="rect" id="Node000010" href="$d0/de9/classPlantGroup.html" title="Represents a group of plants in the Composite pattern." alt="" coords="593,105,688,131"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="698,132,802,163,800,168,697,137"/>
+<area shape="rect" id="Node000011" href="$df/deb/classPlantComponent.html" title="Abstract base class representing a plant component in the Composite pattern." alt="" coords="9,156,140,181"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="153,159,593,119,593,125,154,164"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="257,189,476,215"/>
+<area shape="poly" id="edge15_Node000013_Node000011" title=" " alt="" coords="154,180,168,182,257,192,257,197,168,187,153,185"/>
+<area shape="rect" id="Node000012" href="$d4/d3f/classSubject.html" title="Abstract subject interface in the Observer pattern." alt="" coords="331,88,402,113"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="416,101,593,112,593,118,416,106"/>
+<area shape="poly" id="edge14_Node000010_Node000013" title=" " alt="" coords="490,202,530,195,568,182,587,171,603,157,628,129,632,133,607,161,590,176,570,187,531,200,490,207"/>
+<area shape="poly" id="edge16_Node000010_Node000014" title=" " alt="" coords="452,64,570,91,606,103,604,108,569,97,451,69"/>
+</map>

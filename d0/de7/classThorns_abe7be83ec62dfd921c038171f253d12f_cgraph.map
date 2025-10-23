@@ -1,0 +1,10 @@
+<map id="Thorns::clone" name="Thorns::clone">
+<area shape="rect" id="Node000001" title="Clones the decorated plant component (Prototype pattern)." alt="" coords="5,55,115,80"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="25,56,18,46,22,36,36,30,60,28,89,32,101,41,98,45,87,37,60,33,38,35,26,40,23,46,30,53"/>
+<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#aa89338f85edb0e093d8edd97ad3e7323" title="Adds an attribute decorator to this plant component." alt="" coords="163,5,381,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,52,162,39,199,31,200,36,163,45,112,57"/>
+<area shape="rect" id="Node000003" href="$df/deb/classPlantComponent.html#afccd7a203a3854c7f356e6bde6b93cb8" title="Clones the plant component (Prototype pattern)." alt="" coords="185,55,359,80"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="115,65,172,65,172,70,115,70"/>
+<area shape="rect" id="Node000004" href="$d0/de7/classThorns.html#ab87faf9d6ff7199be720632e5759076c" title="Constructs a Thorns decorator, wrapping the given component." alt="" coords="213,104,331,129"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="116,77,163,89,204,98,203,103,162,94,114,83"/>
+</map>

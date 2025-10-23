@@ -1,0 +1,5 @@
+<map id="AggPlant" name="AggPlant">
+<area shape="rect" id="Node000001" title="Concrete aggregate for creating unfiltered plant iterators." alt="" coords="10,79,90,104"/>
+<area shape="rect" id="Node000002" href="$d9/dea/classAggregate.html" title="Abstract aggregate interface for creating iterators." alt="" coords="5,5,95,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,44,53,79,47,79,47,44"/>
+</map>

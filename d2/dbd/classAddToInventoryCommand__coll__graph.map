@@ -1,0 +1,5 @@
+<map id="AddToInventoryCommand" name="AddToInventoryCommand">
+<area shape="rect" id="Node000001" title="Concrete command for adding plants to the inventory." alt="" coords="5,79,196,104"/>
+<area shape="rect" id="Node000002" href="$d9/d71/classCommand.html" title="Abstract command interface in the Command pattern." alt="" coords="56,5,145,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,44,103,79,98,79,98,44"/>
+</map>

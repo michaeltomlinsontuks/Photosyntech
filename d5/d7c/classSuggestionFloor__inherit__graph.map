@@ -1,0 +1,5 @@
+<map id="SuggestionFloor" name="SuggestionFloor">
+<area shape="rect" id="Node000001" title="Concrete mediator coordinating plant care suggestions." alt="" coords="5,79,132,104"/>
+<area shape="rect" id="Node000002" href="$df/dd5/classMediator.html" title="Abstract mediator interface for coordinating colleague interactions." alt="" coords="29,5,109,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,44,71,79,66,79,66,44"/>
+</map>

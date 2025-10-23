@@ -1,0 +1,7 @@
+<map id="HighWater::water" name="HighWater::water">
+<area shape="rect" id="Node000001" title="Applies high&#45;level watering to the plant." alt="" coords="5,31,140,56"/>
+<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html#aa8bbfb196f1db94e26c352b0a0300649" title="Gets plant waterLevel as an Integer." alt="" coords="188,5,384,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,33,174,29,175,34,140,38"/>
+<area shape="rect" id="Node000003" href="$d7/d79/classLivingPlant.html#a7bca1845a582e324c8a6f54aff665ac2" title="Sets the season for this plant." alt="" coords="189,55,383,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,48,175,52,175,57,140,54"/>
+</map>

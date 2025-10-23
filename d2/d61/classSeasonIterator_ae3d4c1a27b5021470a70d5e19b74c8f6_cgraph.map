@@ -1,0 +1,9 @@
+<map id="SeasonIterator::advanceToNextPlant" name="SeasonIterator::advanceToNextPlant">
+<area shape="rect" id="Node000001" title="Advances to the next matching plant using iterative stack&#45;based traversal. Filters by season while tr..." alt="" coords="5,47,200,87"/>
+<area shape="rect" id="Node000002" href="$d0/de9/classPlantGroup.html#a0d2b83b1cfd52cec5d83860782bf9432" title="Gets direct access to the internal plants list." alt="" coords="261,5,424,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,45,266,31,267,36,201,50"/>
+<area shape="rect" id="Node000003" href="$d7/d79/classLivingPlant.html#a3eec9021bb70dc5cb916f1fadc22c77b" title="Gets the season of the plant." alt="" coords="257,55,428,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,65,244,65,244,70,200,70"/>
+<area shape="rect" id="Node000004" href="$df/deb/classPlantComponent.html#ace727d5177701f579367867b9891c27b" title="Gets the component type for efficient type identification." alt="" coords="248,104,437,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,85,267,99,266,104,200,90"/>
+</map>

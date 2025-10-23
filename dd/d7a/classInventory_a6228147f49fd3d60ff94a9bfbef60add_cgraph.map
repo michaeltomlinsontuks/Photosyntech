@@ -1,0 +1,7 @@
+<map id="Inventory::getStates" name="Inventory::getStates">
+<area shape="rect" id="Node000001" title="to get a flyweight based on a specific id." alt="" coords="5,31,159,56"/>
+<area shape="rect" id="Node000002" href="$d5/d2c/classFlyweightFactory.html#a7abec75c45177edeed4e8c94f0f48e1f" title="Gets or creates a flyweight for the given identifier." alt="" coords="207,5,432,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,33,192,29,193,34,159,38"/>
+<area shape="rect" id="Node000003" href="$db/d19/classSeed.html#a9abc859b004490c9086455651fe07c89" title="Returns the identifier for the Seed state." alt="" coords="271,55,368,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,48,258,58,257,64,159,54"/>
+</map>

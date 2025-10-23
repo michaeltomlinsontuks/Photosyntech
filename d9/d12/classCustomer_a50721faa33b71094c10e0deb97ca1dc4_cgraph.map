@@ -1,0 +1,5 @@
+<map id="Customer::purchasePlants" name="Customer::purchasePlants">
+<area shape="rect" id="Node000001" title="Initiates plant purchase transaction via the sales floor mediator." alt="" coords="5,5,197,31"/>
+<area shape="rect" id="Node000002" href="$df/dd5/classMediator.html#a1dec24c4b70fa3d865db3e086e5fbd05" title="Routes a customer&#39;s assistance request to available staff." alt="" coords="245,5,424,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,15,232,15,232,21,198,21"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="User" name="User">
+<area shape="rect" id="Node000001" title="Abstract base class for users in the Mediator pattern." alt="" coords="209,183,261,208"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="153,322,316,347"/>
+<area shape="poly" id="edge5_Node000005_Node000001" title=" " alt="" coords="237,222,237,322,232,322,232,222"/>
+<area shape="rect" id="Node000007" href="$dd/df7/classStaff.html" title="Concrete colleague representing staff in the mediator and observer patterns." alt="" coords="86,271,138,296"/>
+<area shape="poly" id="edge8_Node000007_Node000001" title=" " alt="" coords="208,218,130,273,127,268,205,214"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="191,95,278,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,134,237,182,232,182,232,134"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="165,5,304,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="237,59,237,94,232,94,232,59"/>
+<area shape="rect" id="Node000004" href="$df/dd5/classMediator.html" title="Abstract mediator interface for coordinating colleague interactions." alt="" coords="180,461,260,487"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="260,453,295,430,310,415,322,397,339,353,341,314,329,275,303,234,284,216,260,206,262,201,286,212,307,230,334,273,346,313,344,354,326,400,314,418,298,434,263,457"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="235,362,224,461,219,461,229,361"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,373,168,399"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="109,406,145,435,192,459,189,464,143,440,106,410"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="88,307,78,321,76,334,76,348,84,372,79,374,71,349,70,334,74,319,83,304"/>
+<area shape="rect" id="Node000008" href="$de/dab/classObserver.html" title="Abstract observer interface in the Observer pattern." alt="" coords="71,183,153,208"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="115,222,115,270,109,270,109,222"/>
+</map>

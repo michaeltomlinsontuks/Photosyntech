@@ -1,0 +1,15 @@
+<map id="iterator" name="iterator">
+<area shape="rect" id="node1" href="dir_c155de92d0cd23d6b7fca8ca69a47fe7.html" title="iterator" alt="" coords="173,5,243,31"/>
+<area shape="rect" id="node2" href="dir_412a7194e3e7e756bd9f9ba974d50196.html" title="singleton" alt="" coords="5,79,88,104"/>
+<area shape="poly" id="edge1" href="dir_000011_000020.html" alt="" coords="183,33,87,75,84,71,181,28"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000011_000020.html" title="1" alt="" coords="88,72,98,86"/>
+<area shape="rect" id="node3" href="dir_53e0f648698c9c44c59b2643276db027.html" title="flyweight" alt="" coords="112,79,195,104"/>
+<area shape="poly" id="edge2" href="dir_000011_000009.html" alt="" coords="201,33,173,69,168,66,197,29"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000011_000009.html" title="1" alt="" coords="175,62,185,77"/>
+<area shape="rect" id="node4" href="dir_b16217dd03acd9165a6995d70452cddd.html" title="composite" alt="" coords="219,79,309,104"/>
+<area shape="poly" id="edge3" href="dir_000011_000002.html" alt="" coords="219,29,249,66,244,69,215,33"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000011_000002.html" title="8" alt="" coords="246,52,255,66"/>
+<area shape="rect" id="node5" href="dir_b3a2258401d5c83a0d9518ae73f64ab9.html" title="prototype" alt="" coords="333,79,419,104"/>
+<area shape="poly" id="edge4" href="dir_000011_000017.html" alt="" coords="236,28,337,71,335,76,234,33"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000011_000017.html" title="3" alt="" coords="330,56,340,71"/>
+</map>

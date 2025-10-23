@@ -1,0 +1,10 @@
+<map id="PlantCharm::clone" name="PlantCharm::clone">
+<area shape="rect" id="Node000001" title="Clones the decorated plant component (Prototype pattern)." alt="" coords="5,55,147,80"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="39,56,31,46,35,36,51,30,76,28,108,32,120,41,117,45,106,37,76,33,52,35,39,40,36,46,43,53"/>
+<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#aa89338f85edb0e093d8edd97ad3e7323" title="Adds an attribute decorator to this plant component." alt="" coords="195,5,413,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,52,231,31,232,36,136,57"/>
+<area shape="rect" id="Node000003" href="$df/deb/classPlantComponent.html#afccd7a203a3854c7f356e6bde6b93cb8" title="Clones the plant component (Prototype pattern)." alt="" coords="217,55,391,80"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="147,65,203,65,203,70,147,70"/>
+<area shape="rect" id="Node000004" href="$de/d0d/classPlantCharm.html#a5248c3ba3b08cbcf501e7857e844e5ca" title="Constructs a PlantCharm decorator, wrapping the given component." alt="" coords="213,104,395,129"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="136,77,232,98,231,104,135,83"/>
+</map>

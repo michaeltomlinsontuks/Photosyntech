@@ -1,0 +1,26 @@
+<map id="Shrub" name="Shrub">
+<area shape="rect" id="Node000001" title="Concrete prototype representing a Shrub plant type." alt="" coords="899,113,957,138"/>
+<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html" title=" " alt="" coords="755,113,849,138"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="863,123,898,123,898,128,863,128"/>
+<area shape="rect" id="Node000003" href="$df/deb/classPlantComponent.html" title="Abstract base class representing a plant component in the Composite pattern." alt="" coords="434,13,565,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="567,8,606,4,648,4,691,10,732,25,756,43,775,67,798,111,794,114,771,70,753,47,729,29,690,15,648,9,606,9,567,13"/>
+<area shape="poly" id="edge6_Node000002_Node000003" title=" " alt="" coords="579,32,654,47,732,73,763,91,788,111,785,115,760,95,730,77,653,52,578,37"/>
+<area shape="rect" id="Node000004" href="$d1/d99/classFlyweight.html" title=" " alt="" coords="403,85,595,110"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="610,105,755,119,754,124,609,110"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="207,85,294,110"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="308,95,403,95,403,100,308,100"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,78,144,118"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="158,95,207,95,207,100,158,100"/>
+<area shape="rect" id="Node000007" href="$d1/d99/classFlyweight.html" title=" " alt="" coords="391,134,607,160"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="621,151,676,150,730,144,766,136,767,141,731,150,676,155,621,156"/>
+<area shape="rect" id="Node000008" href="$d3/d4b/classMaturityState.html" title="Abstract base class for plant maturity states." alt="" coords="195,134,306,160"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="321,144,391,144,391,150,321,150"/>
+<area shape="rect" id="Node000009" href="$d1/d99/classFlyweight.html" title=" " alt="" coords="389,184,609,209"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="623,192,677,184,730,170,760,154,785,136,788,140,763,159,732,175,678,189,623,197"/>
+<area shape="rect" id="Node000010" href="$d7/da1/classWaterStrategy.html" title="Abstract strategy interface for plant watering algorithms." alt="" coords="193,184,308,209"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="322,194,389,194,389,199,322,199"/>
+<area shape="rect" id="Node000011" href="$d1/d99/classFlyweight.html" title=" " alt="" coords="396,233,603,258"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="616,243,674,232,703,223,729,210,750,194,768,175,792,137,796,140,772,178,754,198,732,215,705,228,676,237,617,248"/>
+<area shape="rect" id="Node000012" href="$d6/d99/classSunStrategy.html" title=" " alt="" coords="200,233,301,258"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="315,243,396,243,396,248,315,248"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="SunflowerBuilder::~SunflowerBuilder" name="SunflowerBuilder::~SunflowerBuilder">
+<area shape="rect" id="Node000001" title="Destructor for SunflowerBuilder." alt="" coords="5,29,148,69"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="37,30,35,20,41,10,55,5,77,3,101,6,115,13,112,18,100,11,77,8,56,10,44,15,40,21,42,28"/>
+<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html#a243c56b07cce6b0629f84886b3ab6232" title="Virtual destructor for proper cleanup of derived classes." alt="" coords="196,37,383,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,47,182,47,182,52,149,52"/>
+</map>

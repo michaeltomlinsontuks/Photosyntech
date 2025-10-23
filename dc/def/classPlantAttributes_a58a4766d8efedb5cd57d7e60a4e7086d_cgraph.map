@@ -1,0 +1,5 @@
+<map id="PlantAttributes::addAttribute" name="PlantAttributes::addAttribute">
+<area shape="rect" id="Node000001" title="Adds another attribute decorator to this plant." alt="" coords="5,5,213,31"/>
+<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#aa89338f85edb0e093d8edd97ad3e7323" title="Adds an attribute decorator to this plant component." alt="" coords="261,5,480,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,15,248,15,248,21,214,21"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="SunStrategy" name="SunStrategy">
+<area shape="rect" id="Node000001" title=" " alt="" coords="185,5,286,31"/>
+<area shape="rect" id="Node000002" href="$d4/dad/classAlternatingSun.html" title="Concrete strategy for high&#45;intensity, full sunlight exposure." alt="" coords="5,79,124,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,38,94,81,92,76,194,33"/>
+<area shape="rect" id="Node000003" href="$d7/d2d/classHighSun.html" title="Concrete strategy for high&#45;intensity, full sunlight exposure." alt="" coords="148,79,224,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,44,196,80,192,77,217,41"/>
+<area shape="rect" id="Node000004" href="$d8/d6c/classLowSun.html" title="Concrete strategy for low&#45;intensity, shade&#45;tolerant sunlight exposure." alt="" coords="249,79,321,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="253,41,279,77,274,80,249,44"/>
+<area shape="rect" id="Node000005" href="$d8/d6d/classMidSun.html" title="Concrete strategy for moderate sunlight exposure." alt="" coords="345,79,416,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="272,34,358,76,356,81,270,39"/>
+</map>

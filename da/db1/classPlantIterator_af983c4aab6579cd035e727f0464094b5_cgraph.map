@@ -1,0 +1,11 @@
+<map id="PlantIterator::PlantIterator" name="PlantIterator::PlantIterator">
+<area shape="rect" id="Node000001" title="Constructor that initializes the iterator with an aggregate." alt="" coords="5,31,197,56"/>
+<area shape="rect" id="Node000002" href="$da/db1/classPlantIterator.html#a10240ca91bf514641f47c73d52035a33" title="Positions the iterator at the first plant." alt="" coords="245,31,381,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,41,232,41,232,46,198,46"/>
+<area shape="rect" id="Node000003" href="$da/db1/classPlantIterator.html#a3e582669273a3f0d1b4f043bc23688bf" title="Advances to the next plant using iterative stack&#45;based traversal. Replaces recursive findNextMatch wi..." alt="" coords="429,23,609,63"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="382,41,416,41,416,46,382,46"/>
+<area shape="rect" id="Node000004" href="$d0/de9/classPlantGroup.html#a0d2b83b1cfd52cec5d83860782bf9432" title="Gets direct access to the internal plants list." alt="" coords="671,5,833,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="609,31,657,26,657,31,610,36"/>
+<area shape="rect" id="Node000005" href="$df/deb/classPlantComponent.html#ace727d5177701f579367867b9891c27b" title="Gets the component type for efficient type identification." alt="" coords="657,55,847,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="610,50,644,54,643,59,609,55"/>
+</map>

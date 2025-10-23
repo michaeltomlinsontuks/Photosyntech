@@ -1,0 +1,5 @@
+<map id="TemplatePlantBuilder&lt; PlantType, SunStrategyType, WaterStrategyType &gt;" name="TemplatePlantBuilder&lt; PlantType, SunStrategyType, WaterStrategyType &gt;">
+<area shape="rect" id="Node000001" title="Template builder for creating different types of plants with configurable parameters." alt="" coords="5,79,227,133"/>
+<area shape="rect" id="Node000002" href="$d2/d59/classBuilder.html" title="Abstract builder interface for constructing complex PlantComponent objects." alt="" coords="82,5,150,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,44,119,79,113,79,113,44"/>
+</map>

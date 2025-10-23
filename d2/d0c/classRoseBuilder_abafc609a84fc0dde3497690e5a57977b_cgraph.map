@@ -1,0 +1,40 @@
+<map id="RoseBuilder::assignMaturityState" name="RoseBuilder::assignMaturityState">
+<area shape="rect" id="Node000001" title="Assigns initial Seed state to the Rose plant." alt="" coords="5,23,211,63"/>
+<area shape="rect" id="Node000002" href="$db/d19/classSeed.html#a9abc859b004490c9086455651fe07c89" title="Returns the identifier for the Seed state." alt="" coords="964,5,1061,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,38,950,17,950,22,211,43"/>
+<area shape="rect" id="Node000003" href="$d7/d79/classLivingPlant.html#a5483bf99f33097a9c4d1160f377daf47" title="Sets the maturity state for this plant." alt="" coords="259,56,436,81"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,52,246,55,245,61,210,57"/>
+<area shape="rect" id="Node000004" href="$dd/d7a/classInventory.html#a6214bbce5f65c3c4b50f3703c3374364" title="Gets the singleton instance." alt="" coords="484,204,651,229"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="369,79,537,194,534,198,366,84"/>
+<area shape="rect" id="Node000018" href="$dd/d7a/classInventory.html#a6228147f49fd3d60ff94a9bfbef60add" title="to get a flyweight based on a specific id." alt="" coords="699,56,852,81"/>
+<area shape="poly" id="edge18_Node000003_Node000018" title=" " alt="" coords="436,66,685,66,685,71,436,71"/>
+<area shape="rect" id="Node000005" href="$dd/d7a/classInventory.html#a10485613fc8bfb32ee564d9b5110f8fb" title="Private constructor to prevent direct instantiation." alt="" coords="699,277,852,303"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="605,227,726,270,724,275,604,232"/>
+<area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="776,277,787,231,810,167,826,132,846,98,870,67,898,40,923,26,950,19,951,24,925,31,902,44,874,70,850,101,831,135,815,169,792,233,782,278"/>
+<area shape="rect" id="Node000006" href="$d5/d2c/classFlyweightFactory.html#a7abec75c45177edeed4e8c94f0f48e1f" title="Gets or creates a flyweight for the given identifier." alt="" coords="900,55,1125,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="778,276,792,239,816,188,852,134,874,110,898,89,907,84,910,88,902,93,877,114,856,138,821,191,797,241,783,278"/>
+<area shape="rect" id="Node000007" href="$dc/ddc/classDead.html#abcdb9719d65bb5652d1a95719236673a" title="Returns the identifier for the Dead state." alt="" coords="963,153,1062,179"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="786,275,833,232,864,208,899,188,949,171,951,176,901,192,867,212,836,236,790,279"/>
+<area shape="rect" id="Node000008" href="$da/dc8/classMature.html#a8e9fd3e33549edd0a91f188635f77339" title="Returns the identifier for the Mature state." alt="" coords="957,203,1068,228"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="803,275,899,237,943,225,945,230,901,242,805,280"/>
+<area shape="rect" id="Node000009" href="$db/d81/classVegetative.html#ac92c41674f765f7850b029a289c587aa" title="Returns the identifier for the Vegetative state." alt="" coords="945,301,1080,327"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="852,295,932,303,931,308,852,300"/>
+<area shape="rect" id="Node000010" href="$d4/dad/classAlternatingSun.html#a0b2a72d22483109cd9d21eb11b5f6a77" title="Gets the unique identifier for the AlternatingSun strategy." alt="" coords="932,351,1093,376"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="806,300,901,337,931,345,929,350,899,342,804,305"/>
+<area shape="rect" id="Node000011" href="$d6/df2/classAlternatingWater.html#a29cda914abc61d0db88c872db673a62e" title="Gets the unique identifier for the AlternatingWater strategy." alt="" coords="925,400,1100,425"/>
+<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="790,301,836,343,867,367,901,386,919,393,917,398,899,391,864,371,833,348,787,305"/>
+<area shape="rect" id="Node000012" href="$d7/d2d/classHighSun.html#a602a35623820dfc3cfd118bf18023d58" title="Gets the unique identifier for the HighSun strategy." alt="" coords="953,449,1072,475"/>
+<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="786,301,828,367,862,404,901,436,941,451,939,456,899,440,858,408,824,370,781,304"/>
+<area shape="rect" id="Node000013" href="$d9/d86/classHighWater.html#a23c9ce28639f0c7e57049542217edfd2" title="Gets the unique identifier for the HighWater strategy." alt="" coords="946,499,1079,524"/>
+<area shape="poly" id="edge13_Node000005_Node000013" title=" " alt="" coords="783,302,797,339,821,389,856,442,877,465,901,485,934,500,932,505,899,490,874,469,852,445,817,392,792,341,778,304"/>
+<area shape="rect" id="Node000014" href="$d8/d6c/classLowSun.html#a76b4d46e42dd8d174b39a2d331992c0d" title="Gets the unique identifier for the LowSun strategy." alt="" coords="955,548,1070,573"/>
+<area shape="poly" id="edge14_Node000005_Node000014" title=" " alt="" coords="782,302,793,347,815,410,831,445,850,478,874,508,902,535,921,546,943,553,941,558,919,551,898,539,870,512,846,481,826,447,810,413,787,348,776,303"/>
+<area shape="rect" id="Node000015" href="$d1/de3/classLowWater.html#a249b7e03f5e7ecbaea2581b232b78727" title="Gets the unique identifier for the LowWater strategy." alt="" coords="948,597,1077,623"/>
+<area shape="poly" id="edge15_Node000005_Node000015" title=" " alt="" coords="781,303,789,356,809,432,824,474,845,514,870,552,902,584,918,594,936,601,934,606,915,599,898,588,866,555,840,517,819,476,804,434,784,357,775,304"/>
+<area shape="rect" id="Node000016" href="$d8/d6d/classMidSun.html#a16f4d6db6f6ab1cc5fd96c1ad1dc5b4a" title="Gets the unique identifier for the MidSun strategy." alt="" coords="956,252,1069,277"/>
+<area shape="poly" id="edge16_Node000005_Node000016" title=" " alt="" coords="852,279,942,269,942,275,852,284"/>
+<area shape="rect" id="Node000017" href="$dd/df9/classMidWater.html#a8630fc254c3889716599c148d4ab7819" title="Gets the unique identifier for the MidWater strategy." alt="" coords="949,104,1076,129"/>
+<area shape="poly" id="edge17_Node000005_Node000017" title=" " alt="" coords="781,276,824,209,858,171,899,138,935,123,937,128,901,143,861,175,828,213,786,279"/>
+<area shape="poly" id="edge20_Node000018_Node000002" title=" " alt="" coords="835,53,899,39,950,29,951,34,901,45,836,59"/>
+<area shape="poly" id="edge19_Node000018_Node000006" title=" " alt="" coords="852,66,886,65,886,71,852,71"/>
+</map>

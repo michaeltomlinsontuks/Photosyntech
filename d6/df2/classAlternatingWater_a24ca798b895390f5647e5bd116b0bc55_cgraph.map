@@ -1,0 +1,7 @@
+<map id="AlternatingWater::water" name="AlternatingWater::water">
+<area shape="rect" id="Node000001" title="Applies alternating watering pattern to the plant." alt="" coords="5,31,183,56"/>
+<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html#aa8bbfb196f1db94e26c352b0a0300649" title="Gets plant waterLevel as an Integer." alt="" coords="231,5,427,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,31,217,27,217,33,183,36"/>
+<area shape="rect" id="Node000003" href="$d7/d79/classLivingPlant.html#a7bca1845a582e324c8a6f54aff665ac2" title="Sets the season for this plant." alt="" coords="231,55,426,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,50,218,53,217,59,183,55"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Observer" name="Observer">
+<area shape="rect" id="Node000001" title="Abstract observer interface in the Observer pattern." alt="" coords="5,5,87,31"/>
+<area shape="rect" id="Node000002" href="$dd/df7/classStaff.html" title="Concrete colleague representing staff in the mediator and observer patterns." alt="" coords="20,79,72,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,44,49,79,43,79,43,44"/>
+</map>

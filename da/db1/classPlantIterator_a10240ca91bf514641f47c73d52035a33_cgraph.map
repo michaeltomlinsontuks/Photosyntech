@@ -1,0 +1,9 @@
+<map id="PlantIterator::first" name="PlantIterator::first">
+<area shape="rect" id="Node000001" title="Positions the iterator at the first plant." alt="" coords="5,31,141,56"/>
+<area shape="rect" id="Node000002" href="$da/db1/classPlantIterator.html#a3e582669273a3f0d1b4f043bc23688bf" title="Advances to the next plant using iterative stack&#45;based traversal. Replaces recursive findNextMatch wi..." alt="" coords="189,23,369,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,41,176,41,176,46,142,46"/>
+<area shape="rect" id="Node000003" href="$d0/de9/classPlantGroup.html#a0d2b83b1cfd52cec5d83860782bf9432" title="Gets direct access to the internal plants list." alt="" coords="431,5,593,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="369,31,417,26,417,31,370,36"/>
+<area shape="rect" id="Node000004" href="$df/deb/classPlantComponent.html#ace727d5177701f579367867b9891c27b" title="Gets the component type for efficient type identification." alt="" coords="417,55,607,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="370,50,404,54,403,59,369,55"/>
+</map>

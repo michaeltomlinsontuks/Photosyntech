@@ -1,0 +1,46 @@
+<map id="TEST_CASE" name="TEST_CASE">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,401,100,427"/>
+<area shape="rect" id="Node000002" href="$d4/d2f/unitTests_8cpp.html#a331dcaa5c58dd0e02be020d452d13730" title=" " alt="" coords="203,277,270,303"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,399,94,356,119,332,147,312,189,295,191,300,149,316,122,336,98,360,65,403"/>
+<area shape="rect" id="Node000003" href="$dd/d60/classAggPlant.html#a862932d7baf064b3b3169cb1dcc07be8" title="Creates an unfiltered iterator for this aggregate&#39;s plant collection." alt="" coords="148,327,325,352"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="73,399,107,380,147,361,168,353,170,358,149,366,110,384,76,403"/>
+<area shape="rect" id="Node000004" href="$da/d33/classIterator.html#abe739c884dd94439dd4b2ff777b2eb8d" title="Returns the current plant element." alt="" coords="159,376,314,401"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="100,405,146,399,146,404,101,410"/>
+<area shape="rect" id="Node000005" href="$dd/d7a/classInventory.html#a6214bbce5f65c3c4b50f3703c3374364" title="Gets the singleton instance." alt="" coords="153,425,320,451"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="101,417,140,423,140,428,100,423"/>
+<area shape="rect" id="Node000020" href="$dd/d7a/classInventory.html#a00a4a8d500c8e17c2151709df0e69f4f" title="Gets a flyweight for a season name." alt="" coords="161,475,312,500"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="77,424,149,460,173,468,172,473,147,464,75,429"/>
+<area shape="rect" id="Node000022" href="$da/d33/classIterator.html#ac3f6409895d4701123a91ca528d61565" title="Checks if iteration is complete." alt="" coords="175,524,298,549"/>
+<area shape="poly" id="edge22_Node000001_Node000022" title=" " alt="" coords="65,425,99,467,123,489,149,509,164,517,162,521,147,514,119,494,95,470,61,428"/>
+<area shape="rect" id="Node000006" href="$dd/d7a/classInventory.html#a10485613fc8bfb32ee564d9b5110f8fb" title="Private constructor to prevent direct instantiation." alt="" coords="373,327,527,352"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="289,423,324,410,374,385,418,358,420,362,377,389,326,415,291,428"/>
+<area shape="rect" id="Node000007" href="$d5/d2c/classFlyweightFactory.html#a7abec75c45177edeed4e8c94f0f48e1f" title="Gets or creates a flyweight for the given identifier." alt="" coords="575,597,800,623"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="462,351,493,401,529,468,541,503,546,532,555,558,577,584,582,588,579,592,573,588,550,561,541,533,536,504,524,470,488,404,457,354"/>
+<area shape="rect" id="Node000008" href="$dc/ddc/classDead.html#abcdb9719d65bb5652d1a95719236673a" title="Returns the identifier for the Dead state." alt="" coords="638,55,737,80"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="451,326,462,281,484,216,500,181,520,147,544,116,573,89,597,76,624,68,625,73,599,81,576,93,548,120,525,150,505,184,489,218,467,282,456,327"/>
+<area shape="rect" id="Node000009" href="$da/dc8/classMature.html#a8e9fd3e33549edd0a91f188635f77339" title="Returns the identifier for the Mature state." alt="" coords="632,104,743,129"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="453,326,467,288,491,237,526,184,548,159,573,138,594,127,617,120,619,125,597,132,576,143,552,163,531,187,496,240,472,290,458,328"/>
+<area shape="rect" id="Node000010" href="$db/d19/classSeed.html#a9abc859b004490c9086455651fe07c89" title="Returns the identifier for the Seed state." alt="" coords="639,153,736,179"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="456,325,498,259,532,220,573,188,598,176,624,169,626,174,600,181,576,192,536,224,503,262,460,328"/>
+<area shape="rect" id="Node000011" href="$db/d81/classVegetative.html#ac92c41674f765f7850b029a289c587aa" title="Returns the identifier for the Vegetative state." alt="" coords="620,203,755,228"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="461,325,507,281,539,257,574,237,605,225,607,230,576,242,542,262,511,285,465,329"/>
+<area shape="rect" id="Node000012" href="$d4/dad/classAlternatingSun.html#a0b2a72d22483109cd9d21eb11b5f6a77" title="Gets the unique identifier for the AlternatingSun strategy." alt="" coords="607,252,768,277"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="477,324,574,286,604,278,605,283,576,291,479,329"/>
+<area shape="rect" id="Node000013" href="$d6/df2/classAlternatingWater.html#a29cda914abc61d0db88c872db673a62e" title="Gets the unique identifier for the AlternatingWater strategy." alt="" coords="600,301,775,327"/>
+<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="527,329,586,322,587,327,527,334"/>
+<area shape="rect" id="Node000014" href="$d7/d2d/classHighSun.html#a602a35623820dfc3cfd118bf18023d58" title="Gets the unique identifier for the HighSun strategy." alt="" coords="628,351,747,376"/>
+<area shape="poly" id="edge13_Node000006_Node000014" title=" " alt="" coords="527,344,614,353,614,359,527,350"/>
+<area shape="rect" id="Node000015" href="$d9/d86/classHighWater.html#a23c9ce28639f0c7e57049542217edfd2" title="Gets the unique identifier for the HighWater strategy." alt="" coords="621,400,754,425"/>
+<area shape="poly" id="edge14_Node000006_Node000015" title=" " alt="" coords="481,350,575,385,610,394,609,399,574,390,479,355"/>
+<area shape="rect" id="Node000016" href="$d8/d6c/classLowSun.html#a76b4d46e42dd8d174b39a2d331992c0d" title="Gets the unique identifier for the LowSun strategy." alt="" coords="630,449,745,475"/>
+<area shape="poly" id="edge15_Node000006_Node000016" title=" " alt="" coords="465,350,512,392,542,415,576,434,617,449,615,454,574,439,539,419,508,396,462,354"/>
+<area shape="rect" id="Node000017" href="$d1/de3/classLowWater.html#a249b7e03f5e7ecbaea2581b232b78727" title="Gets the unique identifier for the LowWater strategy." alt="" coords="623,499,752,524"/>
+<area shape="poly" id="edge16_Node000006_Node000017" title=" " alt="" coords="461,351,503,415,537,453,576,484,610,498,608,503,573,488,533,457,499,419,456,354"/>
+<area shape="rect" id="Node000018" href="$d8/d6d/classMidSun.html#a16f4d6db6f6ab1cc5fd96c1ad1dc5b4a" title="Gets the unique identifier for the MidSun strategy." alt="" coords="631,548,744,573"/>
+<area shape="poly" id="edge17_Node000006_Node000018" title=" " alt="" coords="461,351,521,454,555,506,576,533,596,544,618,551,616,556,594,549,573,537,550,509,517,456,456,354"/>
+<area shape="rect" id="Node000019" href="$dd/df9/classMidWater.html#a8630fc254c3889716599c148d4ab7819" title="Gets the unique identifier for the MidWater strategy." alt="" coords="624,5,751,31"/>
+<area shape="poly" id="edge18_Node000006_Node000019" title=" " alt="" coords="450,326,458,272,478,195,494,153,515,111,541,73,573,40,590,29,610,21,611,26,593,34,576,44,545,76,519,114,499,155,483,196,463,273,455,327"/>
+<area shape="poly" id="edge20_Node000020_Node000007" title=" " alt="" coords="312,474,363,472,419,476,475,487,528,510,546,528,554,548,561,567,576,584,585,589,582,594,573,588,556,569,549,550,542,531,525,515,474,493,418,481,363,478,312,479"/>
+<area shape="rect" id="Node000021" href="$d1/d99/classFlyweight.html#a00ae12c029b8c4e184bcbe49a7389228" title="Gets the shared state data." alt="" coords="375,525,525,551"/>
+<area shape="poly" id="edge21_Node000020_Node000021" title=" " alt="" coords="292,498,383,520,382,525,291,503"/>
+</map>

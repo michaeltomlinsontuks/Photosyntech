@@ -1,0 +1,5 @@
+<map id="PlantAttributes::getPrice" name="PlantAttributes::getPrice">
+<area shape="rect" id="Node000001" title="Gets the price including decorator modifications." alt="" coords="5,5,185,31"/>
+<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#aa00a43fd42ec539fa367c1e3f7c7ef14" title="Gets the price of this plant component." alt="" coords="233,5,424,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,15,219,15,219,21,186,21"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="PlantAttributes::water" name="PlantAttributes::water">
+<area shape="rect" id="Node000001" title="Waters the plant component." alt="" coords="5,5,169,31"/>
+<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#abaaf6f115c94a56f28aa2671fb0768bf" title="Waters the plant component." alt="" coords="217,5,392,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,15,203,15,203,21,170,21"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="PlantGroup" name="PlantGroup">
+<area shape="rect" id="Node000001" title="Represents a group of plants in the Composite pattern." alt="" coords="249,181,343,207"/>
+<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html" title="Abstract base class representing a plant component in the Composite pattern." alt="" coords="5,5,136,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,44,44,81,43,100,50,117,62,128,81,139,133,157,249,183,248,188,132,162,79,143,59,132,46,120,38,101,38,80,53,42"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="60,93,279,119"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="96,38,157,91,154,95,93,42"/>
+<area shape="rect" id="Node000003" href="$d4/d3f/classSubject.html" title="Abstract subject interface in the Observer pattern." alt="" coords="303,93,374,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="329,132,304,182,300,180,324,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,124,280,179,277,183,196,129"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="399,93,569,119"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="447,127,323,183,320,179,445,122"/>
+<area shape="rect" id="Node000006" href="$de/dab/classObserver.html" title="Abstract observer interface in the Observer pattern." alt="" coords="443,5,525,31"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="487,45,487,93,481,93,481,45"/>
+</map>

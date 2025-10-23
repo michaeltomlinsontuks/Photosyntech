@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$d7/da1/classWaterStrategy.html" title="Abstract strategy interface for plant watering algorithms." alt="" coords="5,80,120,105"/>
+<area shape="rect" id="Node000001" href="$d6/df2/classAlternatingWater.html" title="Concrete strategy for alternating wet/dry watering cycles." alt="" coords="168,5,300,31"/>
+<area shape="poly" id="edge54_Node000000_Node000001" title=" " alt="" coords="99,71,167,40,196,28,197,33,169,44,102,76"/>
+<area shape="rect" id="Node000002" href="$d9/d86/classHighWater.html" title="Concrete strategy for high&#45;frequency, abundant watering." alt="" coords="189,55,279,80"/>
+<area shape="poly" id="edge55_Node000000_Node000002" title=" " alt="" coords="133,80,188,71,189,77,134,85"/>
+<area shape="rect" id="Node000003" href="$d1/de3/classLowWater.html" title="Concrete strategy for low&#45;frequency, minimal watering." alt="" coords="191,104,277,129"/>
+<area shape="poly" id="edge56_Node000000_Node000003" title=" " alt="" coords="134,100,191,108,190,113,133,105"/>
+<area shape="rect" id="Node000004" href="$dd/df9/classMidWater.html" title="Concrete strategy for moderate watering." alt="" coords="192,153,276,179"/>
+<area shape="poly" id="edge57_Node000000_Node000004" title=" " alt="" coords="104,109,169,138,200,151,198,156,167,143,102,114"/>
+</map>

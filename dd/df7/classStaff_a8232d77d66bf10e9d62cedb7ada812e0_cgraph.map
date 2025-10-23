@@ -1,0 +1,7 @@
+<map id="Staff::assistPurchases" name="Staff::assistPurchases">
+<area shape="rect" id="Node000001" title="Assists customers with purchase transactions via the sales floor mediator." alt="" coords="5,31,169,56"/>
+<area shape="rect" id="Node000002" href="$d0/de9/classPlantGroup.html#ad8067b5dc8115f8a7441b8cf9a8084e0" title="Gets information about all plants in this group." alt="" coords="221,5,369,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,31,207,26,207,31,170,36"/>
+<area shape="rect" id="Node000003" href="$d0/de9/classPlantGroup.html#a39d07fb2f27cafb4f05aa208cabd5750" title="Gets the total price of all plants in this group." alt="" coords="217,55,372,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,50,204,54,203,59,169,55"/>
+</map>

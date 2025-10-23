@@ -1,0 +1,15 @@
+<map id="mediator" name="mediator">
+<area shape="rect" id="node1" href="dir_cd247e48a55e7e3e204d5359c0d3b6cf.html" title="mediator" alt="" coords="166,5,247,31"/>
+<area shape="rect" id="node2" href="dir_412a7194e3e7e756bd9f9ba974d50196.html" title="singleton" alt="" coords="5,79,88,104"/>
+<area shape="poly" id="edge1" href="dir_000013_000020.html" alt="" coords="182,33,86,75,84,71,180,28"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000013_000020.html" title="4" alt="" coords="88,72,98,86"/>
+<area shape="rect" id="node3" href="dir_83601b61417d993a0fc3cd56c2a673f5.html" title="observer" alt="" coords="113,79,191,104"/>
+<area shape="poly" id="edge2" href="dir_000013_000014.html" alt="" coords="200,33,171,69,167,66,196,29"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000013_000014.html" title="1" alt="" coords="174,62,183,77"/>
+<area shape="rect" id="node4" href="dir_b16217dd03acd9165a6995d70452cddd.html" title="composite" alt="" coords="216,79,307,104"/>
+<area shape="poly" id="edge3" href="dir_000013_000002.html" alt="" coords="218,29,246,66,242,69,214,33"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000013_000002.html" title="4" alt="" coords="243,52,253,66"/>
+<area shape="rect" id="node5" href="dir_b3a2258401d5c83a0d9518ae73f64ab9.html" title="prototype" alt="" coords="331,79,416,104"/>
+<area shape="poly" id="edge4" href="dir_000013_000017.html" alt="" coords="234,28,335,71,333,76,232,33"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000013_000017.html" title="1" alt="" coords="328,56,337,71"/>
+</map>
