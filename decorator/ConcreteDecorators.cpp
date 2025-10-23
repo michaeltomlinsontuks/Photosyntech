@@ -96,7 +96,7 @@ PlantComponent *Autumn::clone()
 {
     PlantComponent *clone = new Autumn();
     clone->addAttribute(this->nextComponent->clone());
-        return clone->correctShape(clone);
+    return clone->correctShape(clone);
 }
 
 LargeFlowers::LargeFlowers()
@@ -216,7 +216,7 @@ PlantComponent *Spring::clone()
 {
     PlantComponent *clone = new Spring();
     clone->addAttribute(this->nextComponent->clone());
-        return clone->correctShape(clone);
+    return clone->correctShape(clone);
 }
 
 Summer::Summer()
@@ -233,7 +233,7 @@ PlantComponent *Summer::clone()
 {
     PlantComponent *clone = new Summer();
     clone->addAttribute(this->nextComponent->clone());
-        return clone->correctShape(clone);
+    return clone->correctShape(clone);
 }
 
 Thorns::Thorns()

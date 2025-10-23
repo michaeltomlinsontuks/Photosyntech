@@ -44,13 +44,14 @@ TEST_SRC = unitTests.cpp\
 			iterator/AggSeason.cpp\
 			iterator/PlantIterator.cpp\
 			iterator/SeasonIterator.cpp\
-			   mediator/Mediator.cpp \
-			   mediator/Customer.cpp \
-			   mediator/SalesFloor.cpp \
-			   mediator/Staff.cpp \
-			   mediator/SuggestionFloor.cpp\
-			   observer/Observer.cpp \
-			   observer/Subject.cpp \
+			mediator/Mediator.cpp \
+			mediator/Customer.cpp \
+			mediator/SalesFloor.cpp \
+			mediator/Staff.cpp \
+			mediator/SuggestionFloor.cpp\
+			observer/Observer.cpp \
+			observer/Subject.cpp \
+            usageExample.cpp
 
 SRC = $(TEST_SRC)
 OBJ := $(SRC:.cpp=.o)
@@ -152,3 +153,62 @@ $(DEMO_BIN): $(DEMO_OBJ)
 
 demo-run: demo
 	./$(DEMO_BIN)
+
+
+usageExample_SRC = usageExample.cpp\
+            strategy/LowWater.cpp\
+            strategy/MidWater.cpp\
+            strategy/HighWater.cpp\
+            strategy/AlternatingWater.cpp\
+            strategy/LowSun.cpp\
+            strategy/MidSun.cpp\
+            strategy/HighSun.cpp\
+            strategy/AlternatingSun.cpp\
+            singleton/Singleton.cpp\
+            prototype/LivingPlant.cpp\
+            composite/PlantComponent.cpp\
+            composite/PlantGroup.cpp\
+            state/Dead.cpp\
+            state/Mature.cpp\
+            state/Seed.cpp\
+            state/Vegetative.cpp\
+            decorator/PlantAttributes.cpp\
+            decorator/ConcreteDecorators.cpp\
+            builder/Builder.cpp\
+            builder/Director.cpp\
+            builder/RoseBuilder.cpp\
+            builder/SunflowerBuilder.cpp\
+            builder/CactusBuilder.cpp\
+            builder/PineBuilder.cpp\
+            builder/MapleBuilder.cpp\
+            builder/JadePlantBuilder.cpp\
+            builder/LavenderBuilder.cpp\
+            builder/CherryBlossomBuilder.cpp\
+            iterator/Aggregate.cpp\
+            iterator/AggPlant.cpp\
+            iterator/AggSeason.cpp\
+            iterator/PlantIterator.cpp\
+            iterator/SeasonIterator.cpp\
+            mediator/Mediator.cpp\
+            mediator/Customer.cpp\
+            mediator/SalesFloor.cpp\
+            mediator/Staff.cpp\
+            mediator/SuggestionFloor.cpp\
+            observer/Observer.cpp\
+            observer/Subject.cpp
+
+USE_OBJ := $(usageExample_SRC:.cpp=.o)
+USE_BIN := usage_app
+
+.PHONY: usage usage-run
+
+usage: $(USE_BIN)
+
+$(USE_BIN): $(USE_OBJ)
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
+usage-run ur: usage
+	./$(USE_BIN)
+
+valgrind vur: $(USE_BIN)
+	valgrind --leak-check=full --show-leak-kinds=all -s --track-origins=yes ./$(USE_BIN)
