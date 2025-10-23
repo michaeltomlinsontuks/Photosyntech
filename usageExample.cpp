@@ -36,15 +36,18 @@
 #include "observer/Observer.h"
 #include "observer/Subject.h"
 #include "composite/PlantGroup.h"
+#include "iterator/AggPlant.h"
 #include <type_traits>
 
 void howToUseBuilder();
+void iteratorUsage();
 int main()
 {
     Inventory::getInstance();
     // creates the singleton needed;
-    
+
     howToUseBuilder();
+    iteratorUsage();
     delete Inventory::getInstance();
     // delete the instance
     return 0;
@@ -60,13 +63,13 @@ void howToUseBuilder()
     cactusDirector->construct();
     // Initiate rose delivery
     PlantGroup *roseDelivery = new PlantGroup();
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 3; i++)
     {
         roseDelivery->addComponent(roseBuilder->getResult());
     }
     // there are now 100 roses in the plantGroup.
     PlantGroup *cactusDelivery = new PlantGroup();
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 3; i++)
     {
         cactusDelivery->addComponent(cactusBuilder->getResult());
     }
@@ -78,4 +81,21 @@ void howToUseBuilder()
     delete cactusDirector;
     delete roseBuilder;
     delete roseDirector;
+}
+void iteratorUsage()
+{
+    Aggregate *factory = new AggPlant(Inventory::getInstance()->getInventory()->getPlants());
+
+    Iterator *itr = factory->createIterator();
+
+    while (!itr->isDone())
+    {
+
+        cout << itr->currentItem()->getDecorator()->getInfo() << endl;
+        cout<< "press enter to continue" << endl;
+        cin.get();
+        itr->next();
+    }
+    delete itr;
+    delete factory;
 }

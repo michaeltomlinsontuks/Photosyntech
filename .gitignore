@@ -105,3 +105,4 @@ app
 *.gcda
 *.gcno
 vgcore.*
+usage_app
