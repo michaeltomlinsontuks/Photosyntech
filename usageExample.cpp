@@ -41,6 +41,8 @@
 
 void howToUseBuilder();
 void iteratorUsage();
+void observerUsage();
+
 int main()
 {
     Inventory::getInstance();
@@ -48,6 +50,8 @@ int main()
 
     howToUseBuilder();
     iteratorUsage();
+    observerUsage();
+
     delete Inventory::getInstance();
     // delete the instance
     return 0;
@@ -92,10 +96,23 @@ void iteratorUsage()
     {
 
         cout << itr->currentItem()->getDecorator()->getInfo() << endl;
-        cout<< "press enter to continue" << endl;
+        cout << "press enter to continue" << endl;
         cin.get();
         itr->next();
     }
     delete itr;
     delete factory;
+}
+void observerUsage()
+{
+
+    Staff *watcher = new Staff();
+    Inventory::getInstance()->getInventory()->attach(watcher);
+    for (int i = 0; i < 100; i++)
+    {
+        Inventory::getInstance()->getInventory()->update();
+        
+    }
+
+    delete watcher;
 }

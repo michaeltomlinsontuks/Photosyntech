@@ -11,10 +11,11 @@ class PlantAttributes;
  * Used to avoid dynamic_cast by providing compile-time type information.
  * Enables efficient type checking in iterators and other traversal operations.
  */
-enum class ComponentType {
-    LIVING_PLANT,    ///< Individual plant instances (Succulent, Shrub, Tree, Herb)
-    PLANT_GROUP,     ///< Composite group containing multiple plants
-    PLANT_COMPONENT  ///< Generic component (typically decorators)
+enum class ComponentType
+{
+	LIVING_PLANT,	///< Individual plant instances (Succulent, Shrub, Tree, Herb)
+	PLANT_GROUP,	///< Composite group containing multiple plants
+	PLANT_COMPONENT ///< Generic component (typically decorators)
 };
 
 /**
@@ -145,7 +146,7 @@ public:
 	 * @param other Pointer to the decorator.
 	 */
 	virtual PlantComponent *getDecorator() { return this; };
-		virtual PlantComponent *correctShape(PlantComponent *) = 0;
+	virtual PlantComponent *correctShape(PlantComponent *) = 0;
 };
 
 #endif
