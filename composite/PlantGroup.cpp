@@ -64,9 +64,9 @@ std::string PlantGroup::getInfo()
     for (PlantComponent *component : plants)
     {
         counter++;
-        ss << component->getInfo();
+        ss << component->getDecorator()->getInfo();
 
-        ss << "\n--- End of Component" + std::to_string(counter) + " ---\n";
+        ss << "\n--- End of Component " + std::to_string(counter) + " ---\n";
     }
 
     ss << "---------------------------------" << std::endl;
