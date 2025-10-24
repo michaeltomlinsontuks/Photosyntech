@@ -340,10 +340,12 @@ TEST_CASE("Testing MaturityState transitions and behavior")
  * @param iter Iterator to count (will be reset with first())
  * @return Number of plants iterated
  */
-int countIteratorResults(Iterator* iter) {
+int countIteratorResults(Iterator *iter)
+{
     int count = 0;
     iter->first();
-    while (!iter->isDone()) {
+    while (!iter->isDone())
+    {
         count++;
         iter->next();
     }
@@ -355,10 +357,12 @@ int countIteratorResults(Iterator* iter) {
  * @param iter Iterator to collect from (will be reset with first())
  * @return Vector of pointers to LivingPlants
  */
-std::vector<LivingPlant*> collectPlants(Iterator* iter) {
-    std::vector<LivingPlant*> plants;
+std::vector<LivingPlant *> collectPlants(Iterator *iter)
+{
+    std::vector<LivingPlant *> plants;
     iter->first();
-    while (!iter->isDone()) {
+    while (!iter->isDone())
+    {
         plants.push_back(iter->currentItem());
         iter->next();
     }
@@ -373,9 +377,10 @@ std::vector<LivingPlant*> collectPlants(Iterator* iter) {
  * Note: Uses Flyweight pattern via inv->getString(season) to ensure
  * all plants with the same season share the same Flyweight pointer.
  */
-LivingPlant* createPlantWithSeason(const std::string& season) {
-    Inventory* inv = Inventory::getInstance();
-    LivingPlant* plant = new Succulent();
+LivingPlant *createPlantWithSeason(const std::string &season)
+{
+    Inventory *inv = Inventory::getInstance();
+    LivingPlant *plant = new Succulent();
     plant->setSeason(inv->getString(season));
     return plant;
 }
@@ -384,20 +389,24 @@ LivingPlant* createPlantWithSeason(const std::string& season) {
 // PLANTITERATOR BASIC TESTS
 // ============================================================================
 
-TEST_CASE("PlantIterator - Empty collection") {
-    std::list<PlantComponent*> emptyList;
-    AggPlant* agg = new AggPlant(&emptyList);
-    Iterator* iter = agg->createIterator();
+TEST_CASE("PlantIterator - Empty collection")
+{
+    std::list<PlantComponent *> emptyList;
+    AggPlant *agg = new AggPlant(&emptyList);
+    Iterator *iter = agg->createIterator();
 
-    SUBCASE("isDone() returns true immediately for empty collection") {
+    SUBCASE("isDone() returns true immediately for empty collection")
+    {
         CHECK(iter->isDone() == true);
     }
 
-    SUBCASE("currentItem() returns nullptr for empty collection") {
+    SUBCASE("currentItem() returns nullptr for empty collection")
+    {
         CHECK(iter->currentItem() == nullptr);
     }
 
-    SUBCASE("Calling next() on empty collection has no effect") {
+    SUBCASE("Calling next() on empty collection has no effect")
+    {
         iter->next();
         CHECK(iter->isDone() == true);
         CHECK(iter->currentItem() == nullptr);
@@ -407,31 +416,35 @@ TEST_CASE("PlantIterator - Empty collection") {
     delete agg;
 }
 
-TEST_CASE("PlantIterator - Single plant") {
-    Inventory* inv = Inventory::getInstance();
-    LivingPlant* plant = new Succulent();
+TEST_CASE("PlantIterator - Single plant")
+{
+    Inventory *inv = Inventory::getInstance();
+    LivingPlant *plant = new Succulent();
     plant->setSeason(inv->getString("Spring"));
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant);
 
-    AggPlant* agg = new AggPlant(&plantList);
-    Iterator* iter = agg->createIterator();
+    AggPlant *agg = new AggPlant(&plantList);
+    Iterator *iter = agg->createIterator();
 
-    SUBCASE("first() positions at the plant") {
+    SUBCASE("first() positions at the plant")
+    {
         iter->first();
         CHECK(iter->isDone() == false);
         CHECK(iter->currentItem() == plant);
     }
 
-    SUBCASE("next() after single plant makes isDone() true") {
+    SUBCASE("next() after single plant makes isDone() true")
+    {
         iter->first();
         iter->next();
         CHECK(iter->isDone() == true);
         CHECK(iter->currentItem() == nullptr);
     }
 
-    SUBCASE("Iteration sequence is correct") {
+    SUBCASE("Iteration sequence is correct")
+    {
         iter->first();
         CHECK(iter->currentItem() == plant);
         iter->next();
@@ -443,37 +456,41 @@ TEST_CASE("PlantIterator - Single plant") {
     delete plant;
 }
 
-TEST_CASE("PlantIterator - Multiple plants in flat list") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("PlantIterator - Multiple plants in flat list")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* plant1 = new Succulent();
+    LivingPlant *plant1 = new Succulent();
     plant1->setSeason(inv->getString("Spring"));
-    LivingPlant* plant2 = new Tree();
+    LivingPlant *plant2 = new Tree();
     plant2->setSeason(inv->getString("Summer"));
-    LivingPlant* plant3 = new Shrub();
+    LivingPlant *plant3 = new Shrub();
     plant3->setSeason(inv->getString("Autumn"));
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant1);
     plantList.push_back(plant2);
     plantList.push_back(plant3);
 
-    AggPlant* agg = new AggPlant(&plantList);
-    Iterator* iter = agg->createIterator();
+    AggPlant *agg = new AggPlant(&plantList);
+    Iterator *iter = agg->createIterator();
 
-    SUBCASE("Count returns correct number") {
+    SUBCASE("Count returns correct number")
+    {
         CHECK(countIteratorResults(iter) == 3);
     }
 
-    SUBCASE("Iteration returns all plants in order") {
-        std::vector<LivingPlant*> collected = collectPlants(iter);
+    SUBCASE("Iteration returns all plants in order")
+    {
+        std::vector<LivingPlant *> collected = collectPlants(iter);
         CHECK(collected.size() == 3);
         CHECK(collected[0] == plant1);
         CHECK(collected[1] == plant2);
         CHECK(collected[2] == plant3);
     }
 
-    SUBCASE("Manual iteration works correctly") {
+    SUBCASE("Manual iteration works correctly")
+    {
         iter->first();
         CHECK(iter->currentItem() == plant1);
         iter->next();
@@ -491,30 +508,31 @@ TEST_CASE("PlantIterator - Multiple plants in flat list") {
     delete plant3;
 }
 
-TEST_CASE("PlantIterator - Mixed plant types") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("PlantIterator - Mixed plant types")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* succulent = new Succulent();
+    LivingPlant *succulent = new Succulent();
     succulent->setSeason(inv->getString("Spring"));
-    LivingPlant* tree = new Tree();
+    LivingPlant *tree = new Tree();
     tree->setSeason(inv->getString("Summer"));
-    LivingPlant* shrub = new Shrub();
+    LivingPlant *shrub = new Shrub();
     shrub->setSeason(inv->getString("Autumn"));
-    LivingPlant* herb = new Herb();
+    LivingPlant *herb = new Herb();
     herb->setSeason(inv->getString("Winter"));
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(succulent);
     plantList.push_back(tree);
     plantList.push_back(shrub);
     plantList.push_back(herb);
 
-    AggPlant* agg = new AggPlant(&plantList);
-    Iterator* iter = agg->createIterator();
+    AggPlant *agg = new AggPlant(&plantList);
+    Iterator *iter = agg->createIterator();
 
     CHECK(countIteratorResults(iter) == 4);
 
-    std::vector<LivingPlant*> collected = collectPlants(iter);
+    std::vector<LivingPlant *> collected = collectPlants(iter);
     CHECK(collected.size() == 4);
     CHECK(collected[0] == succulent);
     CHECK(collected[1] == tree);
@@ -536,13 +554,14 @@ TEST_CASE("PlantIterator - Mixed plant types") {
 // Uses direct Flyweight pointer comparison for O(1) season matching.
 // ============================================================================
 
-TEST_CASE("SeasonIterator - Empty collection with season filter") {
-    Inventory* inv = Inventory::getInstance();
-    std::list<PlantComponent*> emptyList;
+TEST_CASE("SeasonIterator - Empty collection with season filter")
+{
+    Inventory *inv = Inventory::getInstance();
+    std::list<PlantComponent *> emptyList;
 
     // Using Flyweight pointer constructor
-    AggSeason* agg = new AggSeason(&emptyList, inv->getString("Spring"));
-    Iterator* iter = agg->createIterator();
+    AggSeason *agg = new AggSeason(&emptyList, inv->getString("Spring"));
+    Iterator *iter = agg->createIterator();
 
     CHECK(iter->isDone() == true);
     CHECK(iter->currentItem() == nullptr);
@@ -551,23 +570,26 @@ TEST_CASE("SeasonIterator - Empty collection with season filter") {
     delete agg;
 }
 
-TEST_CASE("SeasonIterator - Single matching plant") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("SeasonIterator - Single matching plant")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* plant = createPlantWithSeason("Spring");
-    std::list<PlantComponent*> plantList;
+    LivingPlant *plant = createPlantWithSeason("Spring");
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant);
 
-    AggSeason* agg = new AggSeason(&plantList, inv->getString("Spring"));
-    Iterator* iter = agg->createIterator();
+    AggSeason *agg = new AggSeason(&plantList, inv->getString("Spring"));
+    Iterator *iter = agg->createIterator();
 
-    SUBCASE("Returns the matching plant") {
+    SUBCASE("Returns the matching plant")
+    {
         iter->first();
         CHECK(iter->isDone() == false);
         CHECK(iter->currentItem() == plant);
     }
 
-    SUBCASE("Becomes done after the single match") {
+    SUBCASE("Becomes done after the single match")
+    {
         iter->first();
         iter->next();
         CHECK(iter->isDone() == true);
@@ -578,15 +600,16 @@ TEST_CASE("SeasonIterator - Single matching plant") {
     delete plant;
 }
 
-TEST_CASE("SeasonIterator - Single non-matching plant") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("SeasonIterator - Single non-matching plant")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* plant = createPlantWithSeason("Summer");
-    std::list<PlantComponent*> plantList;
+    LivingPlant *plant = createPlantWithSeason("Summer");
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant);
 
-    AggSeason* agg = new AggSeason(&plantList, inv->getString("Spring"));
-    Iterator* iter = agg->createIterator();
+    AggSeason *agg = new AggSeason(&plantList, inv->getString("Spring"));
+    Iterator *iter = agg->createIterator();
 
     CHECK(iter->isDone() == true);
     CHECK(iter->currentItem() == nullptr);
@@ -596,24 +619,25 @@ TEST_CASE("SeasonIterator - Single non-matching plant") {
     delete plant;
 }
 
-TEST_CASE("SeasonIterator - Multiple matching plants") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("SeasonIterator - Multiple matching plants")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* plant1 = createPlantWithSeason("Spring");
-    LivingPlant* plant2 = createPlantWithSeason("Spring");
-    LivingPlant* plant3 = createPlantWithSeason("Spring");
+    LivingPlant *plant1 = createPlantWithSeason("Spring");
+    LivingPlant *plant2 = createPlantWithSeason("Spring");
+    LivingPlant *plant3 = createPlantWithSeason("Spring");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant1);
     plantList.push_back(plant2);
     plantList.push_back(plant3);
 
-    AggSeason* agg = new AggSeason(&plantList, inv->getString("Spring"));
-    Iterator* iter = agg->createIterator();
+    AggSeason *agg = new AggSeason(&plantList, inv->getString("Spring"));
+    Iterator *iter = agg->createIterator();
 
     CHECK(countIteratorResults(iter) == 3);
 
-    std::vector<LivingPlant*> collected = collectPlants(iter);
+    std::vector<LivingPlant *> collected = collectPlants(iter);
     CHECK(collected.size() == 3);
     CHECK(collected[0] == plant1);
     CHECK(collected[1] == plant2);
@@ -626,26 +650,28 @@ TEST_CASE("SeasonIterator - Multiple matching plants") {
     delete plant3;
 }
 
-TEST_CASE("SeasonIterator - Mixed seasons with filtering") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("SeasonIterator - Mixed seasons with filtering")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* spring1 = createPlantWithSeason("Spring");
-    LivingPlant* summer1 = createPlantWithSeason("Summer");
-    LivingPlant* spring2 = createPlantWithSeason("Spring");
-    LivingPlant* autumn1 = createPlantWithSeason("Autumn");
+    LivingPlant *spring1 = createPlantWithSeason("Spring");
+    LivingPlant *summer1 = createPlantWithSeason("Summer");
+    LivingPlant *spring2 = createPlantWithSeason("Spring");
+    LivingPlant *autumn1 = createPlantWithSeason("Autumn");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(spring1);
     plantList.push_back(summer1);
     plantList.push_back(spring2);
     plantList.push_back(autumn1);
 
     // Note: All "Spring" plants share the same Flyweight pointer, enabling O(1) comparison
-    SUBCASE("Filter for Spring returns only Spring plants") {
-        AggSeason* agg = new AggSeason(&plantList, inv->getString("Spring"));
-        Iterator* iter = agg->createIterator();
+    SUBCASE("Filter for Spring returns only Spring plants")
+    {
+        AggSeason *agg = new AggSeason(&plantList, inv->getString("Spring"));
+        Iterator *iter = agg->createIterator();
 
-        std::vector<LivingPlant*> collected = collectPlants(iter);
+        std::vector<LivingPlant *> collected = collectPlants(iter);
         CHECK(collected.size() == 2);
         CHECK(collected[0] == spring1);
         CHECK(collected[1] == spring2);
@@ -654,11 +680,12 @@ TEST_CASE("SeasonIterator - Mixed seasons with filtering") {
         delete agg;
     }
 
-    SUBCASE("Filter for Summer returns only Summer plants") {
-        AggSeason* agg = new AggSeason(&plantList, inv->getString("Summer"));
-        Iterator* iter = agg->createIterator();
+    SUBCASE("Filter for Summer returns only Summer plants")
+    {
+        AggSeason *agg = new AggSeason(&plantList, inv->getString("Summer"));
+        Iterator *iter = agg->createIterator();
 
-        std::vector<LivingPlant*> collected = collectPlants(iter);
+        std::vector<LivingPlant *> collected = collectPlants(iter);
         CHECK(collected.size() == 1);
         CHECK(collected[0] == summer1);
 
@@ -666,11 +693,12 @@ TEST_CASE("SeasonIterator - Mixed seasons with filtering") {
         delete agg;
     }
 
-    SUBCASE("Filter for Autumn returns only Autumn plants") {
-        AggSeason* agg = new AggSeason(&plantList, inv->getString("Autumn"));
-        Iterator* iter = agg->createIterator();
+    SUBCASE("Filter for Autumn returns only Autumn plants")
+    {
+        AggSeason *agg = new AggSeason(&plantList, inv->getString("Autumn"));
+        Iterator *iter = agg->createIterator();
 
-        std::vector<LivingPlant*> collected = collectPlants(iter);
+        std::vector<LivingPlant *> collected = collectPlants(iter);
         CHECK(collected.size() == 1);
         CHECK(collected[0] == autumn1);
 
@@ -684,20 +712,21 @@ TEST_CASE("SeasonIterator - Mixed seasons with filtering") {
     delete autumn1;
 }
 
-TEST_CASE("SeasonIterator - No matching plants") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("SeasonIterator - No matching plants")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* summer1 = createPlantWithSeason("Summer");
-    LivingPlant* summer2 = createPlantWithSeason("Summer");
-    LivingPlant* summer3 = createPlantWithSeason("Summer");
+    LivingPlant *summer1 = createPlantWithSeason("Summer");
+    LivingPlant *summer2 = createPlantWithSeason("Summer");
+    LivingPlant *summer3 = createPlantWithSeason("Summer");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(summer1);
     plantList.push_back(summer2);
     plantList.push_back(summer3);
 
-    AggSeason* agg = new AggSeason(&plantList, inv->getString("Spring"));
-    Iterator* iter = agg->createIterator();
+    AggSeason *agg = new AggSeason(&plantList, inv->getString("Spring"));
+    Iterator *iter = agg->createIterator();
 
     CHECK(iter->isDone() == true);
     CHECK(iter->currentItem() == nullptr);
@@ -710,50 +739,55 @@ TEST_CASE("SeasonIterator - No matching plants") {
     delete summer3;
 }
 
-TEST_CASE("SeasonIterator - All four seasons") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("SeasonIterator - All four seasons")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* spring = createPlantWithSeason("Spring");
-    LivingPlant* summer = createPlantWithSeason("Summer");
-    LivingPlant* autumn = createPlantWithSeason("Autumn");
-    LivingPlant* winter = createPlantWithSeason("Winter");
+    LivingPlant *spring = createPlantWithSeason("Spring");
+    LivingPlant *summer = createPlantWithSeason("Summer");
+    LivingPlant *autumn = createPlantWithSeason("Autumn");
+    LivingPlant *winter = createPlantWithSeason("Winter");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(spring);
     plantList.push_back(summer);
     plantList.push_back(autumn);
     plantList.push_back(winter);
 
-    SUBCASE("Filter Spring") {
-        AggSeason* agg = new AggSeason(&plantList, inv->getString("Spring"));
-        Iterator* iter = agg->createIterator();
+    SUBCASE("Filter Spring")
+    {
+        AggSeason *agg = new AggSeason(&plantList, inv->getString("Spring"));
+        Iterator *iter = agg->createIterator();
         CHECK(countIteratorResults(iter) == 1);
         CHECK(collectPlants(iter)[0] == spring);
         delete iter;
         delete agg;
     }
 
-    SUBCASE("Filter Summer") {
-        AggSeason* agg = new AggSeason(&plantList, inv->getString("Summer"));
-        Iterator* iter = agg->createIterator();
+    SUBCASE("Filter Summer")
+    {
+        AggSeason *agg = new AggSeason(&plantList, inv->getString("Summer"));
+        Iterator *iter = agg->createIterator();
         CHECK(countIteratorResults(iter) == 1);
         CHECK(collectPlants(iter)[0] == summer);
         delete iter;
         delete agg;
     }
 
-    SUBCASE("Filter Autumn") {
-        AggSeason* agg = new AggSeason(&plantList, inv->getString("Autumn"));
-        Iterator* iter = agg->createIterator();
+    SUBCASE("Filter Autumn")
+    {
+        AggSeason *agg = new AggSeason(&plantList, inv->getString("Autumn"));
+        Iterator *iter = agg->createIterator();
         CHECK(countIteratorResults(iter) == 1);
         CHECK(collectPlants(iter)[0] == autumn);
         delete iter;
         delete agg;
     }
 
-    SUBCASE("Filter Winter") {
-        AggSeason* agg = new AggSeason(&plantList, inv->getString("Winter"));
-        Iterator* iter = agg->createIterator();
+    SUBCASE("Filter Winter")
+    {
+        AggSeason *agg = new AggSeason(&plantList, inv->getString("Winter"));
+        Iterator *iter = agg->createIterator();
         CHECK(countIteratorResults(iter) == 1);
         CHECK(collectPlants(iter)[0] == winter);
         delete iter;
@@ -770,24 +804,26 @@ TEST_CASE("SeasonIterator - All four seasons") {
 // SEASONITERATOR FLYWEIGHT IMPLEMENTATION TESTS
 // ============================================================================
 
-TEST_CASE("SeasonIterator - String constructor overload") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("SeasonIterator - String constructor overload")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* spring1 = createPlantWithSeason("Spring");
-    LivingPlant* summer1 = createPlantWithSeason("Summer");
-    LivingPlant* spring2 = createPlantWithSeason("Spring");
+    LivingPlant *spring1 = createPlantWithSeason("Spring");
+    LivingPlant *summer1 = createPlantWithSeason("Summer");
+    LivingPlant *spring2 = createPlantWithSeason("Spring");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(spring1);
     plantList.push_back(summer1);
     plantList.push_back(spring2);
 
-    SUBCASE("String constructor filters correctly") {
+    SUBCASE("String constructor filters correctly")
+    {
         // Using string constructor (internally converts to Flyweight)
-        AggSeason* agg = new AggSeason(&plantList, "Spring");
-        Iterator* iter = agg->createIterator();
+        AggSeason *agg = new AggSeason(&plantList, "Spring");
+        Iterator *iter = agg->createIterator();
 
-        std::vector<LivingPlant*> collected = collectPlants(iter);
+        std::vector<LivingPlant *> collected = collectPlants(iter);
         CHECK(collected.size() == 2);
         CHECK(collected[0] == spring1);
         CHECK(collected[1] == spring2);
@@ -796,12 +832,13 @@ TEST_CASE("SeasonIterator - String constructor overload") {
         delete agg;
     }
 
-    SUBCASE("Flyweight constructor filters correctly") {
+    SUBCASE("Flyweight constructor filters correctly")
+    {
         // Using Flyweight constructor
-        AggSeason* agg = new AggSeason(&plantList, inv->getString("Spring"));
-        Iterator* iter = agg->createIterator();
+        AggSeason *agg = new AggSeason(&plantList, inv->getString("Spring"));
+        Iterator *iter = agg->createIterator();
 
-        std::vector<LivingPlant*> collected = collectPlants(iter);
+        std::vector<LivingPlant *> collected = collectPlants(iter);
         CHECK(collected.size() == 2);
         CHECK(collected[0] == spring1);
         CHECK(collected[1] == spring2);
@@ -810,15 +847,16 @@ TEST_CASE("SeasonIterator - String constructor overload") {
         delete agg;
     }
 
-    SUBCASE("Both constructors produce identical results") {
+    SUBCASE("Both constructors produce identical results")
+    {
         // String constructor
-        AggSeason* aggString = new AggSeason(&plantList, "Spring");
-        Iterator* iterString = aggString->createIterator();
+        AggSeason *aggString = new AggSeason(&plantList, "Spring");
+        Iterator *iterString = aggString->createIterator();
         int countString = countIteratorResults(iterString);
 
         // Flyweight constructor
-        AggSeason* aggFly = new AggSeason(&plantList, inv->getString("Spring"));
-        Iterator* iterFly = aggFly->createIterator();
+        AggSeason *aggFly = new AggSeason(&plantList, inv->getString("Spring"));
+        Iterator *iterFly = aggFly->createIterator();
         int countFly = countIteratorResults(iterFly);
 
         CHECK(countString == countFly);
@@ -835,27 +873,31 @@ TEST_CASE("SeasonIterator - String constructor overload") {
     delete spring2;
 }
 
-TEST_CASE("SeasonIterator - Flyweight pointer comparison") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("SeasonIterator - Flyweight pointer comparison")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    SUBCASE("Same season string yields same Flyweight pointer") {
-        Flyweight<std::string*>* season1 = inv->getString("Spring");
-        Flyweight<std::string*>* season2 = inv->getString("Spring");
+    SUBCASE("Same season string yields same Flyweight pointer")
+    {
+        Flyweight<std::string *> *season1 = inv->getString("Spring");
+        Flyweight<std::string *> *season2 = inv->getString("Spring");
 
         // Flyweight pattern ensures same pointer for same value
         CHECK(season1 == season2);
     }
 
-    SUBCASE("Different season strings yield different Flyweight pointers") {
-        Flyweight<std::string*>* spring = inv->getString("Spring");
-        Flyweight<std::string*>* summer = inv->getString("Summer");
+    SUBCASE("Different season strings yield different Flyweight pointers")
+    {
+        Flyweight<std::string *> *spring = inv->getString("Spring");
+        Flyweight<std::string *> *summer = inv->getString("Summer");
 
         CHECK(spring != summer);
     }
 
-    SUBCASE("Flyweight pointer comparison enables O(1) filtering") {
-        LivingPlant* plant1 = createPlantWithSeason("Spring");
-        LivingPlant* plant2 = createPlantWithSeason("Spring");
+    SUBCASE("Flyweight pointer comparison enables O(1) filtering")
+    {
+        LivingPlant *plant1 = createPlantWithSeason("Spring");
+        LivingPlant *plant2 = createPlantWithSeason("Spring");
 
         // Both plants should have same Flyweight pointer for "Spring"
         CHECK(plant1->getSeason() == plant2->getSeason());
@@ -868,23 +910,24 @@ TEST_CASE("SeasonIterator - Flyweight pointer comparison") {
         delete plant2;
     }
 
-    SUBCASE("Iterator uses direct pointer comparison") {
-        LivingPlant* spring1 = createPlantWithSeason("Spring");
-        LivingPlant* spring2 = createPlantWithSeason("Spring");
-        LivingPlant* summer1 = createPlantWithSeason("Summer");
+    SUBCASE("Iterator uses direct pointer comparison")
+    {
+        LivingPlant *spring1 = createPlantWithSeason("Spring");
+        LivingPlant *spring2 = createPlantWithSeason("Spring");
+        LivingPlant *summer1 = createPlantWithSeason("Summer");
 
-        std::list<PlantComponent*> plantList;
+        std::list<PlantComponent *> plantList;
         plantList.push_back(spring1);
         plantList.push_back(summer1);
         plantList.push_back(spring2);
 
         // Create iterator with Flyweight pointer
-        Flyweight<std::string*>* springFly = inv->getString("Spring");
-        AggSeason* agg = new AggSeason(&plantList, springFly);
-        Iterator* iter = agg->createIterator();
+        Flyweight<std::string *> *springFly = inv->getString("Spring");
+        AggSeason *agg = new AggSeason(&plantList, springFly);
+        Iterator *iter = agg->createIterator();
 
         // Should find both spring plants via pointer comparison
-        std::vector<LivingPlant*> collected = collectPlants(iter);
+        std::vector<LivingPlant *> collected = collectPlants(iter);
         CHECK(collected.size() == 2);
         CHECK(collected[0] == spring1);
         CHECK(collected[1] == spring2);
@@ -897,42 +940,48 @@ TEST_CASE("SeasonIterator - Flyweight pointer comparison") {
     }
 }
 
-TEST_CASE("SeasonIterator - Flyweight memory efficiency") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("SeasonIterator - Flyweight memory efficiency")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    SUBCASE("Multiple plants share season Flyweight") {
+    SUBCASE("Multiple plants share season Flyweight")
+    {
         // Create many plants with same season
-        std::vector<LivingPlant*> plants;
-        for (int i = 0; i < 10; i++) {
+        std::vector<LivingPlant *> plants;
+        for (int i = 0; i < 10; i++)
+        {
             plants.push_back(createPlantWithSeason("Spring"));
         }
 
         // All should point to same Flyweight
-        Flyweight<std::string*>* firstSeason = plants[0]->getSeason();
-        for (int i = 1; i < 10; i++) {
+        Flyweight<std::string *> *firstSeason = plants[0]->getSeason();
+        for (int i = 1; i < 10; i++)
+        {
             CHECK(plants[i]->getSeason() == firstSeason);
         }
 
         // Cleanup
-        for (LivingPlant* plant : plants) {
+        for (LivingPlant *plant : plants)
+        {
             delete plant;
         }
     }
 
-    SUBCASE("Iterator aggregate shares Flyweight with plants") {
-        LivingPlant* plant1 = createPlantWithSeason("Summer");
-        LivingPlant* plant2 = createPlantWithSeason("Summer");
+    SUBCASE("Iterator aggregate shares Flyweight with plants")
+    {
+        LivingPlant *plant1 = createPlantWithSeason("Summer");
+        LivingPlant *plant2 = createPlantWithSeason("Summer");
 
-        std::list<PlantComponent*> plantList;
+        std::list<PlantComponent *> plantList;
         plantList.push_back(plant1);
         plantList.push_back(plant2);
 
         // Create aggregate with same season Flyweight
-        AggSeason* agg = new AggSeason(&plantList, "Summer");
+        AggSeason *agg = new AggSeason(&plantList, "Summer");
 
         // The aggregate's internal targetSeason should match plants' seasons
         // (can't directly test private member, but iterator should find them)
-        Iterator* iter = agg->createIterator();
+        Iterator *iter = agg->createIterator();
         CHECK(countIteratorResults(iter) == 2);
 
         delete iter;
@@ -946,29 +995,32 @@ TEST_CASE("SeasonIterator - Flyweight memory efficiency") {
 // ITERATOR BEHAVIOR CONTRACT TESTS
 // ============================================================================
 
-TEST_CASE("Iterator behavior - first() resets iterator") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("Iterator behavior - first() resets iterator")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* plant1 = createPlantWithSeason("Spring");
-    LivingPlant* plant2 = createPlantWithSeason("Spring");
-    LivingPlant* plant3 = createPlantWithSeason("Spring");
+    LivingPlant *plant1 = createPlantWithSeason("Spring");
+    LivingPlant *plant2 = createPlantWithSeason("Spring");
+    LivingPlant *plant3 = createPlantWithSeason("Spring");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant1);
     plantList.push_back(plant2);
     plantList.push_back(plant3);
 
-    AggPlant* agg = new AggPlant(&plantList);
-    Iterator* iter = agg->createIterator();
+    AggPlant *agg = new AggPlant(&plantList);
+    Iterator *iter = agg->createIterator();
 
-    SUBCASE("first() called twice positions at beginning both times") {
+    SUBCASE("first() called twice positions at beginning both times")
+    {
         iter->first();
         CHECK(iter->currentItem() == plant1);
         iter->first();
         CHECK(iter->currentItem() == plant1);
     }
 
-    SUBCASE("first() after next() resets to beginning") {
+    SUBCASE("first() after next() resets to beginning")
+    {
         iter->first();
         iter->next();
         CHECK(iter->currentItem() == plant2);
@@ -976,7 +1028,8 @@ TEST_CASE("Iterator behavior - first() resets iterator") {
         CHECK(iter->currentItem() == plant1);
     }
 
-    SUBCASE("first() after complete iteration allows re-iteration") {
+    SUBCASE("first() after complete iteration allows re-iteration")
+    {
         // First iteration
         int count1 = countIteratorResults(iter);
         CHECK(count1 == 3);
@@ -996,15 +1049,16 @@ TEST_CASE("Iterator behavior - first() resets iterator") {
     delete plant3;
 }
 
-TEST_CASE("Iterator behavior - next() at end stays at end") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("Iterator behavior - next() at end stays at end")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* plant = createPlantWithSeason("Spring");
-    std::list<PlantComponent*> plantList;
+    LivingPlant *plant = createPlantWithSeason("Spring");
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant);
 
-    AggPlant* agg = new AggPlant(&plantList);
-    Iterator* iter = agg->createIterator();
+    AggPlant *agg = new AggPlant(&plantList);
+    Iterator *iter = agg->createIterator();
 
     iter->first();
     iter->next();
@@ -1024,23 +1078,24 @@ TEST_CASE("Iterator behavior - next() at end stays at end") {
     delete plant;
 }
 
-TEST_CASE("Iterator behavior - currentItem() doesn't advance iterator") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("Iterator behavior - currentItem() doesn't advance iterator")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* plant1 = createPlantWithSeason("Spring");
-    LivingPlant* plant2 = createPlantWithSeason("Spring");
+    LivingPlant *plant1 = createPlantWithSeason("Spring");
+    LivingPlant *plant2 = createPlantWithSeason("Spring");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant1);
     plantList.push_back(plant2);
 
-    AggPlant* agg = new AggPlant(&plantList);
-    Iterator* iter = agg->createIterator();
+    AggPlant *agg = new AggPlant(&plantList);
+    Iterator *iter = agg->createIterator();
 
     iter->first();
-    LivingPlant* item1 = iter->currentItem();
-    LivingPlant* item2 = iter->currentItem();
-    LivingPlant* item3 = iter->currentItem();
+    LivingPlant *item1 = iter->currentItem();
+    LivingPlant *item2 = iter->currentItem();
+    LivingPlant *item3 = iter->currentItem();
 
     CHECK(item1 == plant1);
     CHECK(item2 == plant1);
@@ -1053,34 +1108,38 @@ TEST_CASE("Iterator behavior - currentItem() doesn't advance iterator") {
     delete plant2;
 }
 
-TEST_CASE("Iterator behavior - isDone() accurately reflects state") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("Iterator behavior - isDone() accurately reflects state")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* plant1 = createPlantWithSeason("Spring");
-    LivingPlant* plant2 = createPlantWithSeason("Spring");
+    LivingPlant *plant1 = createPlantWithSeason("Spring");
+    LivingPlant *plant2 = createPlantWithSeason("Spring");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant1);
     plantList.push_back(plant2);
 
-    AggPlant* agg = new AggPlant(&plantList);
-    Iterator* iter = agg->createIterator();
+    AggPlant *agg = new AggPlant(&plantList);
+    Iterator *iter = agg->createIterator();
 
-    SUBCASE("isDone() false when elements remain") {
+    SUBCASE("isDone() false when elements remain")
+    {
         iter->first();
         CHECK(iter->isDone() == false);
         iter->next();
         CHECK(iter->isDone() == false);
     }
 
-    SUBCASE("isDone() true after all elements exhausted") {
+    SUBCASE("isDone() true after all elements exhausted")
+    {
         iter->first();
         iter->next();
         iter->next();
         CHECK(iter->isDone() == true);
     }
 
-    SUBCASE("isDone() false after first() resets") {
+    SUBCASE("isDone() false after first() resets")
+    {
         iter->first();
         iter->next();
         iter->next();
@@ -1099,37 +1158,40 @@ TEST_CASE("Iterator behavior - isDone() accurately reflects state") {
 // COMPARISON TESTS: PlantIterator vs SeasonIterator
 // ============================================================================
 
-TEST_CASE("PlantIterator vs SeasonIterator comparison") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("PlantIterator vs SeasonIterator comparison")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* spring1 = createPlantWithSeason("Spring");
-    LivingPlant* spring2 = createPlantWithSeason("Spring");
-    LivingPlant* summer1 = createPlantWithSeason("Summer");
-    LivingPlant* summer2 = createPlantWithSeason("Summer");
-    LivingPlant* autumn1 = createPlantWithSeason("Autumn");
+    LivingPlant *spring1 = createPlantWithSeason("Spring");
+    LivingPlant *spring2 = createPlantWithSeason("Spring");
+    LivingPlant *summer1 = createPlantWithSeason("Summer");
+    LivingPlant *summer2 = createPlantWithSeason("Summer");
+    LivingPlant *autumn1 = createPlantWithSeason("Autumn");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(spring1);
     plantList.push_back(summer1);
     plantList.push_back(spring2);
     plantList.push_back(summer2);
     plantList.push_back(autumn1);
 
-    SUBCASE("PlantIterator returns all plants") {
-        AggPlant* agg = new AggPlant(&plantList);
-        Iterator* iter = agg->createIterator();
+    SUBCASE("PlantIterator returns all plants")
+    {
+        AggPlant *agg = new AggPlant(&plantList);
+        Iterator *iter = agg->createIterator();
         CHECK(countIteratorResults(iter) == 5);
         delete iter;
         delete agg;
     }
 
-    SUBCASE("SeasonIterator count <= PlantIterator count") {
-        AggPlant* aggAll = new AggPlant(&plantList);
-        Iterator* iterAll = aggAll->createIterator();
+    SUBCASE("SeasonIterator count <= PlantIterator count")
+    {
+        AggPlant *aggAll = new AggPlant(&plantList);
+        Iterator *iterAll = aggAll->createIterator();
         int allCount = countIteratorResults(iterAll);
 
-        AggSeason* aggSpring = new AggSeason(&plantList, inv->getString("Spring"));
-        Iterator* iterSpring = aggSpring->createIterator();
+        AggSeason *aggSpring = new AggSeason(&plantList, inv->getString("Spring"));
+        Iterator *iterSpring = aggSpring->createIterator();
         int springCount = countIteratorResults(iterSpring);
 
         CHECK(springCount <= allCount);
@@ -1142,20 +1204,24 @@ TEST_CASE("PlantIterator vs SeasonIterator comparison") {
         delete aggSpring;
     }
 
-    SUBCASE("SeasonIterator is subset of PlantIterator") {
-        AggSeason* aggSpring = new AggSeason(&plantList, inv->getString("Spring"));
-        Iterator* iterSpring = aggSpring->createIterator();
-        std::vector<LivingPlant*> springPlants = collectPlants(iterSpring);
+    SUBCASE("SeasonIterator is subset of PlantIterator")
+    {
+        AggSeason *aggSpring = new AggSeason(&plantList, inv->getString("Spring"));
+        Iterator *iterSpring = aggSpring->createIterator();
+        std::vector<LivingPlant *> springPlants = collectPlants(iterSpring);
 
-        AggPlant* aggAll = new AggPlant(&plantList);
-        Iterator* iterAll = aggAll->createIterator();
-        std::vector<LivingPlant*> allPlants = collectPlants(iterAll);
+        AggPlant *aggAll = new AggPlant(&plantList);
+        Iterator *iterAll = aggAll->createIterator();
+        std::vector<LivingPlant *> allPlants = collectPlants(iterAll);
 
         // Every spring plant should be in all plants
-        for (LivingPlant* springPlant : springPlants) {
+        for (LivingPlant *springPlant : springPlants)
+        {
             bool found = false;
-            for (LivingPlant* plant : allPlants) {
-                if (plant == springPlant) {
+            for (LivingPlant *plant : allPlants)
+            {
+                if (plant == springPlant)
+                {
                     found = true;
                     break;
                 }
@@ -1180,21 +1246,22 @@ TEST_CASE("PlantIterator vs SeasonIterator comparison") {
 // EDGE CASE TESTS
 // ============================================================================
 
-TEST_CASE("Edge case - Multiple iterators on same collection are independent") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("Edge case - Multiple iterators on same collection are independent")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* plant1 = createPlantWithSeason("Spring");
-    LivingPlant* plant2 = createPlantWithSeason("Spring");
-    LivingPlant* plant3 = createPlantWithSeason("Spring");
+    LivingPlant *plant1 = createPlantWithSeason("Spring");
+    LivingPlant *plant2 = createPlantWithSeason("Spring");
+    LivingPlant *plant3 = createPlantWithSeason("Spring");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant1);
     plantList.push_back(plant2);
     plantList.push_back(plant3);
 
-    AggPlant* agg = new AggPlant(&plantList);
-    Iterator* iter1 = agg->createIterator();
-    Iterator* iter2 = agg->createIterator();
+    AggPlant *agg = new AggPlant(&plantList);
+    Iterator *iter1 = agg->createIterator();
+    Iterator *iter2 = agg->createIterator();
 
     // Advance iter1
     iter1->first();
@@ -1221,20 +1288,21 @@ TEST_CASE("Edge case - Multiple iterators on same collection are independent") {
     delete plant3;
 }
 
-TEST_CASE("Edge case - Iterator doesn't modify collection") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("Edge case - Iterator doesn't modify collection")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* plant1 = createPlantWithSeason("Spring");
-    LivingPlant* plant2 = createPlantWithSeason("Spring");
+    LivingPlant *plant1 = createPlantWithSeason("Spring");
+    LivingPlant *plant2 = createPlantWithSeason("Spring");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant1);
     plantList.push_back(plant2);
 
     size_t originalSize = plantList.size();
 
-    AggPlant* agg = new AggPlant(&plantList);
-    Iterator* iter = agg->createIterator();
+    AggPlant *agg = new AggPlant(&plantList);
+    Iterator *iter = agg->createIterator();
 
     // Iterate through collection
     countIteratorResults(iter);
@@ -1250,29 +1318,32 @@ TEST_CASE("Edge case - Iterator doesn't modify collection") {
     delete plant2;
 }
 
-TEST_CASE("Edge case - All plants same season") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("Edge case - All plants same season")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* plant1 = createPlantWithSeason("Spring");
-    LivingPlant* plant2 = createPlantWithSeason("Spring");
-    LivingPlant* plant3 = createPlantWithSeason("Spring");
+    LivingPlant *plant1 = createPlantWithSeason("Spring");
+    LivingPlant *plant2 = createPlantWithSeason("Spring");
+    LivingPlant *plant3 = createPlantWithSeason("Spring");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(plant1);
     plantList.push_back(plant2);
     plantList.push_back(plant3);
 
-    SUBCASE("Filtering for that season returns all") {
-        AggSeason* agg = new AggSeason(&plantList, inv->getString("Spring"));
-        Iterator* iter = agg->createIterator();
+    SUBCASE("Filtering for that season returns all")
+    {
+        AggSeason *agg = new AggSeason(&plantList, inv->getString("Spring"));
+        Iterator *iter = agg->createIterator();
         CHECK(countIteratorResults(iter) == 3);
         delete iter;
         delete agg;
     }
 
-    SUBCASE("Filtering for different season returns none") {
-        AggSeason* agg = new AggSeason(&plantList, inv->getString("Summer"));
-        Iterator* iter = agg->createIterator();
+    SUBCASE("Filtering for different season returns none")
+    {
+        AggSeason *agg = new AggSeason(&plantList, inv->getString("Summer"));
+        Iterator *iter = agg->createIterator();
         CHECK(countIteratorResults(iter) == 0);
         delete iter;
         delete agg;
@@ -1283,49 +1354,52 @@ TEST_CASE("Edge case - All plants same season") {
     delete plant3;
 }
 
-TEST_CASE("Edge case - Each plant different season") {
-    Inventory* inv = Inventory::getInstance();
+TEST_CASE("Edge case - Each plant different season")
+{
+    Inventory *inv = Inventory::getInstance();
 
-    LivingPlant* spring = createPlantWithSeason("Spring");
-    LivingPlant* summer = createPlantWithSeason("Summer");
-    LivingPlant* autumn = createPlantWithSeason("Autumn");
-    LivingPlant* winter = createPlantWithSeason("Winter");
+    LivingPlant *spring = createPlantWithSeason("Spring");
+    LivingPlant *summer = createPlantWithSeason("Summer");
+    LivingPlant *autumn = createPlantWithSeason("Autumn");
+    LivingPlant *winter = createPlantWithSeason("Winter");
 
-    std::list<PlantComponent*> plantList;
+    std::list<PlantComponent *> plantList;
     plantList.push_back(spring);
     plantList.push_back(summer);
     plantList.push_back(autumn);
     plantList.push_back(winter);
 
-    SUBCASE("PlantIterator returns all 4") {
-        AggPlant* agg = new AggPlant(&plantList);
-        Iterator* iter = agg->createIterator();
+    SUBCASE("PlantIterator returns all 4")
+    {
+        AggPlant *agg = new AggPlant(&plantList);
+        Iterator *iter = agg->createIterator();
         CHECK(countIteratorResults(iter) == 4);
         delete iter;
         delete agg;
     }
 
-    SUBCASE("Each season filter returns exactly 1") {
-        AggSeason* aggSpring = new AggSeason(&plantList, inv->getString("Spring"));
-        Iterator* iterSpring = aggSpring->createIterator();
+    SUBCASE("Each season filter returns exactly 1")
+    {
+        AggSeason *aggSpring = new AggSeason(&plantList, inv->getString("Spring"));
+        Iterator *iterSpring = aggSpring->createIterator();
         CHECK(countIteratorResults(iterSpring) == 1);
         delete iterSpring;
         delete aggSpring;
 
-        AggSeason* aggSummer = new AggSeason(&plantList, inv->getString("Summer"));
-        Iterator* iterSummer = aggSummer->createIterator();
+        AggSeason *aggSummer = new AggSeason(&plantList, inv->getString("Summer"));
+        Iterator *iterSummer = aggSummer->createIterator();
         CHECK(countIteratorResults(iterSummer) == 1);
         delete iterSummer;
         delete aggSummer;
 
-        AggSeason* aggAutumn = new AggSeason(&plantList, inv->getString("Autumn"));
-        Iterator* iterAutumn = aggAutumn->createIterator();
+        AggSeason *aggAutumn = new AggSeason(&plantList, inv->getString("Autumn"));
+        Iterator *iterAutumn = aggAutumn->createIterator();
         CHECK(countIteratorResults(iterAutumn) == 1);
         delete iterAutumn;
         delete aggAutumn;
 
-        AggSeason* aggWinter = new AggSeason(&plantList, inv->getString("Winter"));
-        Iterator* iterWinter = aggWinter->createIterator();
+        AggSeason *aggWinter = new AggSeason(&plantList, inv->getString("Winter"));
+        Iterator *iterWinter = aggWinter->createIterator();
         CHECK(countIteratorResults(iterWinter) == 1);
         delete iterWinter;
         delete aggWinter;
@@ -1536,7 +1610,6 @@ TEST_CASE("Testing Builder Pattern Implementation")
 
         CHECK(rosePlant != nullptr);
 
-
         delete rosePlant->getDecorator();
         delete roseBuilder;
     }
@@ -1599,7 +1672,6 @@ TEST_CASE("Testing Builder Pattern Implementation")
             CHECK(cactusLivingPlant->getSunExposure() > roseLivingPlant->getSunExposure());
         }
 
-
         delete rosePlant->getDecorator();
         delete cactusPlant->getDecorator();
 
@@ -1626,7 +1698,6 @@ TEST_CASE("Testing Builder Pattern Implementation")
             CHECK(roseLivingPlant->getWaterLevel() >= 20);
         }
 
-
         delete rosePlant->getDecorator();
         delete roseBuilder;
 
@@ -1636,6 +1707,7 @@ TEST_CASE("Testing Builder Pattern Implementation")
 
 TEST_CASE("Testing load on system with many rose objects")
 {
+
     SUBCASE("Testing load of 1_000")
     {
         cout << endl;
@@ -1660,7 +1732,6 @@ TEST_CASE("Testing load on system with many rose objects")
         delete Inventory::getInstance();
         cout << "All 1000 plants de-allocated" << endl;
     }
-
     SUBCASE("Testing load of 1_000_000")
     {
         cout << endl;
@@ -1685,30 +1756,28 @@ TEST_CASE("Testing load on system with many rose objects")
         delete Inventory::getInstance();
         cout << "All 1_000_000 plants de-allocated" << endl;
     }
-    /*
-        SUBCASE("Testing load of 1_000_000_000")
+    SUBCASE("Testing load of 10_000_000")
+    {
+        cout << endl;
+
+        Builder *builder = new RoseBuilder();
+        Director *dir = new Director(builder);
+
+        dir->construct();
+        PlantGroup *mainInventory = Inventory::getInstance()->getInventory();
+
+        auto start = std::chrono::high_resolution_clock::now();
+        for (int i = 0; i < 10000000; i++)
         {
-            cout << endl;
-
-            Builder *builder = new RoseBuilder();
-            Director *dir = new Director(builder);
-
-            dir->construct();
-            PlantGroup *mainInventory = Inventory::getInstance()->getInventory();
-
-            auto start = std::chrono::high_resolution_clock::now();
-            for (int i = 0; i < 100000000; i++)
-            {
-                mainInventory->addComponent(dir->getPlant());
-            }
-            auto end = std::chrono::high_resolution_clock::now();
-            std::chrono::duration<double> duration = end - start;
-            std::cout << "Time to add 100_000_000 plants: " << duration.count() << " seconds" << std::endl;
-
-            delete builder;
-            delete dir;
-            delete Inventory::getInstance();
-            cout << "All 100_000_000 plants de-allocated" << endl;
+            mainInventory->addComponent(dir->getPlant());
         }
-            */
+        auto end = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> duration = end - start;
+        std::cout << "Time to add 10_000_000 plants: " << duration.count() << " seconds" << std::endl;
+
+        delete builder;
+        delete dir;
+        delete Inventory::getInstance();
+        cout << "All 10_000_000 plants de-allocated" << endl;
+    }
 }
