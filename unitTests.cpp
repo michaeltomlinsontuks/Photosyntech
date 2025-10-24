@@ -1503,7 +1503,7 @@ TEST_CASE("SeasonIterator - Multiple matching plants")
     delete plant1;
     delete plant2;
     delete plant3;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 TEST_CASE("SeasonIterator - Mixed seasons with filtering")
@@ -1566,7 +1566,7 @@ TEST_CASE("SeasonIterator - Mixed seasons with filtering")
     delete summer1;
     delete spring2;
     delete autumn1;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 TEST_CASE("SeasonIterator - No matching plants")
@@ -1594,7 +1594,7 @@ TEST_CASE("SeasonIterator - No matching plants")
     delete summer1;
     delete summer2;
     delete summer3;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 TEST_CASE("SeasonIterator - All four seasons")
@@ -1656,7 +1656,7 @@ TEST_CASE("SeasonIterator - All four seasons")
     delete summer;
     delete autumn;
     delete winter;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 // ============================================================================
@@ -1730,7 +1730,7 @@ TEST_CASE("SeasonIterator - String constructor overload")
     delete spring1;
     delete summer1;
     delete spring2;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 TEST_CASE("SeasonIterator - Flyweight pointer comparison")
@@ -1798,7 +1798,7 @@ TEST_CASE("SeasonIterator - Flyweight pointer comparison")
         delete spring2;
         delete summer1;
     }
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 TEST_CASE("SeasonIterator - Flyweight memory efficiency")
@@ -1850,7 +1850,7 @@ TEST_CASE("SeasonIterator - Flyweight memory efficiency")
         delete plant1;
         delete plant2;
     }
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 // ============================================================================
@@ -1909,7 +1909,7 @@ TEST_CASE("Iterator behavior - first() resets iterator")
     delete plant1;
     delete plant2;
     delete plant3;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 TEST_CASE("Iterator behavior - next() at end stays at end")
@@ -1939,7 +1939,7 @@ TEST_CASE("Iterator behavior - next() at end stays at end")
     delete iter;
     delete agg;
     delete plant;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 TEST_CASE("Iterator behavior - currentItem() doesn't advance iterator")
@@ -2016,7 +2016,7 @@ TEST_CASE("Iterator behavior - isDone() accurately reflects state")
     delete agg;
     delete plant1;
     delete plant2;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 // ============================================================================
@@ -2105,7 +2105,7 @@ TEST_CASE("PlantIterator vs SeasonIterator comparison")
     delete summer1;
     delete summer2;
     delete autumn1;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 // ============================================================================
@@ -2152,7 +2152,7 @@ TEST_CASE("Edge case - Multiple iterators on same collection are independent")
     delete plant1;
     delete plant2;
     delete plant3;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 TEST_CASE("Edge case - Iterator doesn't modify collection")
@@ -2219,7 +2219,7 @@ TEST_CASE("Edge case - All plants same season")
     delete plant1;
     delete plant2;
     delete plant3;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
 }
 
 TEST_CASE("Edge case - Each plant different season")
@@ -2277,5 +2277,24 @@ TEST_CASE("Edge case - Each plant different season")
     delete summer;
     delete autumn;
     delete winter;
-            delete Inventory::getInstance();
+    delete Inventory::getInstance();
+}
+TEST_CASE("Both deletions work")
+{
+    RoseBuilder *roseB = new RoseBuilder();
+    Director *dirRose = new Director(roseB);
+    dirRose->construct();
+    SUBCASE("Testing old deletion")
+    {
+        delete roseB->getResult()->getDecorator();
+    }
+
+    SUBCASE("Testing new deletion")
+    {
+        delete roseB->getResult();
+    }
+
+    delete roseB;
+    delete dirRose;
+    delete Inventory::getInstance();
 }

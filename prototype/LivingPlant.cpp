@@ -170,11 +170,14 @@ int LivingPlant::affectSunlight()
 
 void LivingPlant::update()
 {
-    //added null checks
-    if (this->decorator != nullptr) {
+    // added null checks
+    if (this->decorator != nullptr)
+    {
         this->waterLevel -= this->decorator->affectWater();
         this->sunExposure -= this->decorator->affectSunlight();
-    } else {
+    }
+    else
+    {
         this->waterLevel -= this->affectWater();
         this->sunExposure -= this->affectSunlight();
     }
@@ -260,4 +263,15 @@ PlantComponent *LivingPlant::correctShape(PlantComponent *mainDecorator)
 {
     this->decorator = mainDecorator;
     return this;
+}
+LivingPlant::~LivingPlant()
+{
+    if (!deleted)
+    {
+        deleted = true;
+        if (decorator)
+        {
+            delete decorator;
+        }
+    }
 }

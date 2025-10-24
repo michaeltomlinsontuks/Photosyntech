@@ -14,6 +14,15 @@ PlantAttributes::PlantAttributes(const PlantAttributes &other)
       nextComponent(other.nextComponent->clone()),
       name(other.name) {};
 
+PlantAttributes::~PlantAttributes()
+{
+    if (nextComponent && nextComponent->isDeleted() == false)
+    {
+        nextComponent->markDeletion();
+        delete nextComponent;
+    }
+}
+
 void PlantAttributes::water()
 {
     if (nextComponent)

@@ -146,11 +146,8 @@ public:
 	/**
 	 * @brief Virtual destructor for proper cleanup of derived classes.
 	 */
-	virtual ~PlantAttributes()
-	{
-		if (nextComponent)
-			delete nextComponent;
-	}
+	virtual ~PlantAttributes();
+
 
 	// /**
 	//  * @brief Sets the decorator for builder purposes

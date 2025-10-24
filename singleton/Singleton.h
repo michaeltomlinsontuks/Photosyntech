@@ -93,7 +93,7 @@ public:
 
 	/**
 	 * @brief Gets a flyweight for a water strategy.
-	 * @param level Integer identifier for the water strategy level.
+	 * @param level Integer identifier Class2for the water strategy level.
 	 * @return Const pointer to the Flyweight wrapping the WaterStrategy.
 	 */
 	Flyweight<WaterStrategy *> *getWaterFly(int level);

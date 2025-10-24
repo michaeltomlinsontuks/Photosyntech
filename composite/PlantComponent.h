@@ -59,6 +59,7 @@ protected:
 	double price;
 	int affectWaterValue;
 	int affectSunValue;
+	bool deleted = false;
 
 public:
 	/**
@@ -147,6 +148,8 @@ public:
 	 */
 	virtual PlantComponent *getDecorator() { return this; };
 	virtual PlantComponent *correctShape(PlantComponent *) = 0;
+	virtual void markDeletion() { deleted = true; }
+	virtual bool isDeleted() { return deleted; };
 };
 
 #endif
