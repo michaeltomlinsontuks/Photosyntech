@@ -1,0 +1,7 @@
+<map id="PlantGroup::checkSunlight" name="PlantGroup::checkSunlight">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,199,67"/>
+<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html#ae652f0e6aa20e1962245e81c67f81b66" title=" " alt="" coords="253,5,429,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,40,239,35,240,40,199,45"/>
+<area shape="rect" id="Node000003" href="$d0/de9/classPlantGroup.html#a861214e9019990d74a62245e19a0195b" title="Notifies observers that plants in this group need water." alt="" coords="247,70,436,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,63,233,67,233,73,199,69"/>
+</map>

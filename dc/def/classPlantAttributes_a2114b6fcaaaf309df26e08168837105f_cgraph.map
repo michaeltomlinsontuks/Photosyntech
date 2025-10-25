@@ -1,0 +1,7 @@
+<map id="PlantAttributes::~PlantAttributes" name="PlantAttributes::~PlantAttributes">
+<area shape="rect" id="Node000001" title="Virtual destructor for proper cleanup of derived classes." alt="" coords="5,31,240,56"/>
+<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#a5bc1be7191e8d4f2207ac2fcd21a2e26" title=" " alt="" coords="301,5,501,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,30,287,26,288,31,240,35"/>
+<area shape="rect" id="Node000003" href="$df/deb/classPlantComponent.html#a69c7c61d79adf27da28b88e381590786" title=" " alt="" coords="288,55,515,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,51,275,54,274,59,240,56"/>
+</map>

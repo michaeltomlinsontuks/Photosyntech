@@ -11,11 +11,16 @@ var classPlantComponent =
     [ "getInfo", "df/deb/classPlantComponent.html#a76e55243e65b24d0f5c230937f66a538", null ],
     [ "getName", "df/deb/classPlantComponent.html#a5c48245a51bca300028429731490c759", null ],
     [ "getPrice", "df/deb/classPlantComponent.html#aa00a43fd42ec539fa367c1e3f7c7ef14", null ],
+    [ "getSunlightValue", "df/deb/classPlantComponent.html#a83d3fd61d82013d68146d9d75bae052e", null ],
     [ "getType", "df/deb/classPlantComponent.html#ace727d5177701f579367867b9891c27b", null ],
+    [ "getWaterValue", "df/deb/classPlantComponent.html#a7cce3c30ba840fbdda3083324c193a2c", null ],
+    [ "isDeleted", "df/deb/classPlantComponent.html#a5bc1be7191e8d4f2207ac2fcd21a2e26", null ],
+    [ "markDeletion", "df/deb/classPlantComponent.html#a69c7c61d79adf27da28b88e381590786", null ],
     [ "setOutside", "df/deb/classPlantComponent.html#a40d4e4ef065167ac12aa85c4136bdb38", null ],
     [ "update", "df/deb/classPlantComponent.html#a74c2b14a119d73b3611905cff2345eaa", null ],
     [ "water", "df/deb/classPlantComponent.html#abaaf6f115c94a56f28aa2671fb0768bf", null ],
     [ "affectSunValue", "df/deb/classPlantComponent.html#a8d1a7485cf8c64ae1e6b2bb1eeaa4fa3", null ],
     [ "affectWaterValue", "df/deb/classPlantComponent.html#ad9151ed63b3d0c867107896b08d5d072", null ],
+    [ "deleted", "df/deb/classPlantComponent.html#a656b6acd254893e53dc13469b36a1e98", null ],
     [ "price", "df/deb/classPlantComponent.html#a5ec6c40d3eaeb131f64fac4d025af122", null ]
 ];

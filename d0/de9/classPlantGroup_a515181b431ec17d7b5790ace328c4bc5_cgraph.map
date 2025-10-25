@@ -1,9 +1,0 @@
-<map id="PlantGroup::waterNeeded" name="PlantGroup::waterNeeded">
-<area shape="rect" id="Node000001" title="Notifies observers that plants in this group need water." alt="" coords="5,31,195,56"/>
-<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html#afe21412a7437304b15bb6a85cb7c4ebe" title="Waters the plant component." alt="" coords="243,31,381,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,41,229,41,229,46,195,46"/>
-<area shape="rect" id="Node000003" href="$d1/d99/classFlyweight.html#a00ae12c029b8c4e184bcbe49a7389228" title="Gets the shared state data." alt="" coords="434,5,583,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="381,32,420,27,421,32,382,37"/>
-<area shape="rect" id="Node000004" href="$d7/da1/classWaterStrategy.html#ac0cde499993bca47adaf1fd4d905b3be" title="Executes the watering algorithm on the specified plant." alt="" coords="429,55,588,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="382,49,416,53,416,59,381,54"/>
-</map>

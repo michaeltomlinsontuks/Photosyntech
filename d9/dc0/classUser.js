@@ -1,6 +1,7 @@
 var classUser =
 [
     [ "User", "d9/dc0/classUser.html#a4a0137053e591fbb79d9057dd7d2283d", null ],
+    [ "User", "d9/dc0/classUser.html#af9e5f33114c8330be7b91276b7377e6d", null ],
     [ "~User", "d9/dc0/classUser.html#a7d1cf7c22ba031caec015ec427419513", null ],
     [ "setSalesFloor", "d9/dc0/classUser.html#a72721edc63b58b13c5a9f0307d6b5d86", null ],
     [ "setSuggestionFloor", "d9/dc0/classUser.html#ab8e52987de0f7dd45d7f5037dc806ba6", null ],

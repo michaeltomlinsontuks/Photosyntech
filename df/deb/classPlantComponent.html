@@ -183,9 +183,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa00a43fd42ec539fa367c1e3f7c7ef14" id="r_aa00a43fd42ec539fa367c1e3f7c7ef14"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/deb/classPlantComponent.html#aa00a43fd42ec539fa367c1e3f7c7ef14">getPrice</a> ()=0</td></tr>
 <tr class="memdesc:aa00a43fd42ec539fa367c1e3f7c7ef14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the price of this plant component.  <br /></td></tr>
 <tr class="separator:aa00a43fd42ec539fa367c1e3f7c7ef14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83d3fd61d82013d68146d9d75bae052e" id="r_a83d3fd61d82013d68146d9d75bae052e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/deb/classPlantComponent.html#a83d3fd61d82013d68146d9d75bae052e">getSunlightValue</a> ()=0</td></tr>
+<tr class="separator:a83d3fd61d82013d68146d9d75bae052e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace727d5177701f579367867b9891c27b" id="r_ace727d5177701f579367867b9891c27b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/db6/PlantComponent_8h.html#a81f78fc173dedefe5a049c0aa3eed2c0">ComponentType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/deb/classPlantComponent.html#ace727d5177701f579367867b9891c27b">getType</a> () const =0</td></tr>
 <tr class="memdesc:ace727d5177701f579367867b9891c27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the component type for efficient type identification.  <br /></td></tr>
 <tr class="separator:ace727d5177701f579367867b9891c27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cce3c30ba840fbdda3083324c193a2c" id="r_a7cce3c30ba840fbdda3083324c193a2c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/deb/classPlantComponent.html#a7cce3c30ba840fbdda3083324c193a2c">getWaterValue</a> ()=0</td></tr>
+<tr class="separator:a7cce3c30ba840fbdda3083324c193a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc1be7191e8d4f2207ac2fcd21a2e26" id="r_a5bc1be7191e8d4f2207ac2fcd21a2e26"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/deb/classPlantComponent.html#a5bc1be7191e8d4f2207ac2fcd21a2e26">isDeleted</a> ()</td></tr>
+<tr class="separator:a5bc1be7191e8d4f2207ac2fcd21a2e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c7c61d79adf27da28b88e381590786" id="r_a69c7c61d79adf27da28b88e381590786"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/deb/classPlantComponent.html#a69c7c61d79adf27da28b88e381590786">markDeletion</a> ()</td></tr>
+<tr class="separator:a69c7c61d79adf27da28b88e381590786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc2d75fbaca8c2e9c09ee13f4abcaf11" id="r_acc2d75fbaca8c2e9c09ee13f4abcaf11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/deb/classPlantComponent.html#acc2d75fbaca8c2e9c09ee13f4abcaf11">PlantComponent</a> (double <a class="el" href="../../df/deb/classPlantComponent.html#a5ec6c40d3eaeb131f64fac4d025af122">price</a>, int waterAffect, int sunAffect)</td></tr>
 <tr class="memdesc:acc2d75fbaca8c2e9c09ee13f4abcaf11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="../../df/deb/classPlantComponent.html" title="Abstract base class representing a plant component in the Composite pattern.">PlantComponent</a> with basic attributes.  <br /></td></tr>
 <tr class="separator:acc2d75fbaca8c2e9c09ee13f4abcaf11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,6 +216,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a8d1a7485cf8c64ae1e6b2bb1eeaa4fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9151ed63b3d0c867107896b08d5d072" id="r_ad9151ed63b3d0c867107896b08d5d072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/deb/classPlantComponent.html#ad9151ed63b3d0c867107896b08d5d072">affectWaterValue</a></td></tr>
 <tr class="separator:ad9151ed63b3d0c867107896b08d5d072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656b6acd254893e53dc13469b36a1e98" id="r_a656b6acd254893e53dc13469b36a1e98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/deb/classPlantComponent.html#a656b6acd254893e53dc13469b36a1e98">deleted</a> = false</td></tr>
+<tr class="separator:a656b6acd254893e53dc13469b36a1e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ec6c40d3eaeb131f64fac4d025af122" id="r_a5ec6c40d3eaeb131f64fac4d025af122"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/deb/classPlantComponent.html#a5ec6c40d3eaeb131f64fac4d025af122">price</a></td></tr>
 <tr class="separator:a5ec6c40d3eaeb131f64fac4d025af122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -590,6 +600,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a83d3fd61d82013d68146d9d75bae052e" name="a83d3fd61d82013d68146d9d75bae052e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83d3fd61d82013d68146d9d75bae052e">&#9670;&#160;</a></span>getSunlightValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int PlantComponent::getSunlightValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../d0/de9/classPlantGroup.html#a4af4b4f8cf2d8066cac9ade53953e563">PlantGroup</a>, <a class="el" href="../../dc/def/classPlantAttributes.html#ad05b843291871a62eb720ecea05b8bcf">PlantAttributes</a>, and <a class="el" href="../../d7/d79/classLivingPlant.html#ae652f0e6aa20e1962245e81c67f81b66">LivingPlant</a>.</p>
+
+</div>
+</div>
 <a id="ace727d5177701f579367867b9891c27b" name="ace727d5177701f579367867b9891c27b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace727d5177701f579367867b9891c27b">&#9670;&#160;</a></span>getType()</h2>
 
@@ -618,6 +655,83 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>ComponentType enum value identifying this component's type. </dd></dl>
 
 <p>Implemented in <a class="el" href="../../d0/de9/classPlantGroup.html#a40e539c828ab3e289fa17ebbc40f7f20">PlantGroup</a>, <a class="el" href="../../dc/def/classPlantAttributes.html#a2e1ee456fc884402bc1620229f52461a">PlantAttributes</a>, and <a class="el" href="../../d7/d79/classLivingPlant.html#ac58b22ceba9d49c65a96942d0bae310b">LivingPlant</a>.</p>
+
+</div>
+</div>
+<a id="a7cce3c30ba840fbdda3083324c193a2c" name="a7cce3c30ba840fbdda3083324c193a2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cce3c30ba840fbdda3083324c193a2c">&#9670;&#160;</a></span>getWaterValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int PlantComponent::getWaterValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../d0/de9/classPlantGroup.html#abe01149ad3e25f79d131268075698176">PlantGroup</a>, <a class="el" href="../../dc/def/classPlantAttributes.html#ae2dcfa5c9c78c6707e51ca29d617f618">PlantAttributes</a>, and <a class="el" href="../../d7/d79/classLivingPlant.html#a650dcd7f89600d96e5cc8371fc721653">LivingPlant</a>.</p>
+
+</div>
+</div>
+<a id="a5bc1be7191e8d4f2207ac2fcd21a2e26" name="a5bc1be7191e8d4f2207ac2fcd21a2e26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc1be7191e8d4f2207ac2fcd21a2e26">&#9670;&#160;</a></span>isDeleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool PlantComponent::isDeleted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69c7c61d79adf27da28b88e381590786" name="a69c7c61d79adf27da28b88e381590786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69c7c61d79adf27da28b88e381590786">&#9670;&#160;</a></span>markDeletion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PlantComponent::markDeletion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -753,6 +867,28 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a656b6acd254893e53dc13469b36a1e98" name="a656b6acd254893e53dc13469b36a1e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656b6acd254893e53dc13469b36a1e98">&#9670;&#160;</a></span>deleted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlantComponent::deleted = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5ec6c40d3eaeb131f64fac4d025af122" name="a5ec6c40d3eaeb131f64fac4d025af122"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ec6c40d3eaeb131f64fac4d025af122">&#9670;&#160;</a></span>price</h2>
 
@@ -785,7 +921,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/deb/classPlantComponent.html">PlantComponent</a></li>
-    <li class="footer">Generated on Thu Oct 23 2025 09:27:35 for Photosyntech by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Oct 25 2025 13:17:47 for Photosyntech by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

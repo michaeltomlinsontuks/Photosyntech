@@ -1,96 +1,100 @@
 <map id="TEST_CASE" name="TEST_CASE">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,499,100,524"/>
-<area shape="rect" id="Node000002" href="$d0/de9/classPlantGroup.html#a8507dfd03dd58768caf68678a6fd63fa" title="Attaches an observer to receive notifications from this group." alt="" coords="179,225,321,251"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,498,59,454,75,393,102,326,122,295,146,268,166,254,169,259,150,272,126,298,107,329,80,394,64,455,58,499"/>
-<area shape="rect" id="Node000003" href="$d4/d2f/unitTests_8cpp.html#a331dcaa5c58dd0e02be020d452d13730" title=" " alt="" coords="470,203,537,228"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="54,498,62,461,79,411,107,358,125,333,146,312,173,294,197,283,244,275,293,272,320,268,351,260,399,237,456,221,457,226,401,242,353,264,321,273,293,278,244,280,199,288,175,298,150,316,129,337,111,360,84,413,67,462,59,499"/>
-<area shape="rect" id="Node000004" href="$d0/de9/classPlantGroup.html#a7e5975240d89ce62058821654784fc97" title="Detaches an observer from this group." alt="" coords="177,400,323,425"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="65,496,100,465,147,434,164,427,166,432,149,439,103,469,68,500"/>
-<area shape="rect" id="Node000005" href="$dd/d7a/classInventory.html#a6214bbce5f65c3c4b50f3703c3374364" title="Gets the singleton instance." alt="" coords="167,449,333,475"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="100,496,147,483,180,475,181,481,149,489,101,501"/>
-<area shape="rect" id="Node000020" href="$dd/df7/classStaff.html#aa13f1ee56ce76eb713cac9cd593b704b" title="Receives notification that a plant&#39;s state has been updated." alt="" coords="169,499,331,524"/>
-<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="100,509,155,509,155,514,100,514"/>
-<area shape="rect" id="Node000025" href="$dd/df7/classStaff.html#a55ea3985ed66ab31f1cbf887896ef24b" title="Receives notification that a plant needs sunlight." alt="" coords="174,597,326,623"/>
-<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="69,522,103,553,149,582,170,591,168,596,147,587,100,557,65,526"/>
-<area shape="rect" id="Node000029" href="$dd/df7/classStaff.html#aaa733e2ae4bf4595027ce76286244da5" title="Receives notification that a plant needs water." alt="" coords="167,659,333,684"/>
-<area shape="poly" id="edge30_Node000001_Node000029" title=" " alt="" coords="63,523,96,575,121,606,150,632,186,652,184,656,146,636,117,609,92,578,58,526"/>
-<area shape="rect" id="Node000033" href="$d0/de9/classPlantGroup.html#a0f69560f280960bdeba7caf45bf844bd" title="Notifies observers that a plant&#39;s state has been updated." alt="" coords="155,831,345,856"/>
-<area shape="poly" id="edge36_Node000001_Node000033" title=" " alt="" coords="59,524,67,567,84,630,112,701,129,735,150,767,180,798,214,821,210,826,177,802,146,770,125,738,107,703,79,632,62,569,53,525"/>
-<area shape="rect" id="Node000039" href="$d4/d2f/unitTests_8cpp.html#ad089a3b764570c6f265386ca62f40c6e" title=" " alt="" coords="209,327,291,352"/>
-<area shape="poly" id="edge42_Node000001_Node000039" title=" " alt="" coords="59,497,92,445,117,413,146,385,171,368,197,355,200,360,174,373,150,389,121,417,97,448,63,500"/>
-<area shape="rect" id="Node000043" href="$d0/de9/classPlantGroup.html#abebe0afb8b855fb23e2442a700ab107d" title="Notifies observers that plants in this group need sunlight." alt="" coords="148,548,352,573"/>
-<area shape="poly" id="edge47_Node000001_Node000043" title=" " alt="" coords="101,521,149,533,186,542,184,547,147,538,100,526"/>
-<area shape="rect" id="Node000044" href="$d0/de9/classPlantGroup.html#a515181b431ec17d7b5790ace328c4bc5" title="Notifies observers that plants in this group need water." alt="" coords="155,732,345,757"/>
-<area shape="poly" id="edge49_Node000001_Node000044" title=" " alt="" coords="60,523,71,557,89,602,115,650,150,693,172,711,197,724,195,729,169,715,146,697,111,653,84,604,66,558,55,525"/>
-<area shape="rect" id="Node000006" href="$dd/d7a/classInventory.html#a10485613fc8bfb32ee564d9b5110f8fb" title="Private constructor to prevent direct instantiation." alt="" coords="427,400,580,425"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="315,447,423,425,424,431,316,452"/>
-<area shape="rect" id="Node000007" href="$d5/d2c/classFlyweightFactory.html#a7abec75c45177edeed4e8c94f0f48e1f" title="Gets or creates a flyweight for the given identifier." alt="" coords="656,400,881,425"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="580,410,642,410,642,415,580,415"/>
-<area shape="rect" id="Node000008" href="$dc/ddc/classDead.html#abcdb9719d65bb5652d1a95719236673a" title="Returns the identifier for the Dead state." alt="" coords="719,449,818,475"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="573,423,706,448,705,453,572,428"/>
-<area shape="rect" id="Node000009" href="$da/dc8/classMature.html#a8e9fd3e33549edd0a91f188635f77339" title="Returns the identifier for the Mature state." alt="" coords="713,499,824,524"/>
-<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="581,423,608,434,624,447,633,460,642,472,656,484,700,500,699,505,653,488,638,476,628,463,620,450,605,439,579,428"/>
-<area shape="rect" id="Node000010" href="$db/d19/classSeed.html#a9abc859b004490c9086455651fe07c89" title="Returns the identifier for the Seed state." alt="" coords="720,548,817,573"/>
-<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="581,420,608,435,620,447,627,460,633,485,639,510,645,522,656,533,680,547,707,554,705,560,678,552,653,537,641,525,634,512,628,487,622,462,616,450,605,439,579,425"/>
-<area shape="rect" id="Node000011" href="$db/d81/classVegetative.html#ac92c41674f765f7850b029a289c587aa" title="Returns the identifier for the Vegetative state." alt="" coords="701,597,836,623"/>
-<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="582,419,608,435,624,453,631,472,633,511,635,548,642,566,656,583,672,593,689,601,687,606,669,598,653,587,638,568,630,549,628,511,626,474,619,456,605,439,579,423"/>
-<area shape="rect" id="Node000012" href="$d4/dad/classAlternatingSun.html#a0b2a72d22483109cd9d21eb11b5f6a77" title="Gets the unique identifier for the AlternatingSun strategy." alt="" coords="688,5,849,31"/>
-<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="579,403,593,395,605,385,621,364,632,343,638,322,640,301,637,258,627,215,618,171,615,128,617,106,624,84,636,62,653,40,674,25,677,29,657,44,640,65,629,86,623,107,620,128,623,170,633,213,642,257,646,301,643,323,637,345,625,367,609,389,596,400,581,407"/>
-<area shape="rect" id="Node000013" href="$d6/df2/classAlternatingWater.html#a29cda914abc61d0db88c872db673a62e" title="Gets the unique identifier for the AlternatingWater strategy." alt="" coords="681,55,856,80"/>
-<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="579,402,605,385,619,367,628,349,637,313,635,276,627,239,620,202,618,164,627,127,638,108,653,89,667,78,671,82,657,93,642,111,632,129,624,165,626,201,633,238,640,276,642,314,633,351,623,370,608,389,582,407"/>
-<area shape="rect" id="Node000014" href="$d7/d2d/classHighSun.html#a602a35623820dfc3cfd118bf18023d58" title="Gets the unique identifier for the HighSun strategy." alt="" coords="709,104,828,129"/>
-<area shape="poly" id="edge13_Node000006_Node000014" title=" " alt="" coords="579,402,605,385,625,356,633,326,632,295,628,264,623,233,622,201,631,170,653,139,672,125,695,117,697,122,675,130,657,143,636,172,628,202,628,232,633,263,638,294,638,326,630,358,609,389,582,407"/>
-<area shape="rect" id="Node000015" href="$d9/d86/classHighWater.html#a23c9ce28639f0c7e57049542217edfd2" title="Gets the unique identifier for the HighWater strategy." alt="" coords="702,153,835,179"/>
-<area shape="poly" id="edge14_Node000006_Node000015" title=" " alt="" coords="579,402,605,385,622,362,629,338,630,313,628,289,625,263,626,238,634,213,653,188,669,176,687,168,690,173,672,181,657,192,639,215,631,239,630,263,633,288,635,313,635,339,627,364,608,389,582,406"/>
-<area shape="rect" id="Node000016" href="$d8/d6c/classLowSun.html#a76b4d46e42dd8d174b39a2d331992c0d" title="Gets the unique identifier for the LowSun strategy." alt="" coords="711,203,826,228"/>
-<area shape="poly" id="edge15_Node000006_Node000016" title=" " alt="" coords="579,401,605,385,619,368,626,350,628,313,630,275,638,256,653,237,674,224,697,216,699,221,676,229,656,241,642,258,635,276,633,313,631,351,623,371,608,389,582,405"/>
-<area shape="rect" id="Node000017" href="$d1/de3/classLowWater.html#a249b7e03f5e7ecbaea2581b232b78727" title="Gets the unique identifier for the LowWater strategy." alt="" coords="704,252,833,277"/>
-<area shape="poly" id="edge16_Node000006_Node000017" title=" " alt="" coords="579,400,605,385,616,374,622,362,628,337,634,311,641,299,653,287,671,276,690,269,692,274,673,281,656,291,645,302,639,313,633,338,627,364,620,377,608,389,581,404"/>
-<area shape="rect" id="Node000018" href="$d8/d6d/classMidSun.html#a16f4d6db6f6ab1cc5fd96c1ad1dc5b4a" title="Gets the unique identifier for the MidSun strategy." alt="" coords="712,301,825,327"/>
-<area shape="poly" id="edge17_Node000006_Node000018" title=" " alt="" coords="576,397,605,385,620,373,628,361,638,348,653,336,698,319,700,324,656,340,642,352,633,364,624,377,608,390,578,402"/>
-<area shape="rect" id="Node000019" href="$dd/df9/classMidWater.html#a8630fc254c3889716599c148d4ab7819" title="Gets the unique identifier for the MidWater strategy." alt="" coords="705,351,832,376"/>
-<area shape="poly" id="edge18_Node000006_Node000019" title=" " alt="" coords="572,397,691,375,692,380,573,403"/>
-<area shape="rect" id="Node000021" href="$d7/d79/classLivingPlant.html#a5ba12006e38fbccef26bebbb1dde201a" title="Gets the age of the plant in months." alt="" coords="429,499,577,524"/>
-<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="331,509,416,509,416,514,331,514"/>
-<area shape="rect" id="Node000022" href="$d7/d79/classLivingPlant.html#a703410ce8d50f0c7a40fa1f610513ba4" title="Gets plant health as an Integer." alt="" coords="420,449,587,475"/>
-<area shape="poly" id="edge21_Node000020_Node000022" title=" " alt="" coords="315,496,423,475,424,480,316,501"/>
-<area shape="rect" id="Node000023" href="$d7/d79/classLivingPlant.html#a2e9a76e718a090b286ff141b108071a4" title="Gets plant name as a formatted string." alt="" coords="422,597,585,623"/>
-<area shape="poly" id="edge22_Node000020_Node000023" title=" " alt="" coords="327,522,353,533,369,545,378,558,387,571,401,582,418,590,415,595,399,587,383,574,374,561,365,549,351,538,325,527"/>
-<area shape="rect" id="Node000024" href="$d1/d99/classFlyweight.html#a00ae12c029b8c4e184bcbe49a7389228" title="Gets the shared state data." alt="" coords="694,696,843,721"/>
-<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="582,620,608,632,624,644,633,657,642,670,656,681,681,692,679,697,653,686,638,673,628,660,620,648,605,636,580,625"/>
-<area shape="poly" id="edge25_Node000025_Node000023" title=" " alt="" coords="326,607,408,607,408,613,326,613"/>
-<area shape="rect" id="Node000026" href="$d7/d79/classLivingPlant.html#abb5e79a270fee9f831b3cd5970c4b606" title="Gets plant sunExposure as an Integer." alt="" coords="400,647,607,672"/>
-<area shape="poly" id="edge26_Node000025_Node000026" title=" " alt="" coords="316,620,424,641,423,647,315,625"/>
-<area shape="rect" id="Node000027" href="$d7/d79/classLivingPlant.html#a5987e8682dbf78888e94b65e72c968e3" title="Sets the plant component to be outside. (Calls Sun Strategy)" alt="" coords="417,548,589,573"/>
-<area shape="poly" id="edge27_Node000025_Node000027" title=" " alt="" coords="315,595,423,573,424,579,316,600"/>
-<area shape="poly" id="edge29_Node000027_Node000024" title=" " alt="" coords="589,571,608,583,620,595,627,608,633,633,639,658,645,670,656,681,682,695,680,700,653,685,641,673,634,660,628,635,622,610,616,598,605,587,586,576"/>
-<area shape="rect" id="Node000028" href="$d6/d99/classSunStrategy.html#ab78e2922e453d8758dcac433749511d0" title="Applies sunlight exposure to the plant." alt="" coords="691,647,847,672"/>
-<area shape="poly" id="edge28_Node000027_Node000028" title=" " alt="" coords="582,571,608,582,624,595,633,608,642,620,656,632,679,642,677,647,653,636,638,624,628,611,620,598,605,587,580,576"/>
-<area shape="poly" id="edge31_Node000029_Node000023" title=" " alt="" coords="301,656,399,631,434,623,435,628,401,637,302,661"/>
-<area shape="rect" id="Node000030" href="$d7/d79/classLivingPlant.html#aa8bbfb196f1db94e26c352b0a0300649" title="Gets plant waterLevel as an Integer." alt="" coords="405,696,601,721"/>
-<area shape="poly" id="edge32_Node000029_Node000030" title=" " alt="" coords="334,681,404,691,403,697,333,686"/>
-<area shape="rect" id="Node000031" href="$d7/d79/classLivingPlant.html#afe21412a7437304b15bb6a85cb7c4ebe" title="Waters the plant component." alt="" coords="434,745,573,771"/>
-<area shape="poly" id="edge33_Node000029_Node000031" title=" " alt="" coords="280,682,335,706,401,730,432,739,430,744,399,735,333,711,278,687"/>
-<area shape="poly" id="edge34_Node000031_Node000024" title=" " alt="" coords="572,743,686,721,687,727,573,748"/>
-<area shape="rect" id="Node000032" href="$d7/da1/classWaterStrategy.html#ac0cde499993bca47adaf1fd4d905b3be" title="Executes the watering algorithm on the specified plant." alt="" coords="689,745,848,771"/>
-<area shape="poly" id="edge35_Node000031_Node000032" title=" " alt="" coords="573,755,675,755,675,761,573,761"/>
-<area shape="rect" id="Node000034" href="$d7/d79/classLivingPlant.html#a78c890f138b7bb7d3a9a016ac5c37c84" title="Gets the sunlight affection value." alt="" coords="430,844,577,869"/>
-<area shape="poly" id="edge37_Node000033_Node000034" title=" " alt="" coords="346,846,416,849,416,855,345,851"/>
-<area shape="rect" id="Node000035" href="$d7/d79/classLivingPlant.html#af2bfad7970b0b09bd6c1f446fa90bc3e" title="Gets the sunlight affection value including decorator modifications." alt="" coords="673,795,865,820"/>
-<area shape="poly" id="edge38_Node000034_Node000035" title=" " alt="" coords="572,841,686,820,687,825,573,847"/>
-<area shape="rect" id="Node000036" href="$df/deb/classPlantComponent.html#a8ee78f7d4dd73734bdd0845108df5cb3" title="Gets the sunlight affection value for this component." alt="" coords="655,844,883,869"/>
-<area shape="poly" id="edge39_Node000034_Node000036" title=" " alt="" coords="577,854,641,854,641,859,577,859"/>
-<area shape="rect" id="Node000037" href="$d7/d79/classLivingPlant.html#a86366933b4230d412e0e44cdd37e632a" title="Gets the water affection value including decorator modifications." alt="" coords="680,893,857,919"/>
-<area shape="poly" id="edge40_Node000034_Node000037" title=" " alt="" coords="573,867,687,888,686,893,572,872"/>
-<area shape="rect" id="Node000038" href="$df/deb/classPlantComponent.html#a02841ed37fd071a840bfca29a058cca0" title="Gets the water affection value for this component." alt="" coords="662,943,875,968"/>
-<area shape="poly" id="edge41_Node000034_Node000038" title=" " alt="" coords="528,867,584,898,656,929,682,937,680,942,654,934,582,903,525,872"/>
-<area shape="poly" id="edge43_Node000039_Node000003" title=" " alt="" coords="291,330,321,321,350,305,366,289,373,272,382,254,398,237,426,224,455,216,457,222,428,229,402,242,386,257,378,274,370,292,354,309,323,326,292,335"/>
-<area shape="rect" id="Node000040" href="$da/d33/classIterator.html#abe739c884dd94439dd4b2ff777b2eb8d" title="Returns the current plant element." alt="" coords="426,252,581,277"/>
-<area shape="poly" id="edge44_Node000039_Node000040" title=" " alt="" coords="291,325,351,305,399,286,428,278,429,283,401,291,353,310,293,330"/>
-<area shape="rect" id="Node000041" href="$da/d33/classIterator.html#aad56ef26673ea3c74b7ac964f24b8ef5" title="Positions the iterator at the first element." alt="" coords="452,301,555,327"/>
-<area shape="poly" id="edge45_Node000039_Node000041" title=" " alt="" coords="291,333,438,318,438,323,292,338"/>
-<area shape="rect" id="Node000042" href="$da/d33/classIterator.html#ac639e96c519e2e78cff17bee372ad750" title="Advances the iterator to the next element." alt="" coords="450,351,557,376"/>
-<area shape="poly" id="edge46_Node000039_Node000042" title=" " alt="" coords="292,341,436,354,436,360,291,346"/>
-<area shape="poly" id="edge48_Node000043_Node000027" title=" " alt="" coords="352,558,404,558,404,563,352,563"/>
-<area shape="poly" id="edge50_Node000044_Node000031" title=" " alt="" coords="345,747,420,751,420,756,345,752"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,363,100,388"/>
+<area shape="rect" id="Node000002" href="$d0/de9/classPlantGroup.html#a8507dfd03dd58768caf68678a6fd63fa" title="Attaches an observer to receive notifications from this group." alt="" coords="173,37,316,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,362,55,310,69,235,81,194,97,153,119,114,146,80,164,66,167,71,150,84,123,117,102,155,86,196,74,236,61,311,57,362"/>
+<area shape="rect" id="Node000003" href="$d4/d2f/unitTests_8cpp.html#a331dcaa5c58dd0e02be020d452d13730" title=" " alt="" coords="455,5,521,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="52,362,58,317,73,253,85,218,101,184,121,152,146,124,171,106,194,95,239,89,286,87,312,82,340,72,364,56,388,40,440,23,442,28,390,44,367,60,343,76,313,87,287,92,239,94,195,100,173,110,150,128,125,155,105,186,90,220,78,254,63,318,58,363"/>
+<area shape="rect" id="Node000004" href="$d0/de9/classPlantGroup.html#a504ce53b355f5504552b921fc68318e3" title=" " alt="" coords="157,217,332,243"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="67,360,146,296,212,248,215,252,150,300,71,364"/>
+<area shape="rect" id="Node000006" href="$d0/de9/classPlantGroup.html#a51294c3168d96e3abd491f68966beed4" title=" " alt="" coords="148,363,341,388"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="100,373,134,373,134,378,100,378"/>
+<area shape="rect" id="Node000009" href="$d0/de9/classPlantGroup.html#a52aa0a6c87a0a144287ab192a4ee4729" title=" " alt="" coords="155,515,334,540"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="62,387,94,442,119,473,150,500,162,507,160,512,146,504,115,477,90,445,58,390"/>
+<area shape="rect" id="Node000011" href="$d0/de9/classPlantGroup.html#a7e5975240d89ce62058821654784fc97" title="Detaches an observer from this group." alt="" coords="171,564,318,589"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="60,387,70,420,87,464,114,510,130,531,150,549,160,556,157,561,146,553,127,535,109,513,82,467,65,422,55,389"/>
+<area shape="rect" id="Node000012" href="$dd/d7a/classInventory.html#a6214bbce5f65c3c4b50f3703c3374364" title="Gets the singleton instance." alt="" coords="161,687,328,712"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="60,388,91,479,117,540,150,599,184,641,219,676,216,679,180,645,146,602,112,543,86,481,55,389"/>
+<area shape="rect" id="Node000027" href="$dd/df7/classStaff.html#a0b9ca7cef23bd0b207445dc8ead51828" title="Receives notification that a plant&#39;s state has been updated." alt="" coords="163,416,326,441"/>
+<area shape="poly" id="edge27_Node000001_Node000027" title=" " alt="" coords="100,386,186,410,185,415,99,391"/>
+<area shape="rect" id="Node000036" href="$dd/df7/classStaff.html#a126fc226ce827f0df58b320fa157812d" title="Receives notification that a plant needs sunlight." alt="" coords="169,311,321,336"/>
+<area shape="poly" id="edge37_Node000001_Node000036" title=" " alt="" coords="100,360,183,337,184,342,101,365"/>
+<area shape="rect" id="Node000039" href="$dd/df7/classStaff.html#afd0235accb5167625af919c9bff694a2" title="Receives notification that a plant needs water." alt="" coords="161,465,328,491"/>
+<area shape="poly" id="edge43_Node000001_Node000039" title=" " alt="" coords="68,386,103,418,149,450,168,458,166,463,147,455,99,423,64,390"/>
+<area shape="rect" id="Node000042" href="$d4/d2f/unitTests_8cpp.html#ad089a3b764570c6f265386ca62f40c6e" title=" " alt="" coords="203,139,286,164"/>
+<area shape="poly" id="edge49_Node000001_Node000042" title=" " alt="" coords="56,361,87,289,113,244,146,203,171,183,197,168,200,172,174,187,150,207,117,247,92,291,61,363"/>
+<area shape="rect" id="Node000005" href="$d0/de9/classPlantGroup.html#ac0c0c63833ca21922ec2a8aaf748ee98" title="Notifies observers that a plant&#39;s state has been updated." alt="" coords="393,203,583,228"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="332,222,379,219,379,225,332,227"/>
+<area shape="rect" id="Node000007" href="$d7/d79/classLivingPlant.html#ae652f0e6aa20e1962245e81c67f81b66" title=" " alt="" coords="400,302,576,342"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="303,360,386,342,387,347,304,365"/>
+<area shape="rect" id="Node000008" href="$d0/de9/classPlantGroup.html#a861214e9019990d74a62245e19a0195b" title="Notifies observers that plants in this group need water." alt="" coords="393,515,583,540"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="317,386,343,401,355,414,362,427,368,452,374,477,380,489,391,500,400,506,397,510,388,504,376,492,369,479,363,453,357,429,350,417,340,405,314,390"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="334,525,379,525,379,530,334,530"/>
+<area shape="rect" id="Node000010" href="$d7/d79/classLivingPlant.html#a650dcd7f89600d96e5cc8371fc721653" title=" " alt="" coords="389,663,587,688"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="324,538,343,549,355,562,362,574,368,600,374,625,380,637,391,648,400,654,397,658,388,652,376,640,369,627,363,601,357,576,351,565,340,553,321,542"/>
+<area shape="rect" id="Node000013" href="$dd/d7a/classInventory.html#a10485613fc8bfb32ee564d9b5110f8fb" title="Private constructor to prevent direct instantiation." alt="" coords="411,875,565,900"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="264,710,461,864,457,868,261,714"/>
+<area shape="rect" id="Node000014" href="$d5/d2c/classFlyweightFactory.html#a7abec75c45177edeed4e8c94f0f48e1f" title="Gets or creates a flyweight for the given identifier." alt="" coords="636,851,861,876"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="565,878,622,872,622,878,565,883"/>
+<area shape="rect" id="Node000015" href="$dc/ddc/classDead.html#abcdb9719d65bb5652d1a95719236673a" title="Returns the identifier for the Dead state." alt="" coords="699,900,798,925"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="565,892,686,904,686,909,565,897"/>
+<area shape="rect" id="Node000016" href="$da/dc8/classMature.html#a8e9fd3e33549edd0a91f188635f77339" title="Returns the identifier for the Mature state." alt="" coords="693,949,804,975"/>
+<area shape="poly" id="edge16_Node000013_Node000016" title=" " alt="" coords="523,898,635,935,680,946,679,952,634,941,522,903"/>
+<area shape="rect" id="Node000017" href="$db/d19/classSeed.html#a9abc859b004490c9086455651fe07c89" title="Returns the identifier for the Seed state." alt="" coords="700,999,797,1024"/>
+<area shape="poly" id="edge17_Node000013_Node000017" title=" " alt="" coords="505,898,560,941,597,965,636,985,687,1000,685,1005,634,990,594,970,557,946,502,902"/>
+<area shape="rect" id="Node000018" href="$db/d81/classVegetative.html#ac92c41674f765f7850b029a289c587aa" title="Returns the identifier for the Vegetative state." alt="" coords="681,1048,816,1073"/>
+<area shape="poly" id="edge18_Node000013_Node000018" title=" " alt="" coords="500,899,552,964,591,1003,636,1034,669,1048,667,1052,633,1039,588,1007,548,968,496,902"/>
+<area shape="rect" id="Node000019" href="$d4/dad/classAlternatingSun.html#a0b2a72d22483109cd9d21eb11b5f6a77" title="Gets the unique identifier for the AlternatingSun strategy." alt="" coords="668,1097,829,1123"/>
+<area shape="poly" id="edge19_Node000013_Node000019" title=" " alt="" coords="497,899,515,936,545,987,585,1040,610,1064,636,1084,656,1094,653,1099,633,1088,606,1068,581,1043,540,990,510,939,492,901"/>
+<area shape="rect" id="Node000020" href="$d6/df2/classAlternatingWater.html#a29cda914abc61d0db88c872db673a62e" title="Gets the unique identifier for the AlternatingWater strategy." alt="" coords="661,1147,836,1172"/>
+<area shape="poly" id="edge20_Node000013_Node000020" title=" " alt="" coords="495,899,510,945,538,1009,580,1076,606,1107,636,1133,650,1141,647,1146,633,1137,602,1111,575,1080,533,1011,505,946,490,901"/>
+<area shape="rect" id="Node000021" href="$d7/d2d/classHighSun.html#a602a35623820dfc3cfd118bf18023d58" title="Gets the unique identifier for the HighSun strategy." alt="" coords="689,1196,808,1221"/>
+<area shape="poly" id="edge21_Node000013_Node000021" title=" " alt="" coords="494,900,506,953,532,1031,551,1072,574,1113,603,1151,636,1183,655,1194,677,1201,675,1206,653,1199,633,1187,599,1154,570,1116,546,1075,527,1032,501,955,489,901"/>
+<area shape="rect" id="Node000022" href="$d9/d86/classHighWater.html#a23c9ce28639f0c7e57049542217edfd2" title="Gets the unique identifier for the HighWater strategy." alt="" coords="682,604,815,629"/>
+<area shape="poly" id="edge22_Node000013_Node000022" title=" " alt="" coords="493,873,554,750,595,682,615,656,633,638,667,622,670,627,636,643,619,660,600,685,559,753,498,875"/>
+<area shape="rect" id="Node000023" href="$d8/d6c/classLowSun.html#a76b4d46e42dd8d174b39a2d331992c0d" title="Gets the unique identifier for the LowSun strategy." alt="" coords="691,653,806,679"/>
+<area shape="poly" id="edge23_Node000013_Node000023" title=" " alt="" coords="493,873,511,836,541,785,582,732,606,708,633,688,654,677,677,670,679,675,656,682,636,692,610,712,586,736,545,788,515,838,497,875"/>
+<area shape="rect" id="Node000024" href="$d1/de3/classLowWater.html#a249b7e03f5e7ecbaea2581b232b78727" title="Gets the unique identifier for the LowWater strategy." alt="" coords="684,703,813,728"/>
+<area shape="poly" id="edge24_Node000013_Node000024" title=" " alt="" coords="496,873,548,807,588,769,633,737,670,723,672,728,636,742,591,773,552,811,500,876"/>
+<area shape="rect" id="Node000025" href="$d8/d6d/classMidSun.html#a16f4d6db6f6ab1cc5fd96c1ad1dc5b4a" title="Gets the unique identifier for the MidSun strategy." alt="" coords="692,752,805,777"/>
+<area shape="poly" id="edge25_Node000013_Node000025" title=" " alt="" coords="502,872,557,830,594,806,634,786,677,772,679,778,636,791,597,811,560,834,506,877"/>
+<area shape="rect" id="Node000026" href="$dd/df9/classMidWater.html#a8630fc254c3889716599c148d4ab7819" title="Gets the unique identifier for the MidWater strategy." alt="" coords="685,801,812,827"/>
+<area shape="poly" id="edge26_Node000013_Node000026" title=" " alt="" coords="522,872,634,835,671,826,672,831,635,841,524,877"/>
+<area shape="rect" id="Node000028" href="$d7/d79/classLivingPlant.html#a243c56b07cce6b0629f84886b3ab6232" title="Virtual destructor for proper cleanup of derived classes." alt="" coords="395,564,581,589"/>
+<area shape="poly" id="edge28_Node000027_Node000028" title=" " alt="" coords="324,439,343,451,355,463,362,476,368,501,374,526,380,538,391,549,400,555,397,560,388,553,376,541,369,528,363,503,357,478,351,466,340,455,321,444"/>
+<area shape="rect" id="Node000029" href="$d7/d79/classLivingPlant.html#aad32e7111286bba18acf8c377b325215" title="Gets plant information as a string." alt="" coords="414,367,562,392"/>
+<area shape="poly" id="edge29_Node000027_Node000029" title=" " alt="" coords="307,413,411,392,412,397,309,419"/>
+<area shape="rect" id="Node000034" href="$df/deb/classPlantComponent.html#a76e55243e65b24d0f5c230937f66a538" title="Gets plant information as a string." alt="" coords="396,465,580,491"/>
+<area shape="poly" id="edge34_Node000027_Node000034" title=" " alt="" coords="309,439,412,460,411,465,307,444"/>
+<area shape="rect" id="Node000035" href="$d7/d79/classLivingPlant.html#a2e9a76e718a090b286ff141b108071a4" title="Gets plant name as a formatted string." alt="" coords="407,416,569,441"/>
+<area shape="poly" id="edge35_Node000027_Node000035" title=" " alt="" coords="326,426,393,426,393,431,326,431"/>
+<area shape="rect" id="Node000030" href="$df/deb/classPlantComponent.html#a8ee78f7d4dd73734bdd0845108df5cb3" title="Gets the sunlight affection value for this component." alt="" coords="635,333,863,359"/>
+<area shape="poly" id="edge30_Node000029_Node000030" title=" " alt="" coords="562,367,635,358,636,363,563,373"/>
+<area shape="rect" id="Node000031" href="$df/deb/classPlantComponent.html#a02841ed37fd071a840bfca29a058cca0" title="Gets the water affection value for this component." alt="" coords="642,383,855,408"/>
+<area shape="poly" id="edge31_Node000029_Node000031" title=" " alt="" coords="562,381,628,385,628,391,562,387"/>
+<area shape="rect" id="Node000032" href="$df/deb/classPlantComponent.html#aa00a43fd42ec539fa367c1e3f7c7ef14" title="Gets the price of this plant component." alt="" coords="653,284,844,309"/>
+<area shape="poly" id="edge32_Node000029_Node000032" title=" " alt="" coords="551,364,585,352,609,335,633,318,654,311,656,316,636,323,612,339,588,356,553,369"/>
+<area shape="rect" id="Node000033" href="$d1/d99/classFlyweight.html#a00ae12c029b8c4e184bcbe49a7389228" title="Gets the shared state data." alt="" coords="674,432,823,457"/>
+<area shape="poly" id="edge33_Node000029_Node000033" title=" " alt="" coords="545,389,587,401,635,417,673,426,672,432,634,422,586,406,543,395"/>
+<area shape="poly" id="edge36_Node000035_Node000033" title=" " alt="" coords="570,431,660,437,660,442,569,436"/>
+<area shape="poly" id="edge39_Node000036_Node000007" title=" " alt="" coords="321,320,386,320,386,325,321,326"/>
+<area shape="poly" id="edge38_Node000036_Node000035" title=" " alt="" coords="312,334,343,348,358,361,368,375,376,389,391,401,406,409,403,413,388,406,372,392,363,378,354,365,340,352,310,338"/>
+<area shape="rect" id="Node000037" href="$d7/d79/classLivingPlant.html#a5987e8682dbf78888e94b65e72c968e3" title="Sets the plant component to be outside. (Calls Sun Strategy)" alt="" coords="402,252,574,277"/>
+<area shape="poly" id="edge40_Node000036_Node000037" title=" " alt="" coords="298,308,421,278,422,283,299,313"/>
+<area shape="poly" id="edge42_Node000037_Node000033" title=" " alt="" coords="569,275,588,288,602,304,609,321,613,355,617,387,623,402,636,417,662,432,659,437,633,421,619,405,612,389,608,355,604,323,598,307,585,292,566,280"/>
+<area shape="rect" id="Node000038" href="$d6/d99/classSunStrategy.html#ab78e2922e453d8758dcac433749511d0" title="Applies sunlight exposure to the plant." alt="" coords="671,235,827,260"/>
+<area shape="poly" id="edge41_Node000037_Node000038" title=" " alt="" coords="574,256,657,251,657,256,574,262"/>
+<area shape="poly" id="edge45_Node000039_Node000010" title=" " alt="" coords="326,489,343,500,358,519,366,538,368,576,370,613,377,631,391,648,398,654,395,658,387,652,373,633,365,614,363,576,360,539,354,521,340,504,323,493"/>
+<area shape="poly" id="edge44_Node000039_Node000035" title=" " alt="" coords="307,463,411,442,412,447,309,468"/>
+<area shape="rect" id="Node000040" href="$d7/d79/classLivingPlant.html#afe21412a7437304b15bb6a85cb7c4ebe" title="Waters the plant component." alt="" coords="419,613,557,639"/>
+<area shape="poly" id="edge46_Node000039_Node000040" title=" " alt="" coords="324,489,343,500,355,512,362,525,368,551,374,576,380,587,391,599,407,609,405,613,388,603,376,590,369,577,363,552,357,527,351,515,340,504,321,493"/>
+<area shape="poly" id="edge47_Node000040_Node000033" title=" " alt="" coords="556,612,585,598,601,585,610,572,619,557,633,540,677,498,719,464,722,468,681,502,637,544,623,560,615,575,605,589,588,603,559,617"/>
+<area shape="rect" id="Node000041" href="$d7/da1/classWaterStrategy.html#ac0cde499993bca47adaf1fd4d905b3be" title="Executes the watering algorithm on the specified plant." alt="" coords="669,555,828,580"/>
+<area shape="poly" id="edge48_Node000040_Node000041" title=" " alt="" coords="541,611,634,589,673,580,674,585,635,594,542,616"/>
+<area shape="poly" id="edge50_Node000042_Node000003" title=" " alt="" coords="285,142,314,132,340,117,355,99,362,79,370,59,388,40,413,27,440,19,442,24,415,32,391,44,375,62,367,81,360,101,343,121,316,137,287,147"/>
+<area shape="rect" id="Node000043" href="$da/d33/classIterator.html#abe739c884dd94439dd4b2ff777b2eb8d" title="Returns the current plant element." alt="" coords="411,55,565,80"/>
+<area shape="poly" id="edge51_Node000042_Node000043" title=" " alt="" coords="285,137,340,117,364,103,388,89,410,81,411,86,390,94,367,107,342,122,287,142"/>
+<area shape="rect" id="Node000044" href="$da/d33/classIterator.html#aad56ef26673ea3c74b7ac964f24b8ef5" title="Positions the iterator at the first element." alt="" coords="437,104,539,129"/>
+<area shape="poly" id="edge52_Node000042_Node000044" title=" " alt="" coords="286,143,423,123,423,128,287,148"/>
+<area shape="rect" id="Node000045" href="$da/d33/classIterator.html#ac639e96c519e2e78cff17bee372ad750" title="Advances the iterator to the next element." alt="" coords="435,153,541,179"/>
+<area shape="poly" id="edge53_Node000042_Node000045" title=" " alt="" coords="286,151,421,159,421,165,286,156"/>
 </map>

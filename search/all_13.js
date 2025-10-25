@@ -9,7 +9,7 @@ var searchData=
   ['unittests_2ecpp_6',['unitTests.cpp',['../d4/d2f/unitTests_8cpp.html',1,'']]],
   ['update_7',['update',['../df/deb/classPlantComponent.html#a74c2b14a119d73b3611905cff2345eaa',1,'PlantComponent::update()'],['../d0/de9/classPlantGroup.html#a26a62a5f37a2a2a90a3be1740c031d87',1,'PlantGroup::update()'],['../dc/def/classPlantAttributes.html#ac02a5ec1ccc4e112242512e5ff71f106',1,'PlantAttributes::update()'],['../d7/d79/classLivingPlant.html#a78c890f138b7bb7d3a9a016ac5c37c84',1,'LivingPlant::update()']]],
   ['ured_8',['URED',['../d3/dfd/Ansi-color-codes_8h.html#aba3f692c7c1eaca01388c4f6abf2c32d',1,'Ansi-color-codes.h']]],
-  ['user_9',['user',['../d9/dc0/classUser.html#a4a0137053e591fbb79d9057dd7d2283d',1,'User::User()'],['../d9/dc0/classUser.html',1,'User']]],
+  ['user_9',['user',['../d9/dc0/classUser.html#af9e5f33114c8330be7b91276b7377e6d',1,'User::User(std::string name)'],['../d9/dc0/classUser.html#a4a0137053e591fbb79d9057dd7d2283d',1,'User::User()'],['../d9/dc0/classUser.html',1,'User']]],
   ['user_2eh_10',['User.h',['../d3/d30/User_8h.html',1,'']]],
   ['uwht_11',['UWHT',['../d3/dfd/Ansi-color-codes_8h.html#a17f899635892fd90fed3c4fdc18ff9c5',1,'Ansi-color-codes.h']]],
   ['uyel_12',['UYEL',['../d3/dfd/Ansi-color-codes_8h.html#a724077571b3286c4f8ca7e659ed13253',1,'Ansi-color-codes.h']]]

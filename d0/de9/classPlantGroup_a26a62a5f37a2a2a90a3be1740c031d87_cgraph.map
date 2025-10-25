@@ -1,0 +1,5 @@
+<map id="PlantGroup::update" name="PlantGroup::update">
+<area shape="rect" id="Node000001" title="Subtracts waterAffect and sunAffect from waterLevel and sunExposure." alt="" coords="5,5,152,31"/>
+<area shape="rect" id="Node000002" href="$d0/de9/classPlantGroup.html#a861214e9019990d74a62245e19a0195b" title="Notifies observers that plants in this group need water." alt="" coords="200,5,389,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,15,186,15,186,21,152,21"/>
+</map>
