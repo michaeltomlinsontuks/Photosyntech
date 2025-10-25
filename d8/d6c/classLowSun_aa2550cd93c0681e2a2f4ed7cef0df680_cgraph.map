@@ -1,7 +1,0 @@
-<map id="LowSun::addSun" name="LowSun::addSun">
-<area shape="rect" id="Node000001" title="Applies low&#45;level sunlight exposure to the plant." alt="" coords="5,31,133,56"/>
-<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html#abb5e79a270fee9f831b3cd5970c4b606" title="Gets plant sunExposure as an Integer." alt="" coords="181,5,388,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,33,168,29,168,34,134,38"/>
-<area shape="rect" id="Node000003" href="$d7/d79/classLivingPlant.html#a1fa5803871a780580c5c7233dd2124a1" title="Sets the sunExposure for this plant." alt="" coords="181,55,388,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,48,168,52,168,57,134,53"/>
-</map>

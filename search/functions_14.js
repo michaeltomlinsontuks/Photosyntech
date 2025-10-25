@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['water_0',['water',['../df/deb/classPlantComponent.html#abaaf6f115c94a56f28aa2671fb0768bf',1,'PlantComponent::water()'],['../d0/de9/classPlantGroup.html#a20d4f9797870a6bcd09fc448daf137eb',1,'PlantGroup::water()'],['../dc/def/classPlantAttributes.html#adc4bf141464d9c477965668c6ef52dbd',1,'PlantAttributes::water()'],['../d7/d79/classLivingPlant.html#afe21412a7437304b15bb6a85cb7c4ebe',1,'LivingPlant::water()'],['../d6/df2/classAlternatingWater.html#a24ca798b895390f5647e5bd116b0bc55',1,'AlternatingWater::water()'],['../d9/d86/classHighWater.html#ab90d1a361635d3965527946a4c3d21c8',1,'HighWater::water()'],['../d1/de3/classLowWater.html#a23c774b2660337657ac1c68a3fa6ed6c',1,'LowWater::water()'],['../dd/df9/classMidWater.html#ad5a62cf3035cd28eaedd4cf3491c427d',1,'MidWater::water()'],['../d7/da1/classWaterStrategy.html#ac0cde499993bca47adaf1fd4d905b3be',1,'WaterStrategy::water()']]],
-  ['waterneeded_1',['waterneeded',['../d0/de9/classPlantGroup.html#a861214e9019990d74a62245e19a0195b',1,'PlantGroup::waterNeeded()'],['../d4/d3f/classSubject.html#ab0d6b125b2c7f9f91325331253dfc0b2',1,'Subject::waterNeeded()']]],
-  ['waterplant_2',['waterPlant',['../d0/dcb/classNurseryFacade.html#a8b8a886147c69f0596b7a7c4accfc534',1,'NurseryFacade']]],
-  ['winter_3',['winter',['../d8/d6d/classWinter.html#a023ec904c7ba3033dae717598d6ef2ae',1,'Winter::Winter()'],['../d8/d6d/classWinter.html#adf91b00bf166fffc8d48a8e084bd757e',1,'Winter::Winter(const Winter &amp;other)']]]
-];

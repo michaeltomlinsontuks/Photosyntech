@@ -1,7 +1,0 @@
-<map id="composite/PlantComponent.h" name="composite/PlantComponent.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,220,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="46,79,105,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,32,90,68,85,65,104,30"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="129,79,171,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,30,140,65,135,68,116,32"/>
-</map>

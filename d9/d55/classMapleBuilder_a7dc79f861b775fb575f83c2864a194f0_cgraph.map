@@ -1,7 +1,0 @@
-<map id="MapleBuilder::getResult" name="MapleBuilder::getResult">
-<area shape="rect" id="Node000001" title="Returns the fully constructed Maple tree." alt="" coords="5,31,184,56"/>
-<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#afccd7a203a3854c7f356e6bde6b93cb8" title="Clones the plant component (Prototype pattern)." alt="" coords="239,5,412,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,31,225,26,225,32,184,36"/>
-<area shape="rect" id="Node000003" href="$d7/d79/classLivingPlant.html#a243c56b07cce6b0629f84886b3ab6232" title="Virtual destructor for proper cleanup of derived classes." alt="" coords="232,55,419,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,50,219,54,218,59,184,55"/>
-</map>

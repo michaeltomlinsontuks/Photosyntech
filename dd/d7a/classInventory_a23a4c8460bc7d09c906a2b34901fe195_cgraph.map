@@ -1,7 +1,0 @@
-<map id="Inventory::getWaterFly" name="Inventory::getWaterFly">
-<area shape="rect" id="Node000001" title="Gets a flyweight for a water strategy." alt="" coords="5,31,176,56"/>
-<area shape="rect" id="Node000002" href="$d5/d2c/classFlyweightFactory.html#a7abec75c45177edeed4e8c94f0f48e1f" title="Gets or creates a flyweight for the given identifier." alt="" coords="224,5,449,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,32,210,28,210,34,176,37"/>
-<area shape="rect" id="Node000003" href="$d1/de3/classLowWater.html#a249b7e03f5e7ecbaea2581b232b78727" title="Gets the unique identifier for the LowWater strategy." alt="" coords="272,55,401,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,49,259,57,258,62,176,54"/>
-</map>

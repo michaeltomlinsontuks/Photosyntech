@@ -1,7 +1,0 @@
-<map id="AlternatingSun::addSun" name="AlternatingSun::addSun">
-<area shape="rect" id="Node000001" title="Applies high&#45;level sunlight exposure to the plant." alt="" coords="5,31,180,56"/>
-<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html#abb5e79a270fee9f831b3cd5970c4b606" title="Gets plant sunExposure as an Integer." alt="" coords="228,5,435,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,31,214,28,214,33,180,37"/>
-<area shape="rect" id="Node000003" href="$d7/d79/classLivingPlant.html#a1fa5803871a780580c5c7233dd2124a1" title="Sets the sunExposure for this plant." alt="" coords="228,55,435,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,49,214,53,214,58,180,55"/>
-</map>

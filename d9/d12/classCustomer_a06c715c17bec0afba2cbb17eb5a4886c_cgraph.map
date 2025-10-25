@@ -1,5 +1,0 @@
-<map id="Customer::askForSuggestion" name="Customer::askForSuggestion">
-<area shape="rect" id="Node000001" title="Requests plant care suggestions from staff via the mediator." alt="" coords="5,5,213,31"/>
-<area shape="rect" id="Node000002" href="$df/dd5/classMediator.html#a1dec24c4b70fa3d865db3e086e5fbd05" title="Routes a customer&#39;s assistance request to available staff." alt="" coords="261,5,440,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,15,248,15,248,21,214,21"/>
-</map>

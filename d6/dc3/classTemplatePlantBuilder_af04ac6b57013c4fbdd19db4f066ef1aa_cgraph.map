@@ -1,5 +1,0 @@
-<map id="TemplatePlantBuilder::getResult" name="TemplatePlantBuilder::getResult">
-<area shape="rect" id="Node000001" title="Returns the fully constructed PlantComponent object." alt="" coords="5,5,167,45"/>
-<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html#a2399cbd35cec1ee64500a16ca7ff7442" title="Clones the plant creating a deep copy (Prototype pattern)." alt="" coords="215,13,352,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,23,201,23,201,28,167,28"/>
-</map>

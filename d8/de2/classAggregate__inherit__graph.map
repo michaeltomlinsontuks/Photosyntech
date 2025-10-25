@@ -1,7 +1,0 @@
-<map id="Aggregate" name="Aggregate">
-<area shape="rect" id="Node000001" title="Abstract aggregate interface for creating iterators." alt="" coords="57,5,146,31"/>
-<area shape="rect" id="Node000002" href="$dd/d60/classAggPlant.html" title="Concrete aggregate for creating unfiltered plant iterators." alt="" coords="5,79,85,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,43,56,80,52,77,81,40"/>
-<area shape="rect" id="Node000003" href="$dc/da4/classAggSeason.html" title="Generic concrete aggregate for creating season&#45;filtered plant iterators." alt="" coords="110,79,205,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,40,150,77,146,80,117,43"/>
-</map>

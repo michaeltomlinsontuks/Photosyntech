@@ -1,5 +1,0 @@
-<map id="PlantAttributes::update" name="PlantAttributes::update">
-<area shape="rect" id="Node000001" title="Subtracts waterAffect and sunAffect from waterLevel and sunExposure." alt="" coords="5,5,177,31"/>
-<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#a74c2b14a119d73b3611905cff2345eaa" title="Subtracts waterAffect and sunAffect from waterLevel and sunExposure." alt="" coords="225,5,408,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,15,212,15,212,21,177,21"/>
-</map>

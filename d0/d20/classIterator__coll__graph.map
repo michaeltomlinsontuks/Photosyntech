@@ -1,9 +1,0 @@
-<map id="Iterator" name="Iterator">
-<area shape="rect" id="Node000001" title=" " alt="" coords="79,269,150,295"/>
-<area shape="rect" id="Node000002" href="$d9/dea/classAggregate.html" title="Abstract aggregate interface for creating iterators." alt="" coords="70,181,159,207"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,221,117,269,112,269,112,221"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,93,224,119"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,133,117,181,112,181,112,133"/>
-<area shape="rect" id="Node000004" href="$df/deb/classPlantComponent.html" title="Abstract base class representing a plant component in the Composite pattern." alt="" coords="49,5,180,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="117,45,117,93,112,93,112,45"/>
-</map>

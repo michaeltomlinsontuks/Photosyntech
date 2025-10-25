@@ -1,5 +1,0 @@
-<map id="PlantAttributes::setOutside" name="PlantAttributes::setOutside">
-<area shape="rect" id="Node000001" title="Sets the plant component to be outside.(Calls Sun Strategy)" alt="" coords="5,5,203,31"/>
-<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#a40d4e4ef065167ac12aa85c4136bdb38" title="Sets the plant component to be outside.(Calls Sun Strategy)" alt="" coords="251,5,459,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,15,237,15,237,21,203,21"/>
-</map>

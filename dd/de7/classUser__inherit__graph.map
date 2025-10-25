@@ -1,7 +1,0 @@
-<map id="User" name="User">
-<area shape="rect" id="Node000001" title="Abstract base class for users in the Mediator pattern." alt="" coords="69,5,121,31"/>
-<area shape="rect" id="Node000002" href="$d9/d12/classCustomer.html" title="Concrete colleague representing a customer in the mediator pattern." alt="" coords="5,79,91,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,44,58,80,53,77,77,41"/>
-<area shape="rect" id="Node000003" href="$dd/df7/classStaff.html" title="Concrete colleague representing staff in the mediator and observer patterns." alt="" coords="115,79,167,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,41,136,77,132,80,108,44"/>
-</map>

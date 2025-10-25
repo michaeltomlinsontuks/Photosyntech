@@ -1,5 +1,0 @@
-<map id="LavenderBuilder" name="LavenderBuilder">
-<area shape="rect" id="Node000001" title="Concrete builder for Lavender plants." alt="" coords="5,79,133,104"/>
-<area shape="rect" id="Node000002" href="$d2/d59/classBuilder.html" title="Abstract builder interface for constructing complex PlantComponent objects." alt="" coords="35,5,103,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,44,72,79,67,79,67,44"/>
-</map>

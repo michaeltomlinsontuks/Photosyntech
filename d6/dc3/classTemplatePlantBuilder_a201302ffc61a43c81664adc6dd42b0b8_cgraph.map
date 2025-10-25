@@ -1,5 +1,0 @@
-<map id="TemplatePlantBuilder::~TemplatePlantBuilder" name="TemplatePlantBuilder::~TemplatePlantBuilder">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,185,45"/>
-<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html#a243c56b07cce6b0629f84886b3ab6232" title="Virtual destructor for proper cleanup of derived classes." alt="" coords="233,13,420,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,23,219,23,219,28,186,28"/>
-</map>

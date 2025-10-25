@@ -1,5 +1,0 @@
-<map id="JadePlantBuilder" name="JadePlantBuilder">
-<area shape="rect" id="Node000001" title="Concrete builder for Jade plants." alt="" coords="5,79,135,104"/>
-<area shape="rect" id="Node000002" href="$d2/d59/classBuilder.html" title="Abstract builder interface for constructing complex PlantComponent objects." alt="" coords="36,5,104,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,44,73,79,67,79,67,44"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="Shrub::clone" name="Shrub::clone">
-<area shape="rect" id="Node000001" title="Clones this shrub creating a deep copy." alt="" coords="5,5,108,31"/>
-<area shape="rect" id="Node000002" href="$d5/d99/classShrub.html#a89726b8d611b05ae3a59b528b003ae3d" title="Constructs a new Shrub with default characteristics." alt="" coords="156,5,260,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,15,142,15,142,21,108,21"/>
-</map>

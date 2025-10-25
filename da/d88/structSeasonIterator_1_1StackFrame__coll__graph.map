@@ -1,7 +1,0 @@
-<map id="SeasonIterator::StackFrame" name="SeasonIterator::StackFrame">
-<area shape="rect" id="Node000001" title="Stack frame for iterative tree traversal. Stores position in a single level of the plant hierarchy." alt="" coords="13,211,216,236"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,224,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,132,117,211,112,211,112,132"/>
-<area shape="rect" id="Node000003" href="$df/deb/classPlantComponent.html" title="Abstract base class representing a plant component in the Composite pattern." alt="" coords="49,5,180,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,45,117,93,112,93,112,45"/>
-</map>

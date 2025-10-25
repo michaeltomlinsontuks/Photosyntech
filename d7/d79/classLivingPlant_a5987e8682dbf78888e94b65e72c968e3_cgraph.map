@@ -1,7 +1,0 @@
-<map id="LivingPlant::setOutside" name="LivingPlant::setOutside">
-<area shape="rect" id="Node000001" title="Sets the plant component to be outside. (Calls Sun Strategy)" alt="" coords="5,31,177,56"/>
-<area shape="rect" id="Node000002" href="$d6/d99/classSunStrategy.html#ab78e2922e453d8758dcac433749511d0" title="Applies sunlight exposure to the plant." alt="" coords="225,5,381,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,30,211,26,212,32,178,36"/>
-<area shape="rect" id="Node000003" href="$d1/d99/classFlyweight.html#a00ae12c029b8c4e184bcbe49a7389228" title="Gets the shared state data." alt="" coords="229,55,378,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,50,215,55,214,60,178,56"/>
-</map>

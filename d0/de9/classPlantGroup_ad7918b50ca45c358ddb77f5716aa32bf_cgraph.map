@@ -1,5 +1,0 @@
-<map id="PlantGroup::~PlantGroup" name="PlantGroup::~PlantGroup">
-<area shape="rect" id="Node000001" title="Virtual destructor for proper cleanup." alt="" coords="5,5,191,31"/>
-<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html#a2a0cffa4617752b41faf3f465a26209f" title="Sets the decorator for builder purposes." alt="" coords="239,5,461,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,15,225,15,225,21,191,21"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="mediator/SuggestionFloor.h" name="mediator/SuggestionFloor.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="245,5,446,31"/>
-<area shape="rect" id="Node000002" href="$d9/d68/PhotosyntechDemoMain_8cpp.html" title=" " alt="" coords="5,79,213,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,37,148,81,147,76,294,32"/>
-<area shape="rect" id="Node000003" href="$db/d05/SuggestionFloor_8cpp.html" title=" " alt="" coords="237,79,453,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="348,44,348,79,343,79,343,44"/>
-<area shape="rect" id="Node000004" href="$d4/d2f/unitTests_8cpp.html" title=" " alt="" coords="477,79,584,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="389,33,501,76,499,81,387,38"/>
-</map>

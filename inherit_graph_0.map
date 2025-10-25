@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$d9/dea/classAggregate.html" title="Abstract aggregate interface for creating iterators." alt="" coords="5,31,95,56"/>
-<area shape="rect" id="Node000001" href="$dd/d60/classAggPlant.html" title="Concrete aggregate for creating unfiltered plant iterators." alt="" coords="150,5,230,31"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="107,30,149,23,150,28,108,36"/>
-<area shape="rect" id="Node000002" href="$dc/da4/classAggSeason.html" title="Generic concrete aggregate for creating season&#45;filtered plant iterators." alt="" coords="143,55,237,80"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="108,51,143,57,142,62,108,56"/>
-</map>

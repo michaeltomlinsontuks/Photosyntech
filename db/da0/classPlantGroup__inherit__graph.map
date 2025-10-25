@@ -1,7 +1,0 @@
-<map id="PlantGroup" name="PlantGroup">
-<area shape="rect" id="Node000001" title="Represents a group of plants in the Composite pattern." alt="" coords="86,79,181,104"/>
-<area shape="rect" id="Node000002" href="$df/deb/classPlantComponent.html" title="Abstract base class representing a plant component in the Composite pattern." alt="" coords="5,5,136,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,39,125,77,121,80,88,43"/>
-<area shape="rect" id="Node000003" href="$d4/d3f/classSubject.html" title="Abstract subject interface in the Observer pattern." alt="" coords="161,5,231,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,43,145,80,141,77,175,39"/>
-</map>

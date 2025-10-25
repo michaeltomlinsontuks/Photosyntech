@@ -1,5 +1,0 @@
-<map id="PlantGroup::clone" name="PlantGroup::clone">
-<area shape="rect" id="Node000001" title="Clones the plant group and all its contained plants." alt="" coords="5,5,143,31"/>
-<area shape="rect" id="Node000002" href="$d0/de9/classPlantGroup.html#a4da16f7b3b117dcbcce99d54baab3f31" title="Constructs a PlantGroup with 0 as attributes." alt="" coords="191,5,365,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,15,177,15,177,21,143,21"/>
-</map>

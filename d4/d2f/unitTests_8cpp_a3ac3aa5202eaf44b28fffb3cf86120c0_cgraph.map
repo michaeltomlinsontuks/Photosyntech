@@ -1,9 +1,0 @@
-<map id="countIteratorResults" name="countIteratorResults">
-<area shape="rect" id="Node000001" title="Counts the total number of plants returned by an iterator." alt="" coords="5,55,160,80"/>
-<area shape="rect" id="Node000002" href="$da/d33/classIterator.html#aad56ef26673ea3c74b7ac964f24b8ef5" title="Positions the iterator at the first element." alt="" coords="218,5,321,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,52,207,32,208,37,132,57"/>
-<area shape="rect" id="Node000003" href="$da/d33/classIterator.html#ac3f6409895d4701123a91ca528d61565" title="Checks if iteration is complete." alt="" coords="208,55,331,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,65,194,65,194,70,160,70"/>
-<area shape="rect" id="Node000004" href="$da/d33/classIterator.html#ac639e96c519e2e78cff17bee372ad750" title="Advances the iterator to the next element." alt="" coords="216,104,323,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="132,77,208,98,207,103,131,83"/>
-</map>

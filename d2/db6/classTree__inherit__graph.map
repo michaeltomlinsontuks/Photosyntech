@@ -1,7 +1,0 @@
-<map id="Tree" name="Tree">
-<area shape="rect" id="Node000001" title="Concrete prototype representing a Tree plant type." alt="" coords="46,152,95,177"/>
-<area shape="rect" id="Node000002" href="$d7/d79/classLivingPlant.html" title=" " alt="" coords="23,79,118,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,118,73,152,68,152,68,118"/>
-<area shape="rect" id="Node000003" href="$df/deb/classPlantComponent.html" title="Abstract base class representing a plant component in the Composite pattern." alt="" coords="5,5,136,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,44,73,79,68,79,68,44"/>
-</map>
