@@ -6,7 +6,7 @@ FlyweightFactory<ID, T>::FlyweightFactory()
 }
 
 template <class ID, class T>
-Flyweight<T> *FlyweightFactory<ID, T>::getFlyweight(ID id, T data)
+Flyweight<T> *FlyweightFactory<ID, T>::getFlyweight(ID id, T *data)
 {
 
     if (cache->find(id) != cache->end())

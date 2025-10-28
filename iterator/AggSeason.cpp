@@ -7,7 +7,7 @@ AggSeason::AggSeason(std::list<PlantComponent*>* plants, const std::string& seas
 	targetSeason = Inventory::getInstance()->getString(season);
 }
 
-AggSeason::AggSeason(std::list<PlantComponent*>* plants, Flyweight<std::string*>* season) : Aggregate(plants)
+AggSeason::AggSeason(std::list<PlantComponent*>* plants, Flyweight<std::string>* season) : Aggregate(plants)
 {
 	// Directly assign the Flyweight pointer
 	targetSeason = season;

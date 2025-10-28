@@ -42,7 +42,7 @@
 
 TEST_CASE("Overall Testing of flyweight strings + error handling")
 {
-    FlyweightFactory<int, string *> *fac = new FlyweightFactory<int, string *>();
+    FlyweightFactory<int, string > *fac = new FlyweightFactory<int, string>();
 
     SUBCASE("factory is created")
     {
@@ -75,7 +75,7 @@ TEST_CASE("Overall Testing of flyweight strings + error handling")
 }
 TEST_CASE("Overall Testing of flyweight water strategies")
 {
-    FlyweightFactory<int, WaterStrategy *> *fac = new FlyweightFactory<int, WaterStrategy *>();
+    FlyweightFactory<int, WaterStrategy > *fac = new FlyweightFactory<int, WaterStrategy >();
     LivingPlant *plant = new Tree();
     fac->getFlyweight(LowWater::getID(), new LowWater());
 
@@ -1748,8 +1748,8 @@ TEST_CASE("SeasonIterator - Flyweight pointer comparison")
 
     SUBCASE("Same season string yields same Flyweight pointer")
     {
-        Flyweight<std::string *> *season1 = inv->getString("Spring");
-        Flyweight<std::string *> *season2 = inv->getString("Spring");
+        Flyweight<string> *season1 = inv->getString("Spring");
+        Flyweight<string> *season2 = inv->getString("Spring");
 
         // Flyweight pattern ensures same pointer for same value
         CHECK(season1 == season2);
@@ -1757,8 +1757,8 @@ TEST_CASE("SeasonIterator - Flyweight pointer comparison")
 
     SUBCASE("Different season strings yield different Flyweight pointers")
     {
-        Flyweight<std::string *> *spring = inv->getString("Spring");
-        Flyweight<std::string *> *summer = inv->getString("Summer");
+        Flyweight<std::string > *spring = inv->getString("Spring");
+        Flyweight<std::string > *summer = inv->getString("Summer");
 
         CHECK(spring != summer);
     }
@@ -1791,7 +1791,7 @@ TEST_CASE("SeasonIterator - Flyweight pointer comparison")
         plantList.push_back(spring2);
 
         // Create iterator with Flyweight pointer
-        Flyweight<std::string *> *springFly = inv->getString("Spring");
+        Flyweight<string> *springFly = inv->getString("Spring");
         AggSeason *agg = new AggSeason(&plantList, springFly);
         Iterator *iter = agg->createIterator();
 
@@ -1824,7 +1824,7 @@ TEST_CASE("SeasonIterator - Flyweight memory efficiency")
         }
 
         // All should point to same Flyweight
-        Flyweight<std::string *> *firstSeason = plants[0]->getSeason();
+        Flyweight<string> *firstSeason = plants[0]->getSeason();
         for (int i = 1; i < 10; i++)
         {
             CHECK(plants[i]->getSeason() == firstSeason);

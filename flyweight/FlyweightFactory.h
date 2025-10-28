@@ -55,7 +55,7 @@ public:
 	 * @param id The identifier for the requested flyweight.
 	 * @return Pointer to the Flyweight instance (either cached or newly created).
 	 */
-	Flyweight<T> *getFlyweight(ID id, T data = NULL);
+	Flyweight<T> *getFlyweight(ID id, T *data = NULL);
 
 	/**
 	 * @brief Destructor that cleans up cached flyweights.

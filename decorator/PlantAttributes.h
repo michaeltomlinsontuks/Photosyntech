@@ -47,7 +47,7 @@ protected:
 	PlantComponent *nextComponent;
 
 	// Name of the attribute
-	Flyweight<std::string *> *name;
+	Flyweight<std::string > *name;
 
 public:
 	/**

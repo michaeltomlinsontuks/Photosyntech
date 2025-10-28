@@ -62,7 +62,7 @@ void LivingPlant::setWaterStrategy(int strategy)
 {
     Inventory *inv = Inventory::getInstance();
 
-    Flyweight<WaterStrategy *> *newStrategy = inv->getWaterFly(strategy);
+    Flyweight<WaterStrategy> *newStrategy = inv->getWaterFly(strategy);
 
     this->waterStrategy = newStrategy;
 };
@@ -71,7 +71,7 @@ void LivingPlant::setSunStrategy(int strategy)
 {
     Inventory *inv = Inventory::getInstance();
 
-    Flyweight<SunStrategy *> *newStrategy = inv->getSunFly(strategy);
+    Flyweight<SunStrategy > *newStrategy = inv->getSunFly(strategy);
 
     this->sunStrategy = newStrategy;
 };
@@ -80,12 +80,12 @@ void LivingPlant::setMaturity(int state)
 {
     Inventory *inv = Inventory::getInstance();
 
-    Flyweight<MaturityState *> *newState = inv->getStates(state);
+    Flyweight<MaturityState> *newState = inv->getStates(state);
 
     this->maturityState = newState;
 };
 
-void LivingPlant::setSeason(Flyweight<std::string *> *season)
+void LivingPlant::setSeason(Flyweight<std::string > *season)
 {
     this->season = season;
 }
@@ -148,7 +148,7 @@ std::string LivingPlant::getInfo()
     return stream.str();
 }
 
-Flyweight<std::string *> *LivingPlant::getSeason()
+Flyweight<std::string> *LivingPlant::getSeason()
 {
     return this->season;
 }

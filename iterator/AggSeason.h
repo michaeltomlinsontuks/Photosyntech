@@ -47,7 +47,7 @@ class AggSeason : public Aggregate
 		 * @brief The target season for filtering as a Flyweight pointer.
 		 * Shared across all instances filtering the same season for memory efficiency.
 		 */
-		Flyweight<std::string*>* targetSeason;
+		Flyweight<std::string>* targetSeason;
 
 	public:
 		/**
@@ -63,7 +63,7 @@ class AggSeason : public Aggregate
 		 * @param plants Pointer to the list of PlantComponents to manage.
 		 * @param season Flyweight pointer to the target season for filtering.
 		 */
-		AggSeason(std::list<PlantComponent*>* plants, Flyweight<std::string*>* season);
+		AggSeason(std::list<PlantComponent*>* plants, Flyweight<std::string>* season);
 
 		/**
 		 * @brief Creates a season-filtered iterator for this aggregate's plant collection.

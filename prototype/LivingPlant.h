@@ -59,7 +59,7 @@ protected:
 	/**
 	 * Name of the plant.
 	 */
-	Flyweight<std::string *> *name;
+	Flyweight<std::string > *name;
 
 	PlantComponent *decorator;
 	int age;
@@ -70,11 +70,11 @@ protected:
 	/**
 	 * Growing season for the plant.
 	 */
-	Flyweight<std::string *> *season;
+	Flyweight<std::string > *season;
 
-	Flyweight<MaturityState *> *maturityState;
-	Flyweight<WaterStrategy *> *waterStrategy;
-	Flyweight<SunStrategy *> *sunStrategy;
+	Flyweight<MaturityState > *maturityState;
+	Flyweight<WaterStrategy > *waterStrategy;
+	Flyweight<SunStrategy > *sunStrategy;
 
 public:
 	/**
@@ -112,7 +112,7 @@ public:
 	 * @brief Sets the waterLevel for this plant.
 	 * @param waterLevel Integer waterLevel for the new waterLevel of the plant.
 	 */
-	void setSeason(Flyweight<std::string *> *season);
+	void setSeason(Flyweight<std::string> *season);
 
 	/**
 	 * @brief Sets the season for this plant.
@@ -155,7 +155,7 @@ public:
 	 * @brief Gets the season of the plant.
 	 * @return Season of the plant.
 	 */
-	Flyweight<std::string *> *getSeason();
+	Flyweight<std::string > *getSeason();
 
 	/**
 	 * @brief Gets the component type (LIVING_PLANT).

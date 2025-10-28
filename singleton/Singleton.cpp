@@ -14,10 +14,10 @@ Inventory::Inventory()
     on.store(false);
     inventory = new PlantGroup();
 
-    stringFactory = new FlyweightFactory<string, string *>();
-    waterStrategies = new FlyweightFactory<int, WaterStrategy *>();
-    sunStrategies = new FlyweightFactory<int, SunStrategy *>();
-    states = new FlyweightFactory<int, MaturityState *>();
+    stringFactory = new FlyweightFactory<string, string >();
+    waterStrategies = new FlyweightFactory<int, WaterStrategy >();
+    sunStrategies = new FlyweightFactory<int, SunStrategy >();
+    states = new FlyweightFactory<int, MaturityState>();
     staffList = new vector<Staff *>();
     customerList = new vector<Customer *>();
 
@@ -84,17 +84,17 @@ Inventory *Inventory::getInstance()
     return instance;
 }
 
-Flyweight<std::string *> *Inventory::getString(std::string str)
+Flyweight<std::string > *Inventory::getString(std::string str)
 {
     string *flyweightData = new string(str);
-    Flyweight<std::string *> *fly = stringFactory->getFlyweight(*flyweightData, flyweightData);
+    Flyweight<std::string > *fly = stringFactory->getFlyweight(*flyweightData, flyweightData);
     if (fly->getState() != flyweightData)
     {
         delete flyweightData;
     }
     return fly;
 }
-Flyweight<WaterStrategy *> *Inventory::getWaterFly(int id)
+Flyweight<WaterStrategy> *Inventory::getWaterFly(int id)
 {
 
     try
@@ -107,7 +107,7 @@ Flyweight<WaterStrategy *> *Inventory::getWaterFly(int id)
         return waterStrategies->getFlyweight(LowWater::getID());
     }
 }
-Flyweight<MaturityState *> *Inventory::getStates(int id)
+Flyweight<MaturityState> *Inventory::getStates(int id)
 {
     try
     {
@@ -120,7 +120,7 @@ Flyweight<MaturityState *> *Inventory::getStates(int id)
     }
 }
 
-Flyweight<SunStrategy *> *Inventory::getSunFly(int id)
+Flyweight<SunStrategy > *Inventory::getSunFly(int id)
 {
     try
     {

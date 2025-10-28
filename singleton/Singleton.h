@@ -71,10 +71,10 @@ class Inventory
 private:
 	static Inventory *instance;
 	PlantGroup *inventory;
-	FlyweightFactory<std::string, string *> *stringFactory;
-	FlyweightFactory<int, WaterStrategy *> *waterStrategies;
-	FlyweightFactory<int, SunStrategy *> *sunStrategies;
-	FlyweightFactory<int, MaturityState *> *states;
+	FlyweightFactory<std::string, string > *stringFactory;
+	FlyweightFactory<int, WaterStrategy > *waterStrategies;
+	FlyweightFactory<int, SunStrategy > *sunStrategies;
+	FlyweightFactory<int, MaturityState > *states;
 	vector<Staff *> *staffList;
 	vector<Customer *> *customerList;
 	/**
@@ -99,21 +99,21 @@ public:
 	 * @param season Season name string.
 	 * @return Flyweight wrapping the season string.
 	 */
-	Flyweight<std::string *> *getString(std::string season);
+	Flyweight<std::string > *getString(std::string season);
 
 	/**
 	 * @brief Retrieves a flyweight for a water strategy level.
 	 * @param level Integer identifier for water strategy.
 	 * @return Flyweight wrapping the WaterStrategy instance.
 	 */
-	Flyweight<WaterStrategy *> *getWaterFly(int level);
+	Flyweight<WaterStrategy > *getWaterFly(int level);
 
 	/**
 	 * @brief Retrieves a flyweight for a sun strategy level.
 	 * @param level Integer identifier for sun strategy.
 	 * @return Flyweight wrapping the SunStrategy instance.
 	 */
-	Flyweight<SunStrategy *> *getSunFly(int level);
+	Flyweight<SunStrategy > *getSunFly(int level);
 
 	/**
 	 * @brief Retrieves a flyweight for a maturity state.
@@ -121,7 +121,7 @@ public:
 	 * @return Flyweight wrapping the MaturityState instance.
 	 * @throws std::runtime_error if id is invalid or not cached.
 	 */
-	Flyweight<MaturityState *> *getStates(int id);
+	Flyweight<MaturityState > *getStates(int id);
 
 	/**
 	 * @brief Gets the root plant inventory group.
